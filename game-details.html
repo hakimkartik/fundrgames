@@ -9,20 +9,14 @@
     <link rel="stylesheet" href="main-game-details.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
     <title>Game Details - Overview</title>
 </head>
 
 <body>
-    <!-- navbar goes here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Navbar goes here</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Include navbar -->
+    <div w3-include-html="navbar.html"></div>
 
     <!-- top of game details -->
     <div class="container d-flex">
@@ -220,5 +214,9 @@
     <script src="main-game-details.js"></script>
 
 </body>
+
+<script>
+    w3.includeHTML();
+</script>
 
 </html>
