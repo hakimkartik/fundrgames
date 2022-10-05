@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,9 +24,11 @@
     crossorigin="anonymous"
   ></script>
 
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
   <style>
     .carousel-caption {
-      background-color: #112f4cD9;
+      background-color: #112f4cd9;
       border-radius: 5px;
     }
     .sub-nav > li {
@@ -35,7 +36,7 @@
       padding-right: 30px;
     }
     .custom-nav {
-      background-color: #6869B0BF !important;
+      background-color: #6869b0bf !important;
     }
     .custom-nav li:hover .nav-link {
       color: white !important;
@@ -82,16 +83,7 @@
 
 <body>
   <!-- Include navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Navbar goes here</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
+  <div w3-include-html="navbar.html"></div>
 
   <!-- sub navbar for genres -->
   <nav class="navbar navbar-expand-lg navbar-light custom-nav">
@@ -131,7 +123,6 @@
   </nav>
 
   <div class="container">
-
     <div class="row pt-4 text-center mb-2">
       <h3>Popular Games</h3>
     </div>
@@ -166,7 +157,9 @@
                 alt="Carousel 2"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block justify-content-center">
+            <div
+              class="carousel-caption d-none d-md-block justify-content-center"
+            >
               <h4 class="text-white p-0 m-0">Hollow Night</h4>
               <p class="p-0 m-0">#horror</p>
             </div>
@@ -256,7 +249,11 @@
           <div class="col-6">
             <h5 class="text-uppercase recommended-name">MINECRAFT</h5>
             <p class="lilac-fill">
-              Players appear in a new world and use its resources to build shelter, find food, and craft tools to construct the universe they want to live in.</div>
+              Players appear in a new world and use its resources to build
+              shelter, find food, and craft tools to construct the universe they
+              want to live in.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -274,7 +271,9 @@
           <div class="col-6">
             <h5 class="text-uppercase recommended-name">FEZ</h5>
             <p class="lilac-fill">
-              The player-character Gomez receives a fez that reveals his two-dimensional world to be one of four sides of a three-dimensional world.
+              The player-character Gomez receives a fez that reveals his
+              two-dimensional world to be one of four sides of a
+              three-dimensional world.
             </p>
           </div>
         </div>
@@ -291,13 +290,14 @@
           <div class="col-6">
             <h5 class="text-uppercase recommended-name">DISCO ELYSIUM</h5>
             <p class="lilac-fill">
-              A detective looses his memory and has to solve a macabre murder. A fight with his own psyche will bring him new challenges and new suspects.
+              A detective looses his memory and has to solve a macabre murder. A
+              fight with his own psyche will bring him new challenges and new
+              suspects.
             </p>
           </div>
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- footer -->
@@ -311,3 +311,7 @@
     </div>
   </nav>
 </body>
+
+<script>
+  w3.includeHTML();
+</script>
