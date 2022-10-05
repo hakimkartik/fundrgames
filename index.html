@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,6 +25,58 @@
     crossorigin="anonymous"
   ></script>
 
+  <style>
+    .carousel-caption {
+      background-color: #112f4cD9;
+      border-radius: 5px;
+    }
+    .sub-nav > li {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .custom-nav {
+      background-color: #6869B0BF !important;
+    }
+    .custom-nav li:hover .nav-link {
+      color: white !important;
+    }
+    .lilac-underline {
+      border-bottom: 1px solid #917cb8;
+      border-width: 3px;
+      margin-bottom: 15px;
+    }
+    .recommended-img-wrapper {
+      height: 190px;
+      width: 190px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .recommended-img-wrapper img {
+      height: 100%;
+      width: auto;
+      border-radius: 10px;
+    }
+    .lilac-fill {
+      background-color: #917cb833;
+      border-radius: 5px;
+      padding: 8px;
+      height: 158px;
+    }
+    .carousel-size {
+      width: 85%;
+    }
+    .carousel-img-wrapper {
+      max-height: 350px;
+      overflow: hidden;
+    }
+    .recommended-name {
+      border-bottom: 1px solid white;
+    }
+    .recommended-game-box:hover .recommended-name {
+      border-bottom: 1px solid #917cb8;
+    }
+  </style>
+
   <title>Welcome to FundrGames</title>
 </head>
 
@@ -39,7 +92,9 @@
     </div>
   </nav>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- sub navbar for genres -->
+  <nav class="navbar navbar-expand-lg navbar-light custom-nav">
     <button
       class="navbar-toggler"
       type="button"
@@ -52,7 +107,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav sub-nav mx-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Strategy</a>
         </li>
@@ -76,103 +131,173 @@
   </nav>
 
   <div class="container">
-    <div class="row">
-      <h3>Popular Game</h3>
+
+    <div class="row pt-4 text-center mb-2">
+      <h3>Popular Games</h3>
     </div>
 
-    <div
-      id="popular-game-carousel"
-      class="carousel slide w-75"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="game-details.html">
-            <img
-              src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fceleste%2Fhome%2F00-1920x1080-656978e07c631e4fb1dc5d2f435c536edaafd8d5.jpg"
-              class="d-block w-100"
-              alt="Carousel 1"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Celeste</h5>
-              <p>#FICTION</p>
+    <div class="row justify-content-center">
+      <div
+        id="popular-game-carousel"
+        class="carousel slide carousel-size"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="game-details.html">
+              <div class="carousel-img-wrapper">
+                <img
+                  src="https://cdn.mos.cms.futurecdn.net/XsKkcvjcCo4dFe9Qr2Pte5.jpg"
+                  class="d-block w-100"
+                  alt="Carousel 1"
+                />
+              </div>
+              <div class="carousel-caption d-none d-md-block">
+                <h4 class="text-white p-0 m-0">Celeste</h4>
+                <p class="p-0 m-0">#fiction</p>
+              </div>
+            </a>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img
+                src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/02/XJ7CgSYGvZqaqGdQ8m4w8P.jpg"
+                class="d-block w-100"
+                alt="Carousel 2"
+              />
             </div>
-          </a>
+            <div class="carousel-caption d-none d-md-block justify-content-center">
+              <h4 class="text-white p-0 m-0">Hollow Night</h4>
+              <p class="p-0 m-0">#horror</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img
+                src="https://www.futuregamereleases.com/wp-content/uploads/2020/08/Hades_Nintendo_Switch.jpg"
+                class="d-block w-100"
+                alt="Carousel 3"
+              />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-white p-0 m-0">Hades</h4>
+              <p class="p-0 m-0">#action</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="carousel-img-wrapper">
+              <img
+                src="https://assets-prd.ignimgs.com/2022/04/26/thestanleyparable-ultradeluxe-review-blogroll-1651007624778.jpg"
+                class="d-block w-100"
+                alt="Carousel 4"
+              />
+            </div>
+            <div class="carousel-caption d-none d-md-block">
+              <h4 class="text-white p-0 m-0">The Stanley Parable</h4>
+              <p class="p-0 m-0">#horror</p>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img
-            src="https://c.tenor.com/D9f6YJpuRmUAAAAC/celeste-madeline.gif"
-            class="d-block w-100"
-            alt="Carousel 2"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/ss_1012b11ad364ad6c138a25a654108de28de56c5f.1920x1080.jpg?t=1617130992"
-            class="d-block w-100"
-            alt="..."
-          />
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#popular-game-carousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#popular-game-carousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#popular-game-carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#popular-game-carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-    <hr />
+    <!-- recommended for you -->
 
-    <div>
+    <div class="row mt-5 lilac-underline">
       <h3>Recommended for you</h3>
     </div>
 
+    <!-- row 1 of recommended for you -->
     <div class="row">
-      <div class="col">
-        <div class="row">
-          <img
-            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero"
-            class="col-6"
-          />
+      <div class="col-6">
+        <div class="row recommended-game-box">
+          <div class="recommended-img-wrapper" class="col-6">
+            <img
+              src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+              alt="Inscryption game"
+            />
+          </div>
           <div class="col-6">
-            <h5>INSCRYPTION</h5>
-            <p>
+            <h5 class="text-uppercase recommended-name">INSCRYPTION</h5>
+            <p class="lilac-fill">
               A card game with a twist. The gamer will have to use a strategy
-              and sacrifice resources to challenge the next opponent
+              and sacrifice resources to challenge the next opponent.
             </p>
           </div>
         </div>
       </div>
 
-      <div class="col">
-        <div class="row">
-          <img
-            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero"
-            class="col-6"
-          />
+      <div class="col-6">
+        <div class="row recommended-game-box">
+          <div class="recommended-img-wrapper" class="col-6">
+            <img
+              src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+              alt="Minecraft game"
+            />
+          </div>
           <div class="col-6">
-            <h5>INSCRYPTION</h5>
-            <p>
-              A card game with a twist. The gamer will have to use a strategy
-              and sacrifice resources to challenge the next opponent
+            <h5 class="text-uppercase recommended-name">MINECRAFT</h5>
+            <p class="lilac-fill">
+              Players appear in a new world and use its resources to build shelter, find food, and craft tools to construct the universe they want to live in.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- row 2 of recommended for you -->
+    <div class="row mt-4">
+      <div class="col-6">
+        <div class="row recommended-game-box">
+          <div class="recommended-img-wrapper" class="col-6">
+            <img
+              src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+              alt="Fez game"
+            />
+          </div>
+          <div class="col-6">
+            <h5 class="text-uppercase recommended-name">FEZ</h5>
+            <p class="lilac-fill">
+              The player-character Gomez receives a fez that reveals his two-dimensional world to be one of four sides of a three-dimensional world.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="row recommended-game-box">
+          <div class="recommended-img-wrapper" class="col-6">
+            <img
+              src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+              alt="Disco Elysium game"
+            />
+          </div>
+          <div class="col-6">
+            <h5 class="text-uppercase recommended-name">DISCO ELYSIUM</h5>
+            <p class="lilac-fill">
+              A detective looses his memory and has to solve a macabre murder. A fight with his own psyche will bring him new challenges and new suspects.
             </p>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 
   <!-- footer -->
