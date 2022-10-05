@@ -1,15 +1,188 @@
 <!DOCTYPE html>
-<head>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="main.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+    crossorigin="anonymous"
+  />
+
+  <script
+    src="https://kit.fontawesome.com/2481ec6db9.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"
+  ></script>
+
+  <title>Welcome to FundrGames</title>
 </head>
 
 <body>
-    <h1>Hello ITP 460ers, y'll awesome!</h1>
-    
-    <h2>Class Roster</h2>
-    <ul>
-        <li>Kevin Che</li>
-    </ul>
-</body>
+  <!-- Include navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Navbar goes here</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-</html>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Strategy</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Action</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Adventure</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">VR</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <h3>Popular Game</h3>
+    </div>
+
+    <div
+      id="popular-game-carousel"
+      class="carousel slide w-75"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="game-details.html">
+            <img
+              src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fceleste%2Fhome%2F00-1920x1080-656978e07c631e4fb1dc5d2f435c536edaafd8d5.jpg"
+              class="d-block w-100"
+              alt="Carousel 1"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Celeste</h5>
+              <p>#FICTION</p>
+            </div>
+          </a>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://c.tenor.com/D9f6YJpuRmUAAAAC/celeste-madeline.gif"
+            class="d-block w-100"
+            alt="Carousel 2"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/ss_1012b11ad364ad6c138a25a654108de28de56c5f.1920x1080.jpg?t=1617130992"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#popular-game-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#popular-game-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <hr />
+
+    <div>
+      <h3>Recommended for you</h3>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero"
+            class="col-6"
+          />
+          <div class="col-6">
+            <h5>INSCRYPTION</h5>
+            <p>
+              A card game with a twist. The gamer will have to use a strategy
+              and sacrifice resources to challenge the next opponent
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="row">
+          <img
+            src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero"
+            class="col-6"
+          />
+          <div class="col-6">
+            <h5>INSCRYPTION</h5>
+            <p>
+              A card game with a twist. The gamer will have to use a strategy
+              and sacrifice resources to challenge the next opponent
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Footer goes here</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</body>
