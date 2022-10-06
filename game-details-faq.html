@@ -19,11 +19,17 @@
             margin-left: 2%;
             margin-bottom: 30px;
         }
+        .question-text {
+            border-bottom: 1px solid white;
+        }
         .new-question {
             position: absolute;
             right: 10px;
             bottom: 10px;
             text-align: right;
+        }
+        .question-box:hover .question-text {
+            border-bottom: 1px solid #917cb8;
         }
     </style>
 
@@ -139,9 +145,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="game-details-community.html">Community</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-statistics.html">Statistics</a>
-                    </li>
                 </ul>
                 <form class="form-inline ms-auto my-lg-0">
                     <button class="btn btn-primary my-2 my-sm-0" type="submit">Fund</button>
@@ -160,21 +163,45 @@
             <div class="col-9 p-4 lilac-fill position-relative">
                     <div class="card question-box mt-4">
                         <div class="card-body">
-                          <h5 class="card-title">What is the purpose of this game?</h5>
+                          <h5 class="card-title question-text">What is the purpose of this game?</h5>
                           <p class="card-text">The purpose of this game is to have fun, climb mountains and learn about indie games.</p>
                         </div>
                     </div>
 
                     <div class="card question-box">
                         <div class="card-body">
-                          <h5 class="card-title">What is the ideal age to play this game?</h5>
+                          <h5 class="card-title question-text">What is the ideal age to play this game?</h5>
                           <p class="card-text">The recommended age for this video game is ages 15+. Nevertheless, it is up to the user to determine if they feel right playing.</p>
                         </div>
                     </div>
 
                     <div class="new-question">
                         <h6 class="mb-2">Don't see your question?</h6>
-                        <button type="button" class="btn btn-primary">Ask now</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newquestionModal" data-bs-whatever="@getbootstrap">Ask now</button>
+                    </div>
+
+                    <!-- new comment form -->
+                    <div class="modal fade" id="newquestionModal" tabindex="-1" aria-labelledby="newquestionModal" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="newquestionModal">What is your question?</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Question:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                            </div>
+                        </div>
                     </div>
 
             </div>
@@ -234,6 +261,7 @@
 
 <script>
     w3.includeHTML();
+
 </script>
 
 </html>
