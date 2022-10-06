@@ -21,8 +21,8 @@
             color: white;
             margin-bottom: 5px;
         }
-        .author-tag:hover {
-            opacity: 80%;
+        .update-title {
+            border-bottom: 2px solid #6869b0;
         }
     </style>
 
@@ -152,10 +152,10 @@
 
         <div class="row m-4 d-flex">
             <div class="col-9 p-4 lilac-fill position-relative">
-                    <div class="card">
-                        <div class="row">
+                    <div class="card p-2">
+                        <div class="row mt-3">
                             <div class="col-11">
-                                <h4 class="card-title">50% funded in 3 days!</h4>
+                                <h4 class="card-title update-title">50% funded in 3 days!</h4>
                             </div>
                             <div class="col-1">
                                 <small class="text-muted">1d</small>
@@ -177,8 +177,46 @@
                             </div>
                             <div class="col-1"></div>
                         </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary">Like</button>
+                            </div>
+                            
+                        </div>
                     </div>
 
+                    <div class="card p-2 mt-4">
+                        <div class="row mt-3">
+                            <div class="col-11">
+                                <h4 class="card-title update-title">Our first $1,000!</h4>
+                            </div>
+                            <div class="col-1">
+                                <small class="text-muted">7d</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2 d-flex justify-content-end">
+                                <img class="card-img-left author-avatar" alt="Lena Raine" src="https://static.wikia.nocookie.net/minecraft/images/7/76/Lena_Raine.png/revision/latest?cb=20200917020731">
+                            </div>
+                            <div class="col-10 d-flex justify-content-start align-items-center">
+                                <h5>Lena Raine</h5>
+                                <span class="author-tag">Author</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-9">
+                                <p>Hello everyone! Thanks for helping me reach the first $1,000. I am so excited to know people are backing this project and with me every step of the way.</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary">Like</button>
+                            </div>
+                            
+                        </div>
+                    </div>
             </div>
 
             <!-- similar games -->
@@ -236,7 +274,6 @@
 
 <script>
     w3.includeHTML();
-
 </script>
 
 </html>
