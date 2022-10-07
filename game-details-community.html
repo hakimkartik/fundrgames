@@ -8,10 +8,33 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="main-game-details.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
     <script src="https://www.w3schools.com/lib/w3.js"></script>
 
-    <title>Game Details - Overview</title>
+    <title>Game Details - Updates</title>
+
+    <style>
+        .backer-tag {
+            background-color: #112f4c;
+            margin-left: 8px;
+            border-radius: 5px;
+            padding: 0px 4px 0px 4px;
+            color: white;
+            margin-bottom: 5px;
+        }
+        .developer-tag {
+            background-color: #917cb8;
+            margin-left: 8px;
+            border-radius: 5px;
+            padding: 0px 4px 0px 4px;
+            color: white;
+            margin-bottom: 5px;
+        }
+        .update-title {
+            border-bottom: 2px solid #6869b0;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -63,9 +86,7 @@
                         <div class="card d-flex flex-row mb-2 border-0 col-8">
                             <img class="card-img-left author-avatar" alt="Lena Raine" src="https://static.wikia.nocookie.net/minecraft/images/7/76/Lena_Raine.png/revision/latest?cb=20200917020731">
                             <div class="card-body">
-                                <h5 class="mb-0">
-                                    Lena Raine
-                                </h5>
+                                <h5 class="mb-0">Lena Raine</h5>
                                 <small class="text-muted">8 games | Los Angeles, CA</small>
                             </div>
                         </div>
@@ -109,7 +130,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="game-details.html">Overview</a>
+                        <a class="nav-link" href="game-details.html">Overview</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="game-details-faq.html">FAQ</a>
@@ -121,7 +142,7 @@
                         <a class="nav-link" href="game-details-updates.html">Updates</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="game-details-community.html">Community</a>
+                        <a class="nav-link active" href="game-details-community.html">Community</a>
                     </li>
                 </ul>
                 <form class="form-inline ms-auto my-lg-0">
@@ -134,29 +155,67 @@
     <!-- specific game-details page content -->
     <div class="container">
         <div class="row mt-4">
-            <h2>Overview</h2>
+            <h2>Community</h2>
         </div>
 
         <div class="row m-4 d-flex">
-            <div class="col-9 p-4 lilac-fill">
-                <h4>Plot</h4>
-                <p>Celeste is a platform game in which players control a young woman named Madeline as she makes her way up Mount Celeste while avoiding various deadly obstacles. Along with jumping and climbing up walls for a limited amount of time, Madeline has the ability to perform a mid-air dash in eight directions.</p>
-                <h4>About the Game</h4>
-                <ul>
-                    <li>Genre: fiction, thriller</li>
-                    <li>Audience: 15+</li>
-                    <li>Characters: 10</li>
-                    <li>Levels: 20</li>
-                </ul>
-                <h4>Characters</h4>
-                <ul>
-                    <li>Main character: Madeline</li>
-                    <li>Villain: Part Of Her</li>
-                    <li>Secondary: Alessandra, Cordelia</li>
-                </ul>
-                <h4>The Project</h4>
-                <p>I started this project to show young adults the power we have over ourselves. The doppelganger is a way to show how we have two sides to our personalities and we should try and let our best self dominate and not be scared of the “evil one” - in this case Part Of Her. It shows them to beat their fears.</p>
-                <p>I am looking for your help to help with funding and release this game to the public for enjoyment purposes but also to teach adults about life.</p>
+            <div class="col-9 p-4 lilac-fill position-relative">
+                <div class="col-12">
+                    <h4>Comments</h4>
+                </div>
+                    <div class="card p-2">
+                        <div class="row mt-3">
+                            <div class="col-2 d-flex justify-content-end">
+                                <img class="card-img-left author-avatar" alt="Susy Jane" src="https://steinhardt.nyu.edu/sites/default/files/styles/nyu_profile_image/public/2021-03/music_edtheatre_faculty_SuzyJaneHunt.jpg?h=2f170955&itok=e8hKw3uU"/>
+                            </div>
+                            <div class="col-9 d-flex justify-content-start align-items-center">
+                                <h5>Susy Jane</h5>
+                                <span class="backer-tag">Backer</span>
+                            </div>
+                            <div class="col-1">
+                                <small class="text-muted">1d</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-9">
+                                <p>Great game! Goodluck with the funding.</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary">Like</button>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="card p-2 mt-4">
+                        <div class="row mt-3">
+                            <div class="col-2 d-flex justify-content-end">
+                                <img class="card-img-left author-avatar" alt="Susy Jane" src="https://www.reed.edu/assets_secondary/images/jobs.jpg">
+                            </div>
+                            <div class="col-9 d-flex justify-content-start align-items-center">
+                                <h5>Bob Smith</h5>
+                                <span class="developer-tag">Developer</span>
+                            </div>
+                            <div class="col-1">
+                                <small class="text-muted">3d</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-9">
+                                <p>Such an amazin game, it is inspiring.</p>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <button type="button" class="btn btn-secondary">Like</button>
+                            </div> 
+                        </div>
+                    </div>
             </div>
 
             <!-- similar games -->
