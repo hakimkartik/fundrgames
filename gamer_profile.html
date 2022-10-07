@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/2481ec6db9.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .lilac-fill {
+        background-color: #917cb833;
+        border: 1px solid black;
+        border-width: 3px;
+        margin-bottom: 15px;
+        border-radius: 3px;
+        padding: 20px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      .tags {
+        border-radius: 5px;
+        background-color: #e7dbfc;
+        padding: 10px;
+        margin: 15px;
+        width: auto;
+        float: left;
+        font-size: medium;
+      }
+      .tags_ {
+        border-radius: 5px;
+        background-color: #e7dbfc;
+        padding: 10px;
+        margin: 15px;
+        width: auto;
+        float: right;
+        font-size: medium;
+      }
+      .profile li {
+        list-style: none;
+        font-size: larger;
+        text-align: left;
+        display: block;
+      }
+      .prof_pic {
+        width: auto;
+        height: 300px;
+        margin-right: 200px;
+        margin-left: 100px;
+      }
+      .nav-item .prof_pic {
+        border-radius: 50px;
+        width: 50px;
+        height: auto;
+        margin-right: 20px;
+      }
+      .scrollbar {
+        margin-left: 100px;
+        float: none;
+        height: 65px;
+        width: 1000px;
+        background: #ffff;
+        overflow-x: scroll;
+        margin-bottom: 25px;
+      }
+      .force-overflow {
+        min-width: 1300px;
+      }
+
+      .scrollbar-primary::-webkit-scrollbar {
+        height: 12px;
+        background-color: #e7dbfc;
+        border-radius: 50px;
+      }
+
+      .scrollbar-primary::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+        background-color: #0d1f38;
+      }
+
+      .scrollbar-primary {
+        scrollbar-color: #0d1f38 #f5f5f5;
+      }
+      .recommended-img-wrapper {
+        height: 190px;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .recommended-img-wrapper img {
+        height: 100%;
+        width: auto;
+        border-radius: 10px;
+      }
+      .recommended-name {
+        border-bottom: 1px solid white;
+      }
+      .recommended-game-box:hover .recommended-name {
+        border-bottom: 1px solid #917cb8;
+      }
+      .games{
+        position: relative;
+        overflow-x: scroll;
+      }
+      .funded{
+        border: 10px solid green;
+        margin-top: 15px;
+        padding-left: 0px;
+        margin-left: 30px;
+      }
+    .funded img{
+        border-radius: 0px;
+    }
+    .fund{
+        margin-top: 20px;
+    }
+    .fund li {
+        list-style: none;
+        font-size: large;
+        text-align: center;
+        display: block;
+        font-weight: bold;
+      }
+      .fund .tags_{
+        border-radius: 5px;
+        background-color: #BC78FF;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 15px;
+        width: auto;
+        text-align: center;
+        font-size: medium;
+        float: none;
+      }
+    </style>
+    <title>Gamer Profile</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid row">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- left -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Discover</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+
+          <!-- center -->
+          <a
+            class="navbar-brand d-flex col-4 justify-content-center"
+            href="index.html"
+            >FUNDRGAMES</a
+          >
+
+          <!-- right -->
+          <div class="d-flex col-4 justify-content-end">
+            <!-- search bar -->
+            <form class="form w-75" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+            </form>
+            <!-- login link -->
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <img class="prof_pic" src="PROFILE.jpg" alt="Profile Picture" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <div class="container">
+      <div class="row pt-4 text-center mb-2 lilac-fill">PROFILE</div>
+      <div class="row pt-4 text-center mb-2">
+        <img class="prof_pic" src="PROFILE.jpg" alt="Gamer Picture" />
+        <div class="col-lg-4 profile">
+          <ul>
+            <li>Username: Jax Ross</li>
+            <br />
+            <li>Email: justforgames@gmail.com</li>
+            <br />
+            <li>
+              Preferred Games:
+              <div class="tags_">Multiplayer</div>
+              <div class="tags">Strategy</div>
+              <div class="tags_">Action</div>
+              <div class="tags">Fantasy</div>
+            </li>
+          </ul>
+        </div>
+        <div class="row pt-4 text-center mb-2 lilac-fill">YOUR LIKED GAMES</div>
+        <div class="row pt-4 text-center m-2 games">
+          <div class="col-6">
+            <div class="row recommended-game-box">
+              <div class="recommended-img-wrapper">
+                <img
+                  src="/Users/ginevraspada/Desktop/Disco elysium.jpeg"
+                  alt="Disco Elysium"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+                <h5 class="text-uppercase recommended-name">DISCO ELYSIUM</h5>
+            </div>
+            <div class="col-6">
+                <div class=" row recommended-game-box">
+                  <div class="recommended-img-wrapper ">
+                    <img
+                      src="/Users/ginevraspada/Desktop/INCRIPTION.jpeg"
+                      alt="Incryption"
+                    />
+                  </div>
+                </div>
+          </div>
+          <div class="col-6">
+            <h5 class="text-uppercase recommended-name">INCRYPTION</h5>
+          </div>
+          <div class="scrollbar scrollbar-primary">
+            <div class="force-overflow"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-4 text-center mb-2 lilac-fill">GAMES FUNDED</div>
+      <div class="col-6">
+        <div class=" row recommended-game-box">
+          <div class="recommended-img-wrapper funded ">
+            <img
+              src="/Users/ginevraspada/Desktop/INCRIPTION.jpeg"
+              alt="Incryption"
+            />
+          </div>
+        </div>
+  </div>
+        <div class="col-lg-4 fund">
+          <ul>
+            <li>INSCRYPTION</li>
+            <br />
+            <li>Amount Donated: $50</li>
+            <br />
+            <li>
+              <div class="tags_">Tier 1 funder</div>
+            </li>
+          </ul>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Footer goes here</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    <script>
+        var gamesScroll = document.querySelector('.scrollbar');
+        var scroll = new Scrolling(gamesScroll);
+        var scrollX = gamesScroll.querySelector('.Scrolling__rail-x');
+
+        gamesScroll.onscroll = function(){
+            scrollX.style.cssText = 'right: ${-this.scrollLeft}px';
+        }
+    </script>
+  </body>
+</html>
