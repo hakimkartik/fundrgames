@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>General Login</title>
+
+    <style>
+        .container-left {
+            background-color: #917cb880;
+            width: 450px;
+            height: 500px;
+            margin-top: 6%;
+            margin-bottom: 6%;
+            border-radius: 5%;
+        }
+        body {
+            background: linear-gradient(
+                to right, 
+                #ffffff 0%, 
+                #ffffff 50%, 
+                #917cb880 50%, 
+                #917cb880 100%
+            );
+        }
+        .container-right {
+            background-color: white;
+            width: 450px;
+            height: 500px;
+            margin-top: 6%;
+            margin-bottom: 6%;
+            border-radius: 5%;
+        }
+        .col-right {
+            padding-left: 5%;
+        }
+        .type-icon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: white;
+        }
+        .type-img {
+            width: 60px;
+            height: 60px;
+            margin-top: 20px;
+        }
+        .type-text {
+            font-size: 10px;
+        }
+        .horizontal-line {
+            width: 80%;
+            height: 1px;
+            background-color: black;
+        }
+        .website-hover {
+            color: #112f4c;
+            text-decoration: underline;
+        }
+        .website-hover:hover {
+            color: #6869b0;
+        }
+        .btn-custom {
+            background-color: white;
+            border: 1px solid #6869b0;
+            color: #6869b0;
+        }
+        .btn-custom:hover {
+            background-color: #6869b0;
+            border: 1px solid #6869b0;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+        <div class="container-fluid row">
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- left -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4">
+                <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Discover</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+
+            <!-- center -->
+            <a
+                class="navbar-brand d-flex col-4 justify-content-center"
+                href="index.html"
+                >FUNDRGAMES</a
+            >
+
+            <!-- right -->
+            <div class="d-flex col-4 justify-content-end">
+                <form class="form w-75" role="search">
+                <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                />
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="log-in.html">Login</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- left -->
+            <div class="col-6">
+                <div class="container-left d-flex flex-wrap justify-content-center text-center mx-auto">
+                    <h2 class="col-12 d-flex align-items-center justify-content-center">Login to your account</h2>
+                    <div class="col-6 d-flex flex-wrap justify-content-center">
+                        <div class="type-icon">
+                            <img src="main/img/gamer.svg" alt="gamer icon" class="type-img">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary w-75 btn-type">I am a gamer</button>
+                        </div>
+                    
+                        <div class="w-100 d-flex justify-content-center">
+                            <p class="type-text w-50">I am here to browse and discover games to fund.</p>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex flex-wrap justify-content-center">
+                        <div class="type-icon">
+                            <img src="main/img/developer.svg" alt="developer icon" class="type-img">
+                        </div>
+                        <div class="col-12">
+                            <button type="button" class="btn btn-primary w-75 btn-type">I am a developer</button>
+                        </div>
+                        <div class="w-100 d-flex justify-content-center">
+                            <p class="type-text w-50">I am here to share my games and be discovered and funded.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-wrap justify-content-center">
+                        <div class="horizontal-line pb-0 mb-0"></div>
+                        <p class="type-text m-0">Learn more about <span class="website-hover">FundrGames</span>.</p>
+                    </div>
+                </div> 
+            </div>
+
+            <!-- right -->
+            <div class="col-6">
+                <div class="container-right d-flex flex-wrap justify-content-center text-center mx-auto">
+                    <div class="col-12"></div>
+                    <h1 class="col-12 d-flex align-items-center justify-content-center">New Here?</h1>
+                    <div class="col-12 d-flex justify-content-center">
+                        <h5 class="w-50">sign up and discover first-of-its-kind games!</h5>
+                    </div>
+                    <div class="col-12">
+                        <button type="button" class="btn btn-custom w-50 btn-type">Sign up</button>
+                    </div>
+                    <div class="col-12"></div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-3 mt-4">
+        <p class="text-center footer-title">FUNDRGAMES</p>
+        <p class="text-center">@2022 ITP460 Created this page</p>
+        <p class="text-center">Terms and Conditions</p>
+    </footer>
+
+</body>
+</html>
