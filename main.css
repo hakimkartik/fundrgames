@@ -4,10 +4,9 @@
     --whale-color: #112f4c;
     --green-color: #1f4361;
     --lilac-color: #917cb8; 
-
 }
 body {
-    font-family: 'proxima-nova', sans-serif;
+    font-family: 'proxima-nova', sans-serif !important;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #061f3a !important;
