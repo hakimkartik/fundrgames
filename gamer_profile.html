@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 
     <link rel="stylesheet" href="main.css" />
     <link
@@ -34,23 +35,14 @@
         margin-top: 15px;
         font-weight: bold;
       }
-      .tags {
+      tbody .tags {
         border-radius: 5px;
         background-color: #e7dbfc;
-        padding: 10px;
-        margin: 15px;
+        padding: 5px;
+        margin: 10px;
         width: auto;
+        font-size: medium;
         float: left;
-        font-size: medium;
-      }
-      .tags_ {
-        border-radius: 5px;
-        background-color: #e7dbfc;
-        padding: 10px;
-        margin: 15px;
-        width: auto;
-        float: right;
-        font-size: medium;
       }
       .profile li {
         list-style: none;
@@ -109,51 +101,60 @@
         width: auto;
         border-radius: 10px;
       }
-      .recommended-name {
-        border-bottom: 1px solid white;
+      .recommended-game-box:hover {
+        border-bottom: 4px solid #917cb8;
       }
-      .recommended-game-box:hover .recommended-name {
-        border-bottom: 1px solid #917cb8;
+      .games {
+        margin-left:80px ;
       }
-      .games{
-        position: relative;
-        overflow-x: scroll;
-      }
-      .funded{
+      .funded {
         border: 10px solid green;
         margin-top: 15px;
         padding-left: 0px;
         margin-left: 30px;
       }
-    .funded img{
+      .funded img {
         border-radius: 0px;
-    }
-    .fund{
+      }
+      .funded:hover {
+        border-bottom: 14px solid darkgreen;
+      }
+      .fund {
         margin-top: 20px;
-    }
-    .fund li {
+        margin-left: 80px;
+
+      }
+      .fund li {
         list-style: none;
         font-size: large;
         text-align: center;
-        display: block;
         font-weight: bold;
+        width: auto;
       }
-      .fund .tags_{
+      .fund .tags_ {
         border-radius: 5px;
-        background-color: #BC78FF;
+        background-color: #bc78ff;
         padding-left: 20px;
         padding-right: 20px;
-        margin: 15px;
         width: auto;
+        line-height: 50px;
         text-align: center;
         font-size: medium;
         float: none;
+      }
+      footer {
+        width: auto;
+      }
+      .borderless td,
+      .borderless th {
+        border: none;
       }
     </style>
     <title>Gamer Profile</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div w3-include-html="navbar.html"></div>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
       <div class="container-fluid row">
         <button
           class="navbar-toggler"
@@ -170,20 +171,22 @@
           <!-- left -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-4">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Discover</a>
+              <a class="nav-link" aria-current="page" href="index.html"
+                >Discover</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About</a>
             </li>
           </ul>
-    
+
           <!-- center -->
           <a
             class="navbar-brand d-flex col-4 justify-content-center"
             href="index.html"
             >FUNDRGAMES</a
           >
-    
+
           <!-- right -->
           <div class="d-flex col-4 justify-content-end">
             <form class="form w-75" role="search">
@@ -196,7 +199,9 @@
             </form>
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="log-in.html">Login</a>
+                <a class="nav-link" aria-current="page" href="log-in.html"
+                  >Login</a
+                >
               </li>
             </ul>
           </div>
@@ -220,84 +225,116 @@
             <li>Email: justforgames@gmail.com</li>
             <br />
             <li>
-              Preferred Games:
-              <div class="tags_">Multiplayer</div>
-              <div class="tags">Strategy</div>
-              <div class="tags_">Action</div>
-              <div class="tags">Fantasy</div>
+              <table class="table table-borderless">
+                <thead>
+                  <tr>
+                    <th scope="col">Preferred Games:</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="tags">Multiplayer</td>
+                    <td class="tags">Strategy</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="tags">Action</td>
+                    <td class="tags">Fantasy</td>
+                  </tr>
+                </tbody>
+              </table>
             </li>
           </ul>
         </div>
         <div class="row pt-4 text-center mb-2 lilac-fill">YOUR LIKED GAMES</div>
         <div class="row pt-4 text-center m-2 games">
-          <div class="col-6">
-            <div class="row recommended-game-box">
-              <div class="recommended-img-wrapper">
-                <img
-                  src="/Users/ginevraspada/Desktop/Disco elysium.jpeg"
-                  alt="Disco Elysium"
-                />
-              </div>
-            </div>
-            <div class="col-6">
-                <h5 class="text-uppercase recommended-name">DISCO ELYSIUM</h5>
-            </div>
-            <div class="col-6">
-                <div class=" row recommended-game-box">
-                  <div class="recommended-img-wrapper ">
-                    <img
-                      src="/Users/ginevraspada/Desktop/INCRIPTION.jpeg"
-                      alt="Incryption"
-                    />
+          <table class="table table-borderless games-liked">
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>
+                  <div class="recommended-game-box recommended-img-wrapper ">
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fdisco-elysium_850024_full.jpg%3Fformat%3Djpg%26width%3D1600%26height%3D1600%26mode%3Dmin%26upscale%3Dfalse&f=1&nofb=1&ipt=7d3408b61ba45cad95b05fa857f3842b7cd7e690417d1b80544358fa5b816609&ipo=images"
+                    alt="Disco Elysium"
+                  />
                   </div>
-                </div>
-          </div>
-          <div class="col-6">
-            <h5 class="text-uppercase recommended-name">INCRYPTION</h5>
-          </div>
+                </td>
+                <td>
+                  <h5 class="text-uppercase recommended-name">DISCO ELYSIUM</h5>
+                </td>
+                <td>
+                  <div class="recommended-img-wrapper recommended-game-box">
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pcgamesn.com%2Fwp-content%2Fuploads%2F2021%2F06%2Finscryption-1.jpg&f=1&nofb=1&ipt=4dcdb77183c1c243285dbfec7ea711a08cde1a947a2c593203dc14e496922356&ipo=images"
+                    alt="Incryption"
+                  />
+                </td>
+                <td>
+                  <h5 class="text-uppercase recommended-name">INCRYPTION</h5>
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <div class="scrollbar scrollbar-primary">
             <div class="force-overflow"></div>
           </div>
         </div>
       </div>
       <div class="row pt-4 text-center mb-2 lilac-fill">GAMES FUNDED</div>
+      <br>
       <div class="col-6">
-        <div class=" row recommended-game-box">
-          <div class="recommended-img-wrapper funded ">
-            <img
-              src="/Users/ginevraspada/Desktop/INCRIPTION.jpeg"
-              alt="Incryption"
-            />
-          </div>
-        </div>
-  </div>
-        <div class="col-lg-4 fund">
-          <ul>
-            <li>INSCRYPTION</li>
-            <br />
-            <li>Amount Donated: $50</li>
-            <br />
-            <li>
-              <div class="tags_">Tier 1 funder</div>
-            </li>
-          </ul>
-        </div>
+        <table class="table table-borderless games">
+            <tbody>
+              <tr>
+                <th scope="row"></th>
+                <td>
+                  <div class="recommended-img-wrapper recommended-game-box funded">
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pcgamesn.com%2Fwp-content%2Fuploads%2F2021%2F06%2Finscryption-1.jpg&f=1&nofb=1&ipt=4dcdb77183c1c243285dbfec7ea711a08cde1a947a2c593203dc14e496922356&ipo=images"
+                    alt="Incryption"
+                  />
+                </td>
+                <td>
+                  <div class="fund">
+                    <ul>
+                      <li>INSCRYPTION</li>
+                      <br />
+                      <li>Amount Donated: $50</li>
+                      <br />
+                      <li>
+                        <div class="tags_">Tier 1 funder</div>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        
+      </div>
     </div>
-    
-    <footer class="py-3 mt-4">
+
+    <footer class="py-3 mt-4 container-fluid">
       <p class="text-center footer-title">FUNDRGAMES</p>
       <p class="text-center">@2022 ITP460 Created this page</p>
       <p class="text-center">Terms and Conditions</p>
-  </footer>
+    </footer>
 
     <script>
-        var gamesScroll = document.querySelector('.scrollbar');
-        var scroll = new Scrolling(gamesScroll);
-        var scrollX = gamesScroll.querySelector('.Scrolling__rail-x');
+      var gamesScroll = document.querySelector(".scrollbar");
+      var scroll = new Scrolling(gamesScroll);
+      var scrollX = gamesScroll.querySelector(".Scrolling__rail-x");
 
-        gamesScroll.onscroll = function(){
-            scrollX.style.cssText = 'right: ${-this.scrollLeft}px';
-        }
+      gamesScroll.onscroll = function () {
+        scrollX.style.cssText = "right: ${-this.scrollLeft}px";
+      };
     </script>
   </body>
+  <script>
+    w3.includeHTML();
+  </script>
 </html>
