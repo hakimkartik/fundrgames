@@ -42,6 +42,9 @@ footer {
     background-color: var(--darkblue-color) !important;
     color: white;
     margin-top: 4px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 footer .footer-title {
     font-size: 15px;
