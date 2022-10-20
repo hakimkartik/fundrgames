@@ -1,0 +1,81 @@
+.container-left {
+    background-color: #917cb880;
+    width: 450px;
+    height: 500px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border-radius: 5%;
+}
+/* body {
+    background: linear-gradient(
+        to right, 
+        #ffffff 0%, 
+        #ffffff 50%, 
+        #917cb880 50%, 
+        #917cb880 100%
+    );
+} */
+.container-right {
+    background-color: white;
+    width: 450px;
+    height: 500px;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    border-radius: 5%;
+}
+.col-right {
+    padding-left: 5%;
+}
+.type-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+.type-img {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+.type-text {
+    font-size: 10px;
+}
+.horizontal-line {
+    width: 80%;
+    height: 1px;
+    background-color: black;
+}
+.website-hover {
+    color: #112f4c;
+    text-decoration: underline;
+}
+.website-hover:hover {
+    color: #6869b0;
+}
+.btn-custom {
+    background-color: white;
+    border: 1px solid #6869b0;
+    color: #6869b0;
+}
+.btn-custom:hover {
+    background-color: #6869b0;
+    border: 1px solid #6869b0;
+    color: white;
+}
+.remember-me {
+    margin-left: 4px;
+    font-size: 12px;
+}
+.form-check-input {
+    font-size: 12px;
+    border-color: #6869b0;
+}
+.form-check-input:checked {
+    background-color: #6869b0;
+}
+.form-control, .form-control:focus, input:focus, .form-check-input:focus{
+    border-color: #6869b0;
+}
+svg:hover g {
+    fill: white;
+}

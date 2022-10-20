@@ -1,0 +1,72 @@
+.carousel-caption {
+  background-color: #112f4cd9;
+  border-radius: 5px;
+}
+.sub-nav > li {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.custom-nav {
+  background-color: #6869b0bf !important;
+}
+.custom-nav li:hover .nav-link {
+  color: white !important;
+}
+.lilac-underline {
+  border-bottom: 1px solid #917cb8;
+  border-width: 3px;
+  margin-bottom: 15px;
+}
+.recommended-img-wrapper {
+  height: 190px;
+  width: 190px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.recommended-img-wrapper img {
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
+.lilac-fill {
+  background-color: #917cb833;
+  border-radius: 5px;
+  padding: 8px;
+  height: 158px;
+}
+.carousel-size {
+  width: 85%;
+}
+.carousel-img-wrapper {
+  max-height: 350px;
+  overflow: hidden;
+}
+.recommended-name {
+  border-bottom: 1px solid white;
+}
+.recommended-game-box:hover .recommended-name {
+  border-bottom: 1px solid #917cb8;
+}
+
+  .paddings {
+    padding-bottom: 150px;
+  }
+
+  .oddBody {
+    background: linear-gradient(
+        to right, 
+        #ffffff 0%, 
+        #ffffff 50%, 
+        #917cb880 50%, 
+        #917cb880 100%
+    );
+}
+.oddBody2 {
+  background: linear-gradient(
+      to right, 
+      #917cb880 0%, 
+      #917cb880 50%,
+      #ffffff 50%, 
+      #ffffff 100% 
+  );
+}

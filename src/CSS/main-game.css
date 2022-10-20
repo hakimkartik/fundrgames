@@ -1,0 +1,58 @@
+#game-details-main-img {
+    height: 83%;
+    overflow: hidden;
+}
+.game-details-thumbnails {
+    height: 14%;
+    overflow: hidden;
+}
+.game-details-thumbnails img {
+    height: 100%;
+    width: auto;
+    opacity: 0.6;
+}
+.game-details-title-img {
+    height: 68px;
+    overflow: hidden;
+}
+.game-details-title-img img {
+    border-radius: 5%;
+}
+.author-avatar {
+    max-height: 70px;
+    border-radius: 50%;
+}
+.similar-games-wrapper {
+    height: 120px;
+    overflow: hidden;
+}
+.similar-games-wrapper img {
+    height: 100%;
+    width: auto;
+}
+.progress-bar {
+    background-color: #1f4361 !important;
+}
+.game-lilac-fill {
+    background-color: #917cb833;
+    border-radius: 5px;
+}
+.similar-games {
+    height: 220px;
+}
+.similar-games-container {
+    border: 1px solid #917cb833;
+    border-radius: 5px;
+}
+.game-description {
+    text-align: justify;
+}
+.opassities {
+    opacity:1;
+}
+.game-details-font-size {
+    font-size:60%;
+}
+.one-third-width {
+    width: 33%;
+}

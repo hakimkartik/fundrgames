@@ -1,0 +1,19 @@
+.community-backer-tag {
+    background-color: #112f4c;
+    margin-left: 8px;
+    border-radius: 5px;
+    padding: 0px 4px 0px 4px;
+    color: white;
+    margin-bottom: 5px;
+}
+.community-developer-tag {
+    background-color: #917cb8;
+    margin-left: 8px;
+    border-radius: 5px;
+    padding: 0px 4px 0px 4px;
+    color: white;
+    margin-bottom: 5px;
+}
+.community-update-title {
+    border-bottom: 2px solid #6869b0;
+}

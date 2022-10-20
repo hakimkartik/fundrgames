@@ -1,0 +1,126 @@
+
+.gamer-lilac-fill {
+  background-color: #917cb833;
+  border: 1px solid black;
+  border-width: 3px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  padding: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+tbody .tags {
+  border-radius: 5px;
+  background-color: #e7dbfc;
+  padding: 5px;
+  margin: 10px;
+  width: auto;
+  font-size: medium;
+  float: left;
+}
+.profile li {
+  list-style: none;
+  font-size: larger;
+  text-align: left;
+  display: block;
+}
+.prof_pic {
+  width: auto;
+  height: 300px;
+  margin-right: 200px;
+  margin-left: 100px;
+}
+.nav-item .prof_pic {
+  border-radius: 50px;
+  width: 50px;
+  height: auto;
+  margin-right: 20px;
+}
+.scrollbar {
+  margin-left: 100px;
+  float: none;
+  height: 65px;
+  width: 1000px;
+  background: #ffff;
+  overflow-x: scroll;
+  margin-bottom: 25px;
+}
+.force-overflow {
+  min-width: 1300px;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+  height: 12px;
+  background-color: #e7dbfc;
+  border-radius: 50px;
+}
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color: #0d1f38;
+}
+
+.scrollbar-primary {
+  scrollbar-color: #0d1f38 #f5f5f5;
+}
+.recommended-img-wrapper {
+  height: 190px;
+  width: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.recommended-img-wrapper img {
+  height: 100%;
+  width: auto;
+  border-radius: 10px;
+}
+.recommended-game-box:hover {
+  border-bottom: 4px solid #917cb8;
+}
+.games {
+  margin-left:80px ;
+  margin-bottom: 50px;
+}
+.funded {
+  border: 10px solid green;
+  margin-top: 15px;
+  padding-left: 0px;
+  margin-left: 30px;
+}
+.funded img {
+  border-radius: 0px;
+}
+.funded:hover {
+  border-bottom: 14px solid darkgreen;
+}
+.fund {
+  margin-top: 20px;
+  margin-left: 80px;
+
+}
+.fund li {
+  list-style: none;
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  width: auto;
+}
+.fund .tags_ {
+  border-radius: 5px;
+  background-color: #bc78ff;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: auto;
+  line-height: 50px;
+  text-align: center;
+  font-size: medium;
+  float: none;
+}
+footer {
+  width: auto;
+}
+.borderless td,
+.borderless th {
+  border: none;
+}
