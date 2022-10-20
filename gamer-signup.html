@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
-    <title>Developer Login</title>
+    <title>Gamer Signup</title>
 
     <style>
         .container-left {
@@ -22,10 +22,10 @@
         body {
             background: linear-gradient(
                 to right, 
-                #ffffff 0%, 
+                #917cb880 0%, 
+                #917cb880 50%,
                 #ffffff 50%, 
-                #917cb880 50%, 
-                #917cb880 100%
+                #ffffff 100% 
             );
         }
         .container-right {
@@ -153,22 +153,39 @@
         <div class="row">
             <!-- left -->
             <div class="col-6">
+                <div class="container-right d-flex flex-wrap justify-content-center text-center mx-auto">
+                    <div class="col-12"></div>
+                    <h1 class="col-12 d-flex align-items-center justify-content-center">Already a user?</h1>
+                    <div class="col-12 d-flex justify-content-center">
+                        <h5 class="w-50">login and reconnect with the community </h5>
+                    </div>
+                    <div class="col-12">
+                        <a href="general-login.html" class="btn btn-custom w-50 btn-type">Login</a>
+                    </div>
+                    <div class="col-12"></div>
+                </div> 
+            </div>
+
+            <!-- right -->
+            <div class="col-6">
                 <div class="container-left d-flex flex-wrap justify-content-center text-center mx-auto">
                     <div class="col-12 mt-4">
-                        <h2>Login for developers</h2>
-                        <p class="type-text">Not a developer? <a href="gamer-login.html" class="website-hover">Sign in as a gamer</a>.</p>
+                        <h2>Sign up for gamers</h2>
+                        <p class="type-text">Not a gamer? <a href="developer-signup.html" class="website-hover">Sign up as a developer</a>.</p>
                     </div>
 
                     <form class="d-flex flex-wrap justify-content-center text-center">
                         <div class="col-12 d-flex flex-wrap justify-content-center">
+                            <input type="username" class="form-control form-control-sm w-75 mb-3" id="username" placeholder="Username">
                             <input type="email" class="form-control form-control-sm mb-3 w-75" id="email" aria-describedby="emailHelp" placeholder="Email">
-                            <input type="password" class="form-control form-control-sm w-75 mb-3" id="password" placeholder="Password">    
-                            <p class="type-text w-75 d-flex justify-content-start"><span class="website-hover">Forgot password?</span></p>     
-                            <button type="submit" class="btn btn-primary w-75">Login</button>                       
+                            <input type="password" class="form-control form-control-sm w-75 mb-3" id="password" placeholder="Password">                          
                         </div>
                         <div class="col-12 w-75 mt-3 form-check d-flex justify-content-start">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label remember-me" for="exampleCheck1">Remember me</label>
+                            <label class="form-check-label remember-me" for="exampleCheck1">Please read our <a href="" class="website-hover">User Agreement</a> and check to agree</label>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary w-75">Sign up</button> 
                         </div>
                     </form>
 
@@ -210,20 +227,7 @@
                 </div> 
             </div>
 
-            <!-- right -->
-            <div class="col-6">
-                <div class="container-right d-flex flex-wrap justify-content-center text-center mx-auto">
-                    <div class="col-12"></div>
-                    <h1 class="col-12 d-flex align-items-center justify-content-center">New Here?</h1>
-                    <div class="col-12 d-flex justify-content-center">
-                        <h5 class="w-50">sign up and discover first-of-its-kind games!</h5>
-                    </div>
-                    <div class="col-12">
-                        <button type="button" class="btn btn-custom w-50 btn-type">Sign up</button>
-                    </div>
-                    <div class="col-12"></div>
-                </div> 
-            </div>
+            
         </div>
     </div>
 
