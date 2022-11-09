@@ -37,12 +37,13 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-custom {
     background-color: var(--darkblue-color) !important;
     color: white !important;
+    height: 70px;
 }
 footer {
     background-color: var(--darkblue-color) !important;
     color: white;
     margin-top: 4px;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     width: 100%;
 }

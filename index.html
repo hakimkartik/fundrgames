@@ -31,38 +31,6 @@
       background-color: #112f4cd9;
       border-radius: 5px;
     }
-    .sub-nav > li {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    .custom-nav {
-      background-color: #6869b0bf !important;
-    }
-    .custom-nav li:hover .nav-link {
-      color: white !important;
-    }
-    .lilac-underline {
-      border-bottom: 1px solid #917cb8;
-      border-width: 3px;
-      margin-bottom: 15px;
-    }
-    .recommended-img-wrapper {
-      height: 190px;
-      width: 190px;
-      overflow: hidden;
-      border-radius: 10px;
-    }
-    .recommended-img-wrapper img {
-      height: 100%;
-      width: auto;
-      border-radius: 10px;
-    }
-    .lilac-fill {
-      background-color: #917cb833;
-      border-radius: 5px;
-      padding: 8px;
-      height: 158px;
-    }
     .carousel-size {
       width: 85%;
     }
@@ -70,11 +38,52 @@
       max-height: 350px;
       overflow: hidden;
     }
-    .recommended-name {
-      border-bottom: 1px solid white;
+    .sub-nav > li {
+      padding-left: 30px;
+      padding-right: 30px;
     }
-    .recommended-game-box:hover .recommended-name {
+    .custom-nav {
+      background-color: #6869b0bf !important;
+      height: 50px;
+    }
+    .custom-nav li:hover .nav-link {
+      color: white !important;
+    }
+    /* horizontal media scroll */
+    .lilac-underline {
       border-bottom: 1px solid #917cb8;
+      border-width: 3px;
+      margin-bottom: 15px;
+    }
+    .media-scroller {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 44%;
+      gap: 2rem;
+      overflow-x: auto;
+      min-height: 320px;
+    }
+    .media-element {
+      height: 300px;
+      width: 480px;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 5px 5px 5px var(--purple-color);
+      position: relative;
+    }
+    .media-element img {
+      height: 100%;
+      width: auto;
+    }
+    .media-element p {
+      color: white;
+      position: absolute;
+      bottom: 0px;
+      left: 10px;
+      font-size: 25px;
+    }
+    .media-element:hover img {
+      opacity: 80%;
     }
   </style>
 
@@ -82,8 +91,7 @@
 </head>
 
 <body>
-  <!-- Include navbar -->
-  <!-- <div w3-include-html="navbar.html"></div> -->
+  <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
     <div class="container-fluid row">
       <button
@@ -135,7 +143,6 @@
     </div>
   </nav>
   
-
   <!-- sub navbar for genres -->
   <nav class="navbar navbar-expand-lg navbar-light custom-nav">
     <button
@@ -173,7 +180,8 @@
     </div>
   </nav>
 
-  <div class="container">
+  <!-- popular games / carousel -->
+  <div class="container-fluid">
     <div class="row pt-4 text-center mb-2">
       <h3>Popular Games</h3>
     </div>
@@ -262,15 +270,49 @@
         </button>
       </div>
     </div>
+  </div>
+
+  <div class="container">
 
     <!-- recommended for you -->
-
     <div class="row mt-5 lilac-underline">
       <h3>Recommended for you</h3>
     </div>
 
+    <div class="media-scroller">
+      <div class="media-element">
+        <img
+        src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+        alt="Inscryption game"
+        />
+        <p class="media-title">INSCRYPTION</p>
+
+      </div>
+      <div class="media-element">
+        <img
+          src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+          alt="Minecraft game"
+        />
+        <p class="media-title">MINECRAFT</p>
+      </div>
+      <div class="media-element">
+        <img
+          src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+          alt="Fez game"
+        />
+        <p class="media-title">FEZ</p>
+      </div>
+      <div class="media-element">
+        <img
+          src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+          alt="Disco Elysium game"
+        />
+        <p class="media-title">DISCO ELYSIUM</p>
+      </div>
+    </div>
+
     <!-- row 1 of recommended for you -->
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-6">
         <div class="row recommended-game-box">
           <div class="recommended-img-wrapper" class="col-6">
@@ -307,10 +349,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- row 2 of recommended for you -->
-    <div class="row mt-4">
+    <!-- <div class="row mt-4">
       <div class="col-6">
         <div class="row recommended-game-box">
           <div class="recommended-img-wrapper" class="col-6">
@@ -348,7 +390,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <!-- footer -->
