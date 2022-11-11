@@ -22,23 +22,12 @@
     max-height: 70px;
     border-radius: 50%;
 }
-.similar-games-wrapper {
-    height: 120px;
-    overflow: hidden;
-}
-.similar-games-wrapper img {
-    height: 100%;
-    width: auto;
-}
 .progress-bar {
     background-color: #1f4361 !important;
 }
 .lilac-fill {
     background-color: #917cb833;
     border-radius: 5px;
-}
-.similar-games {
-    height: 220px;
 }
 .similar-games-container {
     border: 1px solid #917cb833;
@@ -47,3 +36,65 @@
 .game-description {
     text-align: justify;
 }
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2rem;
+    overflow-x: auto;
+    min-height: 200px;
+  }
+  .media-element {
+    height: 180px;
+    width: 320px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--purple-color);
+    position: relative;
+  }
+  .media-element img {
+    height: auto;
+    width: 100%;
+  }
+  .media-element p {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-size: 25px;
+  }
+  .media-element:hover img {
+    opacity: 80%;
+  }
+  .purple-line {
+    height: 5px;
+    background-color: var(--purple-color);
+  }
+  .media-scroller-2 {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: 500px;
+  }
+  .media-element-2 {
+    height: 180px;
+    width: 120px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px var(--purple-color);
+    position: relative;
+  }
+  .media-element-2 img {
+    height: 100%;
+    width: auto;
+  }
+  .media-element-2 p {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+    font-size: 15px;
+  }
+  .media-element-2:hover img {
+    opacity: 80%;
+  }
