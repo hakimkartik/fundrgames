@@ -60,7 +60,7 @@
     position: absolute;
     bottom: 0px;
     left: 10px;
-    font-size: 25px;
+    font-size: 25px !important;
   }
   .media-element:hover img {
     opacity: 80%;
@@ -93,7 +93,7 @@
     position: absolute;
     bottom: 0px;
     left: 10px;
-    font-size: 15px;
+    font-size: 15px !important;
   }
   .media-element-2:hover img {
     opacity: 80%;
