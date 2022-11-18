@@ -36,6 +36,9 @@
       margin-top: 60px !important;
       margin-bottom: 40px;
     }
+    .recommended {
+      width: 85%;
+    }
     .carousel-img-wrapper {
       max-height: 350px;
       overflow: hidden;
@@ -54,24 +57,28 @@
     }
     /* horizontal media scroll */
     .lilac-underline {
-      border-bottom: 1px solid #917cb8;
-      border-width: 3px;
-      margin-bottom: 15px;
+      border-top: 1px solid var(--iris);
+      border-width: 1px;
+    }
+    .lilac-underline h3 {
+      font-size: 15px !important;
+      margin-top: 40px;
+      margin-left: 0px;
+      padding-left: 0px;
     }
     .media-scroller {
       display: grid;
       grid-auto-flow: column;
-      grid-auto-columns: 44%;
-      gap: 2rem;
+      grid-auto-columns: 18%;
+      gap: 2.5rem;
       overflow-x: auto;
-      min-height: 320px;
+      min-height: 200px;
+      margin-top: 40px;
     }
     .media-element {
-      height: 300px;
-      width: 480px;
+      height: 140px;
+      width: 240px;
       overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 5px 5px 5px var(--purple-color);
       position: relative;
     }
     .media-element img {
@@ -271,14 +278,15 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid recommended justify-content-center">
 
     <!-- recommended for you -->
     <div class="row mt-5 lilac-underline">
-      <h3>Recommended for you</h3>
+      <h3>RECOMMENDED FOR YOU</h3>
     </div>
 
-    <div class="media-scroller">
+    <div class="row justify-content-center">
+      <div class="media-scroller">
       <div class="media-element">
         <img
         src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
@@ -309,6 +317,8 @@
         <p class="media-title">DISCO ELYSIUM</p>
       </div>
     </div>
+    </div>
+    
   </div>
 
   <!-- footer -->
