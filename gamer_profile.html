@@ -90,15 +90,20 @@
       .scrollbar-primary {
         scrollbar-color: #0d1f38 #f5f5f5;
       }
+      .games-liked{
+        position: relative;
+        overflow-x: scroll;
+        height: 100%;
+      }
       .recommended-img-wrapper {
         height: 190px;
-        width: 300px;
-        overflow: hidden;
+        width: 330px;
         border-radius: 10px;
       }
       .recommended-img-wrapper img {
         height: 100%;
         width: auto;
+        overflow: hidden;
         border-radius: 10px;
       }
       .recommended-game-box:hover {
@@ -250,7 +255,9 @@
         </div>
         <div class="row pt-4 text-center mb-2 lilac-fill">YOUR LIKED GAMES</div>
         <div class="row pt-4 text-center m-2 games">
-          <table class="table table-borderless games-liked">
+          <div class="scrollbar scrollbar-primary games-liked">
+            <div class="force-overflow"></div>
+          <table class="table table-borderless ">
             <tbody>
               <tr>
                 <th scope="row"></th>
@@ -281,9 +288,8 @@
               </tr>
             </tbody>
           </table>
-          <div class="scrollbar scrollbar-primary">
-            <div class="force-overflow"></div>
-          </div>
+         
+        </div>
         </div>
       </div>
       <div class="row pt-4 text-center mb-2 lilac-fill">GAMES FUNDED</div>
