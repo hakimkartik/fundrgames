@@ -21,20 +21,17 @@
 .author-avatar {
     max-height: 70px;
     border-radius: 50%;
+    margin-left: 10px;
 }
 .progress-bar {
-    background-color: #1f4361 !important;
-}
-.lilac-fill {
-    background-color: #917cb833;
-    border-radius: 5px;
+    background-color: var(--iris) !important;
 }
 .similar-games-container {
-    border: 1px solid #917cb833;
+    background-color: var(--semidark);
     border-radius: 5px;
 }
-.game-description {
-    text-align: justify;
+.similar-games {
+  font-size: 22px !important;
 }
 .media-scroller {
     display: grid;
@@ -48,7 +45,7 @@
     width: 320px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px var(--purple-color);
+    /* box-shadow: 5px 5px 5px var(--purple-color); */
     position: relative;
   }
   .media-element img {
@@ -66,8 +63,14 @@
     opacity: 80%;
   }
   .purple-line {
-    height: 5px;
-    background-color: var(--purple-color);
+    height: 1px;
+    background-color: var(--iris);
+    margin-top: 30px !important;
+  }
+  .more-by-auth {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 20px !important;
   }
   .media-scroller-2 {
     display: grid;
@@ -81,7 +84,7 @@
     width: 120px;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px var(--purple-color);
+    /* box-shadow: 5px 5px 5px var(--purple-color); */
     position: relative;
   }
   .media-element-2 img {
@@ -98,3 +101,47 @@
   .media-element-2:hover img {
     opacity: 80%;
   }
+  .search-bar {
+    background-color: var(--semidark) !important;
+    border: 0px !important;
+  }
+  .card-group .card {
+    background-color: var(--semidark) !important;
+  }
+  .card-body h5 {
+    color: var(--smoke) !important;
+    padding-left: 10% !important;
+  }
+  .card-body small {
+    color: var(--smoke) !important;
+    padding-left: 10% !important;
+  }
+  .box-one {
+    background-color: var(--semidark);
+    border-radius: 10px;
+  }
+  .box-two {
+    background-color: var(--semidark);
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+  .game-description p {
+    font-size: 13px !important;
+    color: var(--smoke) !important;
+    text-align: center !important;
+  }
+  .game-description {
+    padding: 10px;
+  }
+  .funding-info {
+    color: var(--smoke);
+  }
+  .page-title {
+    padding-left: 4% !important;
+  }
+  .bottom-fund .btn {
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+  }
+
