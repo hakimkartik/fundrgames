@@ -9,12 +9,16 @@
     <link rel="stylesheet" href="main-game-details.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
+
     <title>Game Details - Overview</title>
 </head>
 
 <body>
-    <!-- Include navbar -->
-    <!-- <div w3-include-html="navbar.html"></div> -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
         <div class="container-fluid row">
           <button
@@ -68,7 +72,7 @@
       
 
     <!-- top of game details -->
-    <div class="container d-flex">
+    <div class="container top-game-details d-flex">
         <div class="row mt-4">
             <!-- game details top left -->
             <div class="col-7 game-details-gallery">
@@ -91,60 +95,56 @@
                     </div>
             </div>
             <!-- game details top right -->
-            <div class="col-5 gx-5">
-                <div class="row pb-3 shadow-5 game-details-title-img">
-                    <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero" class="img-fluid" alt="Celeste image 1">
+            <div class="col-5 gx-5 top-right">
+                <div class="game-box-one">
+                    <div class="row pb-3 shadow-5 game-details-title-img">
+                        <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero" class="img-fluid" alt="Celeste image 1">
+                    </div>
+                    <div class="row mt-2 game-description">
+                        <p>A young woman named Madeline undertakes the challenge of climbing a mountain with dangerous perils and mysterious powers. Throughout her journey, she is confronted by Part Of Her, her evil doppelganger.</p>
+                    </div>
                 </div>
-                <div class="row mt-2 game-description">
-                    <p>A young woman named Madeline undertakes the challenge of climbing a mountain with dangerous perils and mysterious powers. Throughout her journey, she is confronted by Part Of Her, her evil doppelganger.</p>
-                </div>
-                <div class="row mt-2 mb-2 text-center">
-                    <table class="lilac-fill">
-                        <trow>
-                            <th>#FICTION</th>
-                            <th>#HORROR</th>
-                            <th>#TEENAGERS</th>
-                        </trow>
-                    </table>
-                </div>
-                <div class="row">
-                    <div class="card-group mt-2">
-                        <div class="card d-flex flex-row mb-2 border-0 col-8">
-                            <img class="card-img-left author-avatar" alt="Lena Raine" src="https://static.wikia.nocookie.net/minecraft/images/7/76/Lena_Raine.png/revision/latest?cb=20200917020731">
-                            <div class="card-body">
-                                <h5 class="mb-0">
-                                    Lena Raine
-                                </h5>
-                                <small class="text-muted">8 games | Los Angeles, CA</small>
+                
+                <div class="game-box-two">
+                    
+                    <div class="row">
+                        <div class="card-group game-card-auth mt-2">
+                            <div class="card d-flex flex-row mb-2 border-0 col-8">
+                                <div class="card-body">
+                                    <h5 class="mb-0">
+                                        Lena Raine
+                                    </h5>
+                                    <small>8 games | Los Angeles, CA</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-center py-3 funding-info">
+                        <div class="d-flex p-0.5 w-75">
+                            <div class="d-flex col-md-6 justify-content-start px-0 pb-2 m-0 h5">$12,345</div>
+                            <div class="d-flex col-md-6 justify-content-end px-0 pb-2 m-0 h5">88 days left</div>
+                        </div>
+
+                        <div class="d-flex justify-content-center">
+                            <div class="progress w-75 col-md-12">
+                                <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
 
-                    </div>
-                </div>
-
-                <div class="row justify-content-center py-3 lilac-fill">
-                    <div class="d-flex p-0.5 w-75">
-                        <div class="d-flex col-md-6 justify-content-start px-0 pb-2 m-0 h5">$12,345</div>
-                        <div class="d-flex col-md-6 justify-content-end px-0 pb-2 m-0 h5">88<span style="font-size:60%">days left</span></div>
-                    </div>
-
-                    <div class="d-flex justify-content-center">
-                        <div class="progress w-75 col-md-12">
-                            <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="d-flex p-0.5 w-75">
+                            <div class="d-flex col-md-6 justify-content-start px-0 pt-2 m-0 h5">of $67,890</div>
+                            <div class="d-flex col-md-6 justify-content-end px-0 pt-2 m-0 h5">90 backers</div>
                         </div>
-                    </div>
-
-                    <div class="d-flex p-0.5 w-75">
-                        <div class="d-flex col-md-6 justify-content-start px-0 pt-2 m-0 h5"><span style="font-size:60%">of </span>$67,890</div>
-                        <div class="d-flex col-md-6 justify-content-end px-0 pt-2 m-0 h5">90<span style="font-size:60%"> backers</span></div>
-                    </div>
-                    <div class="w-75">
-                        <div class="d-flex col-md-12 justify-content-center px-0 pt-2 m-0">
-                            <button type="button" class="btn btn-primary w-50">Fund</button>
-                        </div>
-                        <div class="col-md-12 text-center px-0 pt-2 m-0">
-                            <button type="button" class="btn btn-secondary btn-sm w-25">Save</button>
-                            <button type="button" class="btn btn-secondary btn-sm w-25">Share</button>
+                        <div class="w-75 mt-4">
+                            <div class="d-flex col-md-12 justify-content-center px-0 pt-2 m-0">
+                                <button type="button" class="btn btn-primary w-50">Fund</button>
+                            </div>
+                            <div class="col-md-12 text-center px-0 pt-2 m-0 mt-2 mb-4">
+                                <button type="button" class="btn btn-secondary btn-sm w-25">Save</button>
+                                <button type="button" class="btn btn-secondary btn-sm w-25">Share</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -152,62 +152,60 @@
         </div>
    </div>
 
-   <!-- game details navbar -->
-   <div class="row mt-4">
-        <nav class="navbar navbar-expand-lg navbar-dark px-4 navbar-custom">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details.html">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="game-details-terms.html">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-updates.html">Updates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-community.html">Community</a>
-                    </li>
-                </ul>
-                <form class="form-inline ms-auto my-lg-0">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Fund</button>
-                </form>
-            </div>
-        </nav>
-    </div>
-
     <!-- specific game-details page content -->
     <div class="container">
         <div class="row mt-4">
-            <h2>Terms</h2>
+            <div class="game-purple-line"></div>
+            <h2 class="game-page-title">Terms</h2>
         </div>
 
         <div class="row m-4 d-flex">
-            <div class="col-9 p-4 lilac-fill">
-                <h4>Terms of Use</h4>
+            <!-- subnav -->
+            <div class="col-1">
+                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom game-details-subnav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details.html">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="game-details-terms.html">Terms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-updates.html">Updates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-community.html">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-8 offset-1 p-4">
+                <h4 class="bold">Terms of Use</h4>
                 <ul>
                     <li>This license grants the entity 1 year of Royalty Free use for the duration of the license and is non-transferable</li>
                     <li>It can only be used for self-purposes, it cannot be shared or commercialized</li>
                     <li>You may NOT sell, share, transfer, modify or distribute any of the digital files, images, graphics or media</li>
                     <li>These files may not be modified and/or incorporated into any other project in digital or physical form for sale or distribution</li>
                 </ul>
-                <h4>Risks and challenges</h4>
+                <h4 class="bold">Risks and challenges</h4>
                 <p>
                     We have been designing and distributing digital files for several years now, and all of our previous projects have been fulfilled on or before the promised fulfillment schedule. The risk with this campaign is small compared to many campaigns. There is no manufacturing or shipping so we can avoid all of these supply chain issues. All of the files undergo digital testing and many of the files have already been physically printed. All unlocked stretch goals will go through the same.
                 </p>
             </div>
 
             <!-- similar games -->
-            <div class="col-2 offset-1 p-4 overflow-auto similar-games-container">
+            <div class="col-2 p-4 overflow-auto similar-games-container">
                 <div class="text-center mb-4">
-                    <h4>Similar Games</h4>
+                    <h4 class="similar-games">Similar Games</h4>
                 </div>
-                <div class="media-scroller-2">
-                    <div class="media-element-2">
+                <div class="game-media-scroller-2">
+                    <div class="game-media-element-2">
                     <img
                     src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
                     alt="Inscryption game"
@@ -215,21 +213,21 @@
                     <p class="media-title">INSCRYPTION</p>
             
                     </div>
-                    <div class="media-element-2">
+                    <div class="game-media-element-2">
                     <img
                         src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
                         alt="Minecraft game"
                     />
                     <p class="media-title">MINECRAFT</p>
                     </div>
-                    <div class="media-element-2">
+                    <div class="game-media-element-2">
                     <img
                         src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
                         alt="Fez game"
                     />
                     <p class="media-title">FEZ</p>
                     </div>
-                    <div class="media-element-2">
+                    <div class="game-media-element-2">
                     <img
                         src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
                         alt="Disco Elysium game"
@@ -244,18 +242,17 @@
     </div>
 
     <!-- bottom buttons -->
-    <div class="container">
-        <h4 class="mb-2">Think it looks great?</h4>
-        <button type="button" class="btn btn-primary mb-4">Fund</button>
-        <!-- <button type="button" class="btn btn-secondary">More by this Author</button> -->
+    <div class="container bottom-fund d-flex">
+        <button type="button" class="btn btn-primary mb-4">Back this project</button>
     </div>
 
+    <!-- more by this author -->
     <div class="container">
-        <div class="purple-line"></div>
-        <h4 class="mt-4">More by this author...</h4>
+        <div class="game-purple-line"></div>
+        <h3 class="more-by-auth">MORE BY THIS AUTHOR</h3>
         
-        <div class="media-scroller">
-            <div class="media-element">
+        <div class="game-media-scroller">
+            <div class="game-media-element">
             <img
             src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
             alt="Inscryption game"
@@ -263,21 +260,21 @@
             <p class="media-title">INSCRYPTION</p>
     
             </div>
-            <div class="media-element">
+            <div class="game-media-element">
             <img
                 src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
                 alt="Minecraft game"
             />
             <p class="media-title">MINECRAFT</p>
             </div>
-            <div class="media-element">
+            <div class="game-media-element">
             <img
                 src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
                 alt="Fez game"
             />
             <p class="media-title">FEZ</p>
             </div>
-            <div class="media-element">
+            <div class="game-media-element">
             <img
                 src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
                 alt="Disco Elysium game"
@@ -298,9 +295,5 @@
     <script src="main-game-details.js"></script>
 
 </body>
-
-<script>
-    w3.includeHTML();
-</script>
 
 </html>

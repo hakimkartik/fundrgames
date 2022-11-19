@@ -7,12 +7,16 @@
 
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
 
     <title>General Login</title>
 
     <style>
-        .container-left {
-            background-color: #917cb880;
+        .login-container-left {
+            background-color: var(--bone);
             width: 450px;
             height: 500px;
             margin-top: 6%;
@@ -22,68 +26,59 @@
         body {
             background: linear-gradient(
                 to right, 
-                #ffffff 0%, 
-                #ffffff 50%, 
-                #917cb880 50%, 
-                #917cb880 100%
+                var(--dark) 0%, 
+                var(--dark) 50%, 
+                var(--iris) 50%, 
+                var(--iris) 100%
             );
         }
-        .container-right {
-            background-color: white;
+        .login-container-right {
+            background-color: var(--bone);
             width: 450px;
             height: 500px;
             margin-top: 6%;
             margin-bottom: 6%;
             border-radius: 5%;
         }
-        .col-right {
-            padding-left: 5%;
-        }
-        .type-icon {
+        .login-type-icon {
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            background-color: white;
+            border: 1px solid var(--dark);
         }
-        .type-img {
+        .login-type-img {
             width: 60px;
             height: 60px;
             margin-top: 20px;
         }
-        .horizontal-line {
+        .login-horizontal-line {
             width: 80%;
             height: 1px;
-            background-color: black;
+            background-color: var(--iris);
         }
-        .website-hover {
-            color: #112f4c;
+        .login-website-hover {
+            color: var(--iris);
             text-decoration: underline;
         }
-        .website-hover:hover {
-            color: #6869b0;
+        .login-website-hover:hover {
+            color: var(--periwinkle);
         }
-        .btn-custom {
-            background-color: white;
-            border: 1px solid #6869b0;
-            color: #6869b0;
-        }
-        .btn-custom:hover {
-            background-color: #6869b0;
-            border: 1px solid #6869b0;
-            color: white;
-        }
-        .new-msg {
+        .login-new-msg {
             font-size: 50px !important;
+            color: var(--iris) !important;
         }
-        .new-sub-msg {
+        .login-new-sub-msg {
             font-size: 25px !important;
+            color: var(--dark) !important;
         }
-        .type-text {
+        .login-type-text {
             font-size: 14px !important;
+            color: var(--dark) !important;
         }
         .login-msg {
             font-size: 35px !important;
             margin-top: 4px;
+            color: var(--iris) !important;
         }
     </style>
 </head>
@@ -145,48 +140,48 @@
         <div class="row">
             <!-- left -->
             <div class="col-6">
-                <div class="container-left d-flex flex-wrap justify-content-center text-center mx-auto">
+                <div class="login-container-left d-flex flex-wrap justify-content-center text-center mx-auto">
                     <h2 class="col-12 d-flex align-items-center justify-content-center login-msg">Login to your account</h2>
                     <div class="col-6 d-flex flex-wrap justify-content-center">
-                        <div class="type-icon">
-                            <img src="main/img/gamer.svg" alt="gamer icon" class="type-img">
+                        <div class="login-type-icon">
+                            <img src="main/img/gamer.svg" alt="gamer icon" class="login-type-img">
                         </div>
                         <div class="col-12">
                             <a href="gamer-login.html" class="btn btn-primary w-75 btn-type">I am a gamer</a>
                         </div>
                     
                         <div class="w-100 d-flex justify-content-center">
-                            <p class="type-text w-50">I am here to browse and discover games to fund.</p>
+                            <p class="login-type-text w-50">I am here to browse and discover games to fund.</p>
                         </div>
                     </div>
                     <div class="col-6 d-flex flex-wrap justify-content-center">
-                        <div class="type-icon">
-                            <img src="main/img/developer.svg" alt="developer icon" class="type-img">
+                        <div class="login-type-icon">
+                            <img src="main/img/developer.svg" alt="developer icon" class="login-type-img">
                         </div>
                         <div class="col-12">
                             <a href="developer-login.html" class="btn btn-primary w-75 btn-type">I am a developer</a>
                         </div>
                         <div class="w-100 d-flex justify-content-center">
-                            <p class="type-text w-50">I am here to share my games and be discovered.</p>
+                            <p class="login-type-text w-50">I am here to share my games and be discovered.</p>
                         </div>
                     </div>
                     <div class="col-12 d-flex flex-wrap justify-content-center">
-                        <div class="horizontal-line pb-0 mb-0"></div>
-                        <p class="type-text m-0">Learn more about <span class="website-hover">FundrGames</span>.</p>
+                        <div class="login-horizontal-line pb-0 mb-0"></div>
+                        <p class="login-type-text m-0">Learn more about <span class="login-website-hover">FundrGames</span>.</p>
                     </div>
                 </div> 
             </div>
 
             <!-- right -->
             <div class="col-6">
-                <div class="container-right d-flex flex-wrap justify-content-center text-center mx-auto">
+                <div class="login-container-right d-flex flex-wrap justify-content-center text-center mx-auto">
                     <div class="col-12"></div>
-                    <h1 class="col-12 d-flex align-items-center justify-content-center new-msg">New Here?</h1>
+                    <h1 class="col-12 d-flex align-items-center justify-content-center login-new-msg">New Here?</h1>
                     <div class="col-12 d-flex justify-content-center">
-                        <h5 class="w-50 new-sub-msg">sign up and discover first-of-its-kind games!</h5>
+                        <h5 class="w-50 login-new-sub-msg">sign up and discover first-of-its-kind games!</h5>
                     </div>
                     <div class="col-12">
-                        <a href="general-signup.html" class="btn btn-custom w-50 btn-type">Sign up</a>
+                        <a href="general-signup.html" class="btn btn-primary w-50 btn-type">Sign up</a>
                     </div>
                     <div class="col-12"></div>
                 </div> 

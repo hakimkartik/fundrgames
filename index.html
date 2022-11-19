@@ -14,61 +14,69 @@
   />
 
   <script
-    src="https://kit.fontawesome.com/2481ec6db9.js"
-    crossorigin="anonymous"
-  ></script>
-
-  <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
   ></script>
 
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
+
 
   <style>
-    .carousel-caption {
-      background-color: #112f4cd9;
+    .index-carousel-caption {
+      background-color: #5a36ccaa;
       border-radius: 5px;
     }
-    .carousel-size {
+    .index-carousel-size {
+      width: 85%;
+      margin-top: 60px !important;
+      margin-bottom: 40px;
+    }
+    .index-recommended {
       width: 85%;
     }
-    .carousel-img-wrapper {
+    .index-carousel-img-wrapper {
       max-height: 350px;
       overflow: hidden;
     }
-    .sub-nav > li {
+    .index-sub-nav > li {
       padding-left: 30px;
       padding-right: 30px;
     }
-    .custom-nav {
-      background-color: #6869b0bf !important;
+    .index-custom-nav {
+      background-color: var(--dark) !important;
       height: 50px;
+      color: var(--bone) !important;
     }
-    .custom-nav li:hover .nav-link {
-      color: white !important;
+    .index-custom-nav li:hover .nav-link {
+      color: var(--iris) !important;
     }
-    /* horizontal media scroll */
     .lilac-underline {
-      border-bottom: 1px solid #917cb8;
-      border-width: 3px;
-      margin-bottom: 15px;
+      border-top: 1px solid var(--iris);
+      border-width: 1px;
+    }
+    .lilac-underline h3 {
+      font-size: 15px !important;
+      margin-top: 40px;
+      margin-left: 0px;
+      padding-left: 0px;
     }
     .media-scroller {
       display: grid;
       grid-auto-flow: column;
-      grid-auto-columns: 44%;
-      gap: 2rem;
+      grid-auto-columns: 20%;
+      gap: 2.5rem;
       overflow-x: auto;
-      min-height: 320px;
+      height: 200px;
+      margin-top: 40px;
     }
     .media-element {
-      height: 300px;
-      width: 480px;
+      height: 140px;
+      width: 240px;
       overflow: hidden;
-      border-radius: 15px;
-      box-shadow: 5px 5px 5px var(--purple-color);
       position: relative;
     }
     .media-element img {
@@ -76,7 +84,7 @@
       width: auto;
     }
     .media-element p {
-      color: white;
+      color: var(--bone);
       position: absolute;
       bottom: 0px;
       left: 10px;
@@ -144,7 +152,7 @@
   </nav>
   
   <!-- sub navbar for genres -->
-  <nav class="navbar navbar-expand-lg navbar-light custom-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark index-custom-nav">
     <button
       class="navbar-toggler"
       type="button"
@@ -157,7 +165,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav sub-nav mx-auto">
+      <ul class="navbar-nav index-sub-nav mx-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#">Strategy</a>
         </li>
@@ -182,34 +190,30 @@
 
   <!-- popular games / carousel -->
   <div class="container-fluid">
-    <div class="row pt-4 text-center mb-2">
-      <h3>Popular Games</h3>
-    </div>
-
     <div class="row justify-content-center">
       <div
         id="popular-game-carousel"
-        class="carousel slide carousel-size"
+        class="carousel slide index-carousel-size"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="game-details.html">
-              <div class="carousel-img-wrapper">
+              <div class="index-carousel-img-wrapper">
                 <img
                   src="https://cdn.mos.cms.futurecdn.net/XsKkcvjcCo4dFe9Qr2Pte5.jpg"
                   class="d-block w-100"
                   alt="Carousel 1"
                 />
               </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="index-carousel-caption carousel-caption d-none d-md-block">
                 <h4 class="text-white p-0 m-0">Celeste</h4>
                 <p class="p-0 m-0">#fiction</p>
               </div>
             </a>
           </div>
           <div class="carousel-item">
-            <div class="carousel-img-wrapper">
+            <div class="index-carousel-img-wrapper">
               <img
                 src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/02/XJ7CgSYGvZqaqGdQ8m4w8P.jpg"
                 class="d-block w-100"
@@ -217,34 +221,34 @@
               />
             </div>
             <div
-              class="carousel-caption d-none d-md-block justify-content-center"
+              class="index-carousel-caption carousel-caption d-none d-md-block justify-content-center"
             >
               <h4 class="text-white p-0 m-0">Hollow Night</h4>
               <p class="p-0 m-0">#horror</p>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousel-img-wrapper">
+            <div class="index-carousel-img-wrapper">
               <img
                 src="https://www.futuregamereleases.com/wp-content/uploads/2020/08/Hades_Nintendo_Switch.jpg"
                 class="d-block w-100"
                 alt="Carousel 3"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="index-carousel-caption carousel-caption d-none d-md-block">
               <h4 class="text-white p-0 m-0">Hades</h4>
               <p class="p-0 m-0">#action</p>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousel-img-wrapper">
+            <div class="index-carousel-img-wrapper">
               <img
                 src="https://assets-prd.ignimgs.com/2022/04/26/thestanleyparable-ultradeluxe-review-blogroll-1651007624778.jpg"
                 class="d-block w-100"
                 alt="Carousel 4"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="index-carousel-caption carousel-caption d-none d-md-block">
               <h4 class="text-white p-0 m-0">The Stanley Parable</h4>
               <p class="p-0 m-0">#horror</p>
             </div>
@@ -272,14 +276,44 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid index-recommended justify-content-center">
 
     <!-- recommended for you -->
     <div class="row mt-5 lilac-underline">
-      <h3>Recommended for you</h3>
+      <h3>RECOMMENDED FOR YOU</h3>
     </div>
 
-    <div class="media-scroller">
+    <div class="row justify-content-center">
+      <div class="media-scroller">
+      <div class="media-element">
+        <img
+        src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+        alt="Inscryption game"
+        />
+        <p class="media-title">INSCRYPTION</p>
+
+      </div>
+      <div class="media-element">
+        <img
+          src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+          alt="Minecraft game"
+        />
+        <p class="media-title">MINECRAFT</p>
+      </div>
+      <div class="media-element">
+        <img
+          src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+          alt="Fez game"
+        />
+        <p class="media-title">FEZ</p>
+      </div>
+      <div class="media-element">
+        <img
+          src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+          alt="Disco Elysium game"
+        />
+        <p class="media-title">DISCO ELYSIUM</p>
+      </div>
       <div class="media-element">
         <img
         src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
@@ -310,6 +344,8 @@
         <p class="media-title">DISCO ELYSIUM</p>
       </div>
     </div>
+    </div>
+    
   </div>
 
   <!-- footer -->
@@ -321,6 +357,3 @@
   
 </body>
 
-<script>
-  w3.includeHTML();
-</script>

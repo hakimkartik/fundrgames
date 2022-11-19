@@ -1,14 +1,14 @@
 :root {
-    --iris: #5A36CC;
+    --iris: #4825b8;
     --wisteria: #A699DA;
     --periwinkle: #DACFEA;
     --lavender: #f7f7fA;
     --azure: #e3f5ff;
     --smoke: #d7d5d5;
     --bone: #fbfbfb;
-    --dark: rgb(36,36,36);
-    --semidark: rgb(94,94,94);
-    --light: rgb(160,160,160);
+    --dark: #242424;
+    --semidark: #444444;
+    --light: #a0a0a0;
 
     /* old colors */
     --darkblue-color: #061f3a;
@@ -17,17 +17,17 @@
     --green-color: #1f4361;
     --lilac-color: #917cb8; 
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 * {
     font-family: 'Inter', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 html, body {
-    /* background-color: var(--dark) !important; */
+    background-color: var(--dark) !important;
 }
 h1, h2, h3, h4, h5, h6, p, li {
-    /* color: var(--bone) !important; */
+    color: var(--bone) !important;
 }
 h1 {
     font-size: 60pt !important;
@@ -53,6 +53,13 @@ p, li {
     font-size: 12pt !important;
     font-weight: 400 !important;
 }
+.bold {
+    font-weight: 600 !important;
+}
+.navbar-brand {
+    font-weight: 600 !important;
+    color: var(--bone) !important;
+}
 .btn-primary {
     background-color:var(--iris) !important;
     border: 0px !important;
@@ -62,25 +69,27 @@ p, li {
 }
 .btn-secondary {
     background-color: var(--wisteria) !important;
+    color: var(--dark) !important;
     border: 0px !important;
 }
 .btn-secondary:hover {
     opacity: 90%;
 }
 .navbar-custom {
-    background-color: var(--darkblue-color) !important;
-    /* background-color: var(--iris) !important; */
+    background-color: var(--dark) !important;
+    border-bottom: 1px solid var(--semidark);
     color: var(--bone) !important;
     height: 70px;
 }
 footer {
-    background-color: var(--darkblue-color) !important;
-    /* background-color: var(--iris) !important; */
+    background-color: var(--dark) !important;
     color: var(--bone);
-    margin-top: 4px;
+    border-top: 1px solid var(--semidark);
+    /* margin-top: 4px; */
     position: sticky;
     bottom: 0;
-    width: 100%;
+    width: 100% !important;
+    height: 65px;
 }
 footer .footer-title {
     font-size: 15px !important;
