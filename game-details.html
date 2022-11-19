@@ -67,7 +67,7 @@
             </div>
           </div>
         </div>
-      </nav>
+    </nav>
       
 
     <!-- top of game details -->
@@ -95,7 +95,7 @@
             </div>
             <!-- game details top right -->
             <div class="col-5 gx-5 top-right">
-                <div class="box-one">
+                <div class="game-box-one">
                     <div class="row pb-3 shadow-5 game-details-title-img">
                         <img src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero" class="img-fluid" alt="Celeste image 1">
                     </div>
@@ -104,12 +104,11 @@
                     </div>
                 </div>
                 
-                <div class="box-two">
+                <div class="game-box-two">
                     
                     <div class="row">
-                        <div class="card-group mt-2">
+                        <div class="card-group game-card-auth mt-2">
                             <div class="card d-flex flex-row mb-2 border-0 col-8">
-                                <!-- <img class="card-img-left author-avatar" alt="Lena Raine" src="https://static.wikia.nocookie.net/minecraft/images/7/76/Lena_Raine.png/revision/latest?cb=20200917020731"> -->
                                 <div class="card-body">
                                     <h5 class="mb-0">
                                         Lena Raine
@@ -152,42 +151,42 @@
         </div>
    </div>
 
-   <!-- game details navbar -->
-   <div class="row mt-4">
-        <nav class="navbar navbar-expand-lg navbar-dark px-4 navbar-custom">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="game-details.html">Overview</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-terms.html">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-updates.html">Updates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="game-details-community.html">Community</a>
-                    </li>
-                </ul>
-                <form class="form-inline ms-auto my-lg-0">
-                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Fund</button>
-                </form>
-            </div>
-        </nav>
-    </div>
-
     <!-- specific game-details page content -->
     <div class="container">
         <div class="row mt-4">
-            <h2 class="page-title">Overview</h2>
+            <div class="game-purple-line"></div>
+            <h2 class="game-page-title">Overview</h2>
         </div>
 
+        <!-- content -->
         <div class="row m-4 d-flex">
-            <div class="col-9 p-4 lilac-fill">
+            <!-- subnav -->
+            <div class="col-1">
+                <nav class="navbar navbar-expand-lg navbar-dark navbar-custom game-details-subnav">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="game-details.html">Overview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-faq.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-terms.html">Terms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-updates.html">Updates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="game-details-community.html">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- specific page game details -->
+            <div class="col-8 offset-1 p-4">
                 <h4 class="bold">Plot</h4>
                 <p>Celeste is a platform game in which players control a young woman named Madeline as she makes her way up Mount Celeste while avoiding various deadly obstacles. Along with jumping and climbing up walls for a limited amount of time, Madeline has the ability to perform a mid-air dash in eight directions.</p>
                 <h4 class="bold">About the Game</h4>
@@ -209,12 +208,12 @@
             </div>
 
             <!-- similar games -->
-            <div class="col-2 offset-1 p-4 overflow-auto similar-games-container">
+            <div class="col-2 p-4 overflow-auto similar-games-container">
                 <div class="text-center mb-4">
                     <h4 class="similar-games">Similar Games</h4>
                 </div>
-                <div class="media-scroller-2">
-                    <div class="media-element-2">
+                <div class="game-media-scroller-2">
+                    <div class="game-media-element-2">
                     <img
                     src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
                     alt="Inscryption game"
@@ -222,21 +221,21 @@
                     <p class="media-title">INSCRYPTION</p>
             
                     </div>
-                    <div class="media-element-2">
+                    <div class="game-media-element-2">
                     <img
                         src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
                         alt="Minecraft game"
                     />
                     <p class="media-title">MINECRAFT</p>
                     </div>
-                    <div class="media-element-2">
+                    <div class="game-media-element-2">
                     <img
                         src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
                         alt="Fez game"
                     />
                     <p class="media-title">FEZ</p>
                     </div>
-                    <div class="media-element-2">
+                    <div class="game-media-element-2">
                     <img
                         src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
                         alt="Disco Elysium game"
@@ -257,12 +256,13 @@
         <button type="button" class="btn btn-primary mb-4">Back this project</button>
     </div>
 
+    <!-- more by this author -->
     <div class="container">
-        <div class="purple-line"></div>
-        <h4 class="more-by-auth">More by this author...</h4>
+        <div class="game-purple-line"></div>
+        <h3 class="more-by-auth">MORE BY THIS AUTHOR</h3>
         
-        <div class="media-scroller">
-            <div class="media-element">
+        <div class="game-media-scroller">
+            <div class="game-media-element">
             <img
             src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
             alt="Inscryption game"
@@ -270,21 +270,21 @@
             <p class="media-title">INSCRYPTION</p>
     
             </div>
-            <div class="media-element">
+            <div class="game-media-element">
             <img
                 src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
                 alt="Minecraft game"
             />
             <p class="media-title">MINECRAFT</p>
             </div>
-            <div class="media-element">
+            <div class="game-media-element">
             <img
                 src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
                 alt="Fez game"
             />
             <p class="media-title">FEZ</p>
             </div>
-            <div class="media-element">
+            <div class="game-media-element">
             <img
                 src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
                 alt="Disco Elysium game"

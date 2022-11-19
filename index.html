@@ -14,32 +14,31 @@
   />
 
   <script
-    src="https://kit.fontawesome.com/2481ec6db9.js"
-    crossorigin="anonymous"
-  ></script>
-
-  <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"
   ></script>
 
-  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"> 
+
+
 
   <style>
-    .carousel-caption {
-      background-color: #112f4cd9;
+    .index-carousel-caption {
+      background-color: #5a36ccaa;
       border-radius: 5px;
     }
-    .carousel-size {
+    .index-carousel-size {
       width: 85%;
       margin-top: 60px !important;
       margin-bottom: 40px;
     }
-    .recommended {
+    .index-recommended {
       width: 85%;
     }
-    .carousel-img-wrapper {
+    .index-carousel-img-wrapper {
       max-height: 350px;
       overflow: hidden;
     }
@@ -55,7 +54,6 @@
     .custom-nav li:hover .nav-link {
       color: var(--iris) !important;
     }
-    /* horizontal media scroll */
     .lilac-underline {
       border-top: 1px solid var(--iris);
       border-width: 1px;
@@ -69,10 +67,10 @@
     .media-scroller {
       display: grid;
       grid-auto-flow: column;
-      grid-auto-columns: 18%;
+      grid-auto-columns: 20%;
       gap: 2.5rem;
       overflow-x: auto;
-      min-height: 200px;
+      height: 200px;
       margin-top: 40px;
     }
     .media-element {
@@ -86,7 +84,7 @@
       width: auto;
     }
     .media-element p {
-      color: white;
+      color: var(--bone);
       position: absolute;
       bottom: 0px;
       left: 10px;
@@ -195,27 +193,27 @@
     <div class="row justify-content-center">
       <div
         id="popular-game-carousel"
-        class="carousel slide carousel-size"
+        class="carousel slide index-carousel-size"
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
             <a href="game-details.html">
-              <div class="carousel-img-wrapper">
+              <div class="index-carousel-img-wrapper">
                 <img
                   src="https://cdn.mos.cms.futurecdn.net/XsKkcvjcCo4dFe9Qr2Pte5.jpg"
                   class="d-block w-100"
                   alt="Carousel 1"
                 />
               </div>
-              <div class="carousel-caption d-none d-md-block">
+              <div class="index-carousel-caption carousel-caption d-none d-md-block">
                 <h4 class="text-white p-0 m-0">Celeste</h4>
                 <p class="p-0 m-0">#fiction</p>
               </div>
             </a>
           </div>
           <div class="carousel-item">
-            <div class="carousel-img-wrapper">
+            <div class="index-carousel-img-wrapper">
               <img
                 src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/02/XJ7CgSYGvZqaqGdQ8m4w8P.jpg"
                 class="d-block w-100"
@@ -223,34 +221,34 @@
               />
             </div>
             <div
-              class="carousel-caption d-none d-md-block justify-content-center"
+              class="index-carousel-caption carousel-caption d-none d-md-block justify-content-center"
             >
               <h4 class="text-white p-0 m-0">Hollow Night</h4>
               <p class="p-0 m-0">#horror</p>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousel-img-wrapper">
+            <div class="index-carousel-img-wrapper">
               <img
                 src="https://www.futuregamereleases.com/wp-content/uploads/2020/08/Hades_Nintendo_Switch.jpg"
                 class="d-block w-100"
                 alt="Carousel 3"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="index-carousel-caption carousel-caption d-none d-md-block">
               <h4 class="text-white p-0 m-0">Hades</h4>
               <p class="p-0 m-0">#action</p>
             </div>
           </div>
           <div class="carousel-item">
-            <div class="carousel-img-wrapper">
+            <div class="index-carousel-img-wrapper">
               <img
                 src="https://assets-prd.ignimgs.com/2022/04/26/thestanleyparable-ultradeluxe-review-blogroll-1651007624778.jpg"
                 class="d-block w-100"
                 alt="Carousel 4"
               />
             </div>
-            <div class="carousel-caption d-none d-md-block">
+            <div class="index-carousel-caption carousel-caption d-none d-md-block">
               <h4 class="text-white p-0 m-0">The Stanley Parable</h4>
               <p class="p-0 m-0">#horror</p>
             </div>
@@ -278,7 +276,7 @@
     </div>
   </div>
 
-  <div class="container-fluid recommended justify-content-center">
+  <div class="container-fluid index-recommended justify-content-center">
 
     <!-- recommended for you -->
     <div class="row mt-5 lilac-underline">
@@ -287,6 +285,35 @@
 
     <div class="row justify-content-center">
       <div class="media-scroller">
+      <div class="media-element">
+        <img
+        src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+        alt="Inscryption game"
+        />
+        <p class="media-title">INSCRYPTION</p>
+
+      </div>
+      <div class="media-element">
+        <img
+          src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+          alt="Minecraft game"
+        />
+        <p class="media-title">MINECRAFT</p>
+      </div>
+      <div class="media-element">
+        <img
+          src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+          alt="Fez game"
+        />
+        <p class="media-title">FEZ</p>
+      </div>
+      <div class="media-element">
+        <img
+          src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+          alt="Disco Elysium game"
+        />
+        <p class="media-title">DISCO ELYSIUM</p>
+      </div>
       <div class="media-element">
         <img
         src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
@@ -330,6 +357,3 @@
   
 </body>
 
-<script>
-  w3.includeHTML();
-</script>
