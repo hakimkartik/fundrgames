@@ -1,31 +1,35 @@
-import ReactDOM from 'react-dom/client';
-import React, { useState, useEffect } from 'react';
-import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
-import './index.css';
-import App from './Routes/App';
+import ReactDOM from "react-dom/client";
+import React, { useState, useEffect } from "react";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
+import "./index.css";
+import App from "./Routes/App";
 import Homes from "./Routes/Homes";
-import reportWebVitals from './reportWebVitals';
-import GameLogin from './Routes/GameLogin';
-import DevLogin from './Routes/DevLogin';
-import Login from './Routes/Login';
-import Register from './Routes/Register';
-import GameRigister from './Routes/GameRegister';
-import DevRegister from './Routes/DevRegister';
-import Game from './Routes/Game';
-import Overview from './Routes/Overview';
-import FAQ from './Routes/FAQ';
-import Terms from './Routes/Terms';
-import Updates from './Routes/Updates';
-import Community from './Routes/Community';
-import CreateGame from './Routes/CreateGame';
-import CreateStory from './Routes/CreateStory';
-import CreateNav from './Components/CreateNavBar';
-import CreateAboutYou from './Routes/createAboutYou';
-import CreateAwards from './Routes/CreateAwards';
-import CreatePayments from './Routes/CreatePayments';
-import CreateLaunch from './Routes/CreateLauch';
+import reportWebVitals from "./reportWebVitals";
+import GameLogin from "./Routes/GameLogin";
+import DevLogin from "./Routes/DevLogin";
+import Login from "./Routes/Login";
+import Register from "./Routes/Register";
+import GameRigister from "./Routes/GameRegister";
+import DevRegister from "./Routes/DevRegister";
+import Game from "./Routes/Game";
+import Overview from "./Routes/Overview";
+import FAQ from "./Routes/FAQ";
+import Terms from "./Routes/Terms";
+import Updates from "./Routes/Updates";
+import Community from "./Routes/Community";
+import CreateGame from "./Routes/CreateGame";
+import CreateStory from "./Routes/CreateStory";
+import CreateNav from "./Components/CreateNavBar";
+import CreateAboutYou from "./Routes/createAboutYou";
+import CreateAwards from "./Routes/CreateAwards";
+import CreatePayments from "./Routes/CreatePayments";
+import CreateLaunch from "./Routes/CreateLauch";
 import { Helmet } from "react-helmet";
-import GamerProfile from './Routes/GamerProfile';
+import GamerProfile from "./Routes/GamerProfile";
 
 const router = createBrowserRouter([
   {
@@ -38,87 +42,87 @@ const router = createBrowserRouter([
       },
       {
         path: "/gamelogin",
-        element: <GameLogin />
+        element: <GameLogin />,
       },
       {
-        path: '/devlogin',
-        element: <DevLogin />
+        path: "/devlogin",
+        element: <DevLogin />,
       },
       {
-        path: '/login',
-        element: <Login />
+        path: "/login",
+        element: <Login />,
       },
       {
-        path: '/register',
-        element: <Register />
+        path: "/register",
+        element: <Register />,
       },
       {
-        path: '/gameregister',
-        element: <GameRigister />
+        path: "/gameregister",
+        element: <GameRigister />,
       },
       {
-        path: '/devregister',
-        element: <DevRegister />
+        path: "/devregister",
+        element: <DevRegister />,
       },
       {
-        path: '/game/:id',
+        path: "/game/:id",
         element: <Game />,
         children: [
           {
-            path: '/game/:id',
-            element: <Overview />
+            path: "/game/:id",
+            element: <Overview />,
           },
           {
-            path: '/game/:id/faq',
-            element: <FAQ />
+            path: "/game/:id/faq",
+            element: <FAQ />,
           },
           {
-            path: '/game/:id/terms',
-            element: <Terms />
+            path: "/game/:id/terms",
+            element: <Terms />,
           },
           {
-            path: '/game/:id/updates',
-            element: <Updates />
+            path: "/game/:id/updates",
+            element: <Updates />,
           },
           {
-            path: '/game/:id/community',
-            element: <Community />
-          }
-        ]
+            path: "/game/:id/community",
+            element: <Community />,
+          },
+        ],
       },
       {
-        path: '/create',
-        element: <CreateGame />
+        path: "/create",
+        element: <CreateGame />,
       },
       {
-        path: '/create/story',
-        element: <CreateStory />
+        path: "/create/story",
+        element: <CreateStory />,
       },
       {
-        path: '/create/about',
-        element: <CreateAboutYou />
+        path: "/create/about",
+        element: <CreateAboutYou />,
       },
       {
-        path: '/create/rewards',
-        element: <CreateAwards />
+        path: "/create/rewards",
+        element: <CreateAwards />,
       },
       {
-        path: '/create/payments',
-        element: <CreatePayments />
+        path: "/create/payments",
+        element: <CreatePayments />,
       },
       {
-        path: '/create/launch',
-        element: <CreateLaunch />
+        path: "/create/launch",
+        element: <CreateLaunch />,
       },
       {
-        path: '/gamer',
-        element: <GamerProfile />
-      }
-    ]
-  }
+        path: "/gamer",
+        element: <GamerProfile />,
+      },
+    ],
+  },
 ]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Helmet>

@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
-import '../CSS/index.css';
+import "../CSS/index.css";
 import Navbar from "../Components/navbar";
 import Footer from "../Components/Footer";
 import { Outlet } from "react-router-dom";
