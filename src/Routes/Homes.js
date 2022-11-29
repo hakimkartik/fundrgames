@@ -1,5 +1,6 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../CSS/index.css";
+import "../CSS/Homes.css";
 import "../CSS/main.css";
 import "bootstrap/dist/css/bootstrap.css";
 import CategoryNav from "../Components/CategoryNav";
@@ -11,10 +12,11 @@ export default function Homes() {
   return (
     <>
       <CategoryNav />
-      <div className="container">
-        <div className="row pt-4 text-center mb-2">
+
+      <div className="container-fluid">
+        {/* <div className="row justify-content-center">
           <h3>Popular Games</h3>
-        </div>
+        </div> */}
 
         <div className="row justify-content-center">
           <Carousel id="popular-game-carousel" className="carousel-size">
@@ -56,7 +58,75 @@ export default function Homes() {
           </Carousel>
         </div>
 
-        <div className="row mt-5 lilac-underline">
+        <div className="container-fluid index-recommended justify-content-center">
+          {/*  recommended for you */}
+          <div className="row mt-5 lilac-underline">
+            <h3>RECOMMENDED FOR YOU</h3>
+          </div>
+
+          <div className="row justify-content-center">
+            <div className="media-scroller">
+              <div className="media-element">
+                <img
+                  src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+                  alt="Inscryption game"
+                />
+                <p className="media-title">INSCRYPTION</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+                  alt="Minecraft game"
+                />
+                <p className="media-title">MINECRAFT</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+                  alt="Fez game"
+                />
+                <p className="media-title">FEZ</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+                  alt="Disco Elysium game"
+                />
+                <p className="media-title">DISCO ELYSIUM</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+                  alt="Inscryption game"
+                />
+                <p className="media-title">INSCRYPTION</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+                  alt="Minecraft game"
+                />
+                <p className="media-title">MINECRAFT</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+                  alt="Fez game"
+                />
+                <p className="media-title">FEZ</p>
+              </div>
+              <div className="media-element">
+                <img
+                  src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+                  alt="Disco Elysium game"
+                />
+                <p className="media-title">DISCO ELYSIUM</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="row mt-5 lilac-underline">
           <h3>Recommended for you</h3>
         </div>
 
@@ -148,7 +218,7 @@ export default function Homes() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
