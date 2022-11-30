@@ -6,7 +6,7 @@ export default function CreateLaunch() {
     <>
       <CreateNav launch="true" />
       <div className="container container-fluid create-body-container">
-        <div className="row justify-content-evenly">
+        <div className="row justify-content-evenly icon-launch">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="80"
@@ -24,17 +24,20 @@ export default function CreateLaunch() {
               d="M5 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H6.707l8.147 8.146a.5.5 0 0 1-.708.708L6 6.707V10.5a.5.5 0 0 1-1 0v-5z"
             />
           </svg>
-          <p className="text-center fs-1 text fw-light launch-text">
+          <p className="text-center fs-2 text fw-light launch-text">
             Congrats! Your project is now LIVE
           </p>
         </div>
 
+
         <div>
+        <br />
           <p className="fw-light text-center launch-text-2">
             Share it with everyone
           </p>
 
-          <div className="row justify-content-center">
+
+          <div className="row justify-content-center icon-launch">
             <div className="col-2 col-sm-auto">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

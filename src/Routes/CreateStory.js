@@ -14,10 +14,10 @@ export default function CreateStory() {
         <form>
           <div className="row justify-content-evenly">
             <div className="col text-center">
-              <p className=" fs-2 text fw-light">
+              <p className=" fs-3 text fw-light">
                 Introduction of Your Project
               </p>
-              <p className="fw-lighter fst-italic">
+              <p className="fw-lighter fst-italic sub-heading">
                 Tell the people what your project is about and why they should
                 be excited about it. Make it brief, but specific and concise.
                 Describe what you're raising funds for and how it will be used.
@@ -25,13 +25,10 @@ export default function CreateStory() {
             </div>
           </div>
 
-          <br />
           <hr />
-          <br />
-          <br />
 
-          <div className="row mb-3">
-            <label htmlFor="FormControlTextarea1" className="form-label">
+          <div className="row mb-4">
+            <label htmlFor="FormControlTextarea1" className="form-label" style={{color: "white"}}>
               Project description
             </label>
             <textarea
@@ -45,7 +42,7 @@ export default function CreateStory() {
 
           <div className="row d-grid gap-2 mb-5">
             <button
-              className="btn btn-primary"
+              className="create-btn create-btn-primary"
               type="submit"
               onClick={onSubmitHandler}
             >

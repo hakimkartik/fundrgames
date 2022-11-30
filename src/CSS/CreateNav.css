@@ -1,3 +1,9 @@
 .create-nav-item-back {
-    background-color:#DED8EA;
+    /*background-color: #5A36CC;*/
+    background-color: var(--semidark);
+    /*border-color: #a699da;*/
 }
+.create-nav-item-back a {
+	color: var(--wisteria);
+}
+

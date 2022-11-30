@@ -7,7 +7,7 @@ export default function CreateNav(props) {
     <>
       <div className="container container-fluid">
         <div className="row">
-          <div className="col-sm-2 text-center pt-4 create-border-bottom border-1 create-nav-item-back">
+          <div className="col-sm-2 text-center pt-2 create-border-bottom border-1 create-nav-item-back">
             <Link style={{ textDecoration: "none" }} to={"/create"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -29,14 +29,14 @@ export default function CreateNav(props) {
                   color: "#000000",
                   backgroundColor: "#000000",
                   height: 0.5,
-                  borderColor: "#000000",
+                  borderColor: "#a699da",
                 }}
               />
             ) : (
               <></>
             )}
           </div>
-          <div className="col-sm-2 text-center pt-4 create-nav-item-back">
+          <div className="col-sm-2 text-center pt-2 create-nav-item-back">
             <Link style={{ textDecoration: "none" }} to={"/create/story"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ export default function CreateNav(props) {
                   color: "#000000",
                   backgroundColor: "#000000",
                   height: 0.5,
-                  borderColor: "#000000",
+                  borderColor: "#a699da",
                 }}
               />
             ) : (
@@ -66,7 +66,7 @@ export default function CreateNav(props) {
             )}
           </div>
 
-          <div className="col-sm-2 text-center pt-4 create-nav-item-back">
+          <div className="col-sm-2 text-center pt-2 create-nav-item-back">
             <Link style={{ textDecoration: "none" }} to={"/create/about"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +92,7 @@ export default function CreateNav(props) {
                   color: "#000000",
                   backgroundColor: "#000000",
                   height: 0.5,
-                  borderColor: "#000000",
+                  borderColor: "#a699da",
                 }}
               />
             ) : (
@@ -100,7 +100,7 @@ export default function CreateNav(props) {
             )}
           </div>
 
-          <div className="col-sm-2 text-center pt-4 create-nav-item-back">
+          <div className="col-sm-2 text-center pt-2 create-nav-item-back">
             <Link style={{ textDecoration: "none" }} to={"/create/rewards"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ export default function CreateNav(props) {
                   color: "#000000",
                   backgroundColor: "#000000",
                   height: 0.5,
-                  borderColor: "#000000",
+                  borderColor: "#a699da",
                 }}
               />
             ) : (
@@ -130,7 +130,7 @@ export default function CreateNav(props) {
             )}
           </div>
 
-          <div className="col-sm-2 text-center pt-4 create-nav-item-back">
+          <div className="col-sm-2 text-center pt-2 create-nav-item-back">
             <Link style={{ textDecoration: "none" }} to={"/create/payments"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -153,7 +153,7 @@ export default function CreateNav(props) {
                   color: "#000000",
                   backgroundColor: "#000000",
                   height: 0.5,
-                  borderColor: "#000000",
+                  borderColor: "#a699da",
                 }}
               />
             ) : (
@@ -161,7 +161,7 @@ export default function CreateNav(props) {
             )}
           </div>
 
-          <div className="col-sm-2 text-center pt-4 create-nav-item-back">
+          <div className="col-sm-2 text-center pt-2 create-nav-item-back">
             <Link style={{ textDecoration: "none" }}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -183,7 +183,7 @@ export default function CreateNav(props) {
                   color: "#000000",
                   backgroundColor: "#000000",
                   height: 0.5,
-                  borderColor: "#000000",
+                  borderColor: "#a699da",
                 }}
               />
             ) : (

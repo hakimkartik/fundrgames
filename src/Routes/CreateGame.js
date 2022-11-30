@@ -15,22 +15,21 @@ export default function CreateGame(props) {
         <form>
           <div className="row justify-content-evenly">
             <div className="col text-center">
-              <p className=" fs-2 text fw-light">Create Your Game</p>
-              <p className="fw-lighter fst-italic">
+              <p className=" fs-3 text fw-light">Create Your Game</p>
+              <p className="fw-lighter fst-italic sub-heading">
                 Make a profile for your game and give it a unique name.
               </p>
             </div>
           </div>
 
-          <br />
           <hr />
           <br />
-          <br />
 
-          <div className="row mb-5">
+          <div className="row mb-4">
             <label
               htmlFor="FormControlInput1"
-              className="form-label fs-4 text fw-light"
+              className="form-label fs-5 text fw-light"
+              style={{color: "white"}}
             >
               Game Title
             </label>
@@ -42,10 +41,11 @@ export default function CreateGame(props) {
             />
           </div>
 
-          <div className="row mb-5">
+          <div className="row mb-4">
             <label
               htmlFor="FormControlInput2"
-              className="form-label fs-4 text fw-light"
+              className="form-label fs-5 text fw-light"
+              style={{color: "white"}}
             >
               Subtitle
             </label>
@@ -57,15 +57,16 @@ export default function CreateGame(props) {
             />
           </div>
 
-          <div className="row mb-5">
+          <div className="row mb-4">
             <label
               htmlFor="FormControlInput3"
-              className="form-label fs-4 text fw-light"
+              className="form-label fs-5 text fw-light"
+              style={{color: "white"}}
             >
               Primary Category
             </label>
             <select
-              className="form-select"
+              className="form-select-sm"
               aria-label="primary category"
               id="FormControlInput3"
               defaultValue={0}
@@ -85,15 +86,16 @@ export default function CreateGame(props) {
             </select>
           </div>
 
-          <div className="row mb-5">
+          <div className="row mb-4">
             <label
               htmlFor="FormControlInput4"
-              className="form-label fs-4 text fw-light"
+              className="form-label fs-5 text fw-light"
+              style={{color: "white"}}
             >
               Sub Category
             </label>
             <select
-              className="form-select"
+              className="form-select-sm"
               aria-label="sub category"
               id="FormControlInput4"
               defaultValue={0}
@@ -113,41 +115,43 @@ export default function CreateGame(props) {
             </select>
           </div>
 
-          <div className="row input-group mb-5">
+          <div className="row mb-4">
             <label
               htmlFor="FormControlInput5"
-              className="form-label fs-4 text fw-light"
+              className="form-label fs-5 text fw-light"
+              style={{color: "white"}}
             >
               Project Image
             </label>
             <input
               type="file"
-              className="form-control"
+              className="form-control form-control-sm"
               id="FormControlInput5"
             />
           </div>
 
-          <div className="row input-group mb-5">
+          <div className="row mb-5">
             <label
-              htmlFor="FormControlInput5"
-              className="form-label fs-4 text fw-light"
+              htmlFor="FormControlInput6"
+              className="form-label fs-5 text fw-light"
+              style={{color: "white"}}
             >
               Project Media
             </label>
             <input
               type="file"
-              className="form-control"
-              id="FormControlInput5"
+              className="form-control form-control-sm"
+              id="FormControlInput6"
             />
           </div>
 
           <div className="row d-grid gap-2 mb-5">
             <button
               type="submit"
-              className="btn btn-primary"
+              className="create-btn create-btn-primary"
               onClick={onSubmitHandler}
             >
-              Next: About You
+              Next: Story
             </button>
           </div>
         </form>

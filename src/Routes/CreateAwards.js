@@ -14,26 +14,22 @@ export default function CreateAwards() {
         <form action="game_create_payments.html">
           <div className="row justify-content-evenly">
             <div className="col text-center">
-              <p className=" fs-2 text fw-light">Add Rewards</p>
-              <p className="fw-lighter fst-italic">
+              <p className=" fs-3 text fw-light">Add Rewards</p>
+              <p className="fw-lighter fst-italic sub-heading">
                 As backers support you, you can also support them
               </p>
             </div>
           </div>
 
-          <br />
           <hr />
-          <br />
-          <br />
 
-          <p className="fs-2 text fw-light">Tier 1</p>
+          <p className="fs-4 text fw-light">Tier 1</p>
           <p className="text fw-lighter">
             Set the minimum amount they have to pledge and the reward that will
             be given
           </p>
-          <br />
 
-          <div className="form-floating mb-5">
+          <div className="form-floating mb-4">
             <input
               type="text"
               className="form-control"
@@ -43,7 +39,7 @@ export default function CreateAwards() {
             <label htmlFor="floatingInput">Title</label>
           </div>
 
-          <div className="input-group mb-5">
+          <div className="input-group mb-4">
             <span className="input-group-text">$</span>
             <input
               type="text"
@@ -63,19 +59,16 @@ export default function CreateAwards() {
             <label htmlFor="floatingTextarea2">Description</label>
           </div>
 
-          <br />
-          <hr />
-          <br />
-          <br />
 
-          <p className="fs-2 text fw-light">Tier 2</p>
+          <hr />
+
+          <p className="fs-4 text fw-light">Tier 2</p>
           <p className="text fw-lighter">
             Set the minimum amount they have to pledge and the reward that will
             be given
           </p>
-          <br />
 
-          <div className="form-floating mb-5">
+          <div className="form-floating mb-4">
             <input
               type="text"
               className="form-control"
@@ -85,7 +78,7 @@ export default function CreateAwards() {
             <label htmlFor="floatingInput">Title</label>
           </div>
 
-          <div className="input-group mb-5">
+          <div className="input-group mb-4">
             <span className="input-group-text">$</span>
             <input
               type="text"
@@ -105,19 +98,16 @@ export default function CreateAwards() {
             <label htmlFor="floatingTextarea2">Description</label>
           </div>
 
-          <br />
-          <hr />
-          <br />
-          <br />
 
-          <p className="fs-2 text fw-light">Tier 3</p>
+          <hr />
+
+          <p className="fs-4 text fw-light">Tier 3</p>
           <p className="text fw-lighter">
             Set the minimum amount they have to pledge and the reward that will
             be given
           </p>
-          <br />
 
-          <div className="form-floating mb-5">
+          <div className="form-floating mb-4">
             <input
               type="text"
               className="form-control"
@@ -127,7 +117,7 @@ export default function CreateAwards() {
             <label htmlFor="floatingInput">Title</label>
           </div>
 
-          <div className="input-group mb-5">
+          <div className="input-group mb-4">
             <span className="input-group-text">$</span>
             <input
               type="text"
@@ -147,13 +137,11 @@ export default function CreateAwards() {
             <label htmlFor="floatingTextarea2">Description</label>
           </div>
 
-          <br />
           <hr />
-          <br />
 
           <div className="row d-grid gap-2 mb-5">
             <button
-              className="btn btn-primary"
+              className="create-btn create-btn-primary"
               type="submit"
               onClick={onSubmitHandler}
             >

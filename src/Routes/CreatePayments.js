@@ -14,22 +14,21 @@ export default function CreatePayments() {
         <form action="game_create_launch.html">
           <div className="row justify-content-evenly">
             <div className="col text-center">
-              <p className=" fs-2 text fw-light">Link a Bank Account</p>
-              <p className="fw-lighter fst-italic">
+              <p className=" fs-3 text fw-light">Link a Bank Account</p>
+              <p className="fw-lighter fst-italic sub-heading">
                 Receive funding accordingly as the project reaches it goal
               </p>
             </div>
           </div>
 
-          <br />
           <hr />
           <br />
-          <br />
 
-          <div className="mb-5 row">
+          <div className="mb-4 row">
             <label
               htmlFor="exampleFormControlInput1"
-              className="form-label fw-light fs-4 text"
+              className="form-label fw-light fs-5 text"
+              style={{color: "white"}}
             >
               Email address
             </label>
@@ -39,7 +38,7 @@ export default function CreatePayments() {
               id="exampleFormControlInput1"
               placeholder="name@example.com"
             />
-            <button type="button" className="btn btn-outline-secondary">
+            <button type="button" className="create-btn-verification">
               Send Verification
             </button>
           </div>
@@ -50,11 +49,11 @@ export default function CreatePayments() {
           </p>
 
           <br />
-          <br />
 
-          <h4 className="mb-3">Chekout Form</h4>
 
-          <p className="w-light fs-4 text">Payment</p>
+          <h4 className="mb-3 checkout-form">Chekout Form</h4>
+
+          <p className="w-light fs-5 text">Payment</p>
 
           <div className="my-3">
             <div className="form-check">
@@ -66,7 +65,7 @@ export default function CreatePayments() {
                 checked
                 required
               />
-              <label className="form-check-label" for="credit">
+              <label className="form-check-label" for="credit" style={{color: "white"}}>
                 Credit card
               </label>
             </div>
@@ -78,7 +77,7 @@ export default function CreatePayments() {
                 className="form-check-input"
                 required
               />
-              <label className="form-check-label" for="debit">
+              <label className="form-check-label" for="debit" style={{color: "white"}}>
                 Debit card
               </label>
             </div>
@@ -90,15 +89,30 @@ export default function CreatePayments() {
                 className="form-check-input"
                 required
               />
-              <label className="form-check-label" for="paypal">
+              <label className="form-check-label" for="paypal" style={{color: "white"}}>
                 PayPal
+              </label>
+            </div>
+
+            <div className="form-check">
+              <input
+                id="venmo"
+                name="paymentMethod"
+                type="radio"
+                className="form-check-input"
+                required
+              />
+              <label className="form-check-label" for="venmo" style={{color: "white"}}>
+                Venmo
               </label>
             </div>
           </div>
 
+      
+
           <div className="row gy-3">
             <div className="col-md-6">
-              <label htmlFor="cc-name" className="form-label">
+              <label htmlFor="cc-name" className="form-label" style={{color: "white"}}>
                 Name on card
               </label>
               <input
@@ -115,7 +129,7 @@ export default function CreatePayments() {
             </div>
 
             <div className="col-md-6">
-              <label htmlFor="cc-number" className="form-label">
+              <label htmlFor="cc-number" className="form-label" style={{color: "white"}}>
                 Credit card number
               </label>
               <input
@@ -131,7 +145,7 @@ export default function CreatePayments() {
             </div>
 
             <div className="col-md-3">
-              <label htmlFor="cc-expiration" className="form-label">
+              <label htmlFor="cc-expiration" className="form-label" style={{color: "white"}}>
                 Expiration
               </label>
               <input
@@ -145,7 +159,7 @@ export default function CreatePayments() {
             </div>
 
             <div className="col-md-3">
-              <label htmlFor="cc-cvv" className="form-label">
+              <label htmlFor="cc-cvv" className="form-label" style={{color: "white"}}>
                 CVV
               </label>
               <input
@@ -165,7 +179,7 @@ export default function CreatePayments() {
 
           <div className="row d-grid gap-2 mb-5">
             <button
-              className="btn btn-primary"
+              className="create-btn create-btn-primary"
               type="submit"
               onClick={onSubmitHandler}
             >
