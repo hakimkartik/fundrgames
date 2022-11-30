@@ -1,5 +1,4 @@
 import Carousel from "react-bootstrap/Carousel";
-import "../CSS/index.css";
 import "../CSS/Homes.css";
 import "../CSS/main.css";
 import "bootstrap/dist/css/bootstrap.css";
@@ -14,24 +13,20 @@ export default function Homes() {
       <CategoryNav />
 
       <div className="container-fluid">
-        {/* <div className="row justify-content-center">
-          <h3>Popular Games</h3>
-        </div> */}
-
         <div className="row justify-content-center">
-          <Carousel id="popular-game-carousel" className="carousel-size">
-            <Carousel.Item className="carousel-img-wrapper">
+          <Carousel id="popular-game-carousel" className="index-carousel-size">
+            <Carousel.Item className="index-carousel-img-wrapper">
               <img
                 src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/02/XJ7CgSYGvZqaqGdQ8m4w8P.jpg"
                 className="d-block w-100"
                 alt="Carousel 2"
               />
-              <Carousel.Caption>
+              <Carousel.Caption className="index-carousel-caption carousel-caption d-none d-md-block">
                 <h4 className="text-white p-0 m-0">Hollow Night</h4>
                 <p className="p-0 m-0">#horror</p>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item className="carousel-img-wrapper">
+            <Carousel.Item className="index-carousel-img-wrapper">
               <Link to={"/game/1"}>
                 <img
                   src="https://cdn.mos.cms.futurecdn.net/XsKkcvjcCo4dFe9Qr2Pte5.jpg"
@@ -39,26 +34,37 @@ export default function Homes() {
                   alt="Carousel 1"
                 />
               </Link>
-              <Carousel.Caption>
+              <Carousel.Caption className="index-carousel-caption carousel-caption d-none d-md-block">
                 <h4 className="text-white p-0 m-0">Celeste</h4>
                 <p className="p-0 m-0">#fiction</p>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item className="carousel-img-wrapper">
+            <Carousel.Item className="index-carousel-img-wrapper">
               <img
                 src="https://www.futuregamereleases.com/wp-content/uploads/2020/08/Hades_Nintendo_Switch.jpg"
                 className="d-block w-100"
                 alt="Carousel 3"
               />
-              <Carousel.Caption>
+              <Carousel.Caption className="index-carousel-caption carousel-caption d-none d-md-block">
                 <h4 className="text-white p-0 m-0">Hades</h4>
                 <p className="p-0 m-0">#action</p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item className="index-carousel-img-wrapper">
+              <img
+                src="https://assets-prd.ignimgs.com/2022/04/26/thestanleyparable-ultradeluxe-review-blogroll-1651007624778.jpg"
+                className="d-block w-100"
+                alt="Carousel 4"
+              />
+              <Carousel.Caption className="index-carousel-caption carousel-caption d-none d-md-block">
+                <h4 className="text-white p-0 m-0">The Stanley Parable</h4>
+                <p className="p-0 m-0">#horror</p>
               </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
 
-        <div className="container-fluid index-recommended justify-content-center">
+        <div className="container-fluid index-recommended justify-content-center mb-4">
           {/*  recommended for you */}
           <div className="row mt-5 lilac-underline">
             <h3>RECOMMENDED FOR YOU</h3>

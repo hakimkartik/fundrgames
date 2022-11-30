@@ -1,5 +1,5 @@
-.carousel-caption {
-  background-color: #112f4cd9;
+/* .carousel-caption {
+  background-color: #5a36ccaa;
   border-radius: 5px;
 }
 .sub-nav > li {
@@ -36,6 +36,8 @@
 }
 .carousel-size {
   width: 85%;
+  margin-top: 60px !important;
+  margin-bottom: 40px;
 }
 .carousel-img-wrapper {
   max-height: 350px;
@@ -48,25 +50,25 @@
   border-bottom: 1px solid #917cb8;
 }
 
-  .paddings {
-    padding-bottom: 150px;
-  }
+.paddings {
+  padding-bottom: 150px;
+}
 
-  .oddBody {
-    background: linear-gradient(
-        to right, 
-        #ffffff 0%, 
-        #ffffff 50%, 
-        #917cb880 50%, 
-        #917cb880 100%
-    );
+.oddBody {
+  background: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 50%,
+    #917cb880 50%,
+    #917cb880 100%
+  );
 }
 .oddBody2 {
   background: linear-gradient(
-      to right, 
-      #917cb880 0%, 
-      #917cb880 50%,
-      #ffffff 50%, 
-      #ffffff 100% 
+    to right,
+    #917cb880 0%,
+    #917cb880 50%,
+    #ffffff 50%,
+    #ffffff 100%
   );
-}
+} */

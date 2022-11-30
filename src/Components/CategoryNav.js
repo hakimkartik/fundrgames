@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function CategoryNav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light custom-nav">
+    <nav className="navbar navbar-expand-lg navbar-dark index-custom-nav">
       <button
         className="navbar-toggler"
         type="button"
