@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import "../CSS/GameDetail.css";
+
 export default function GameDetail() {
   const [mainImage, setMainInmage] = useState(
     "https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fceleste%2Fhome%2F00-1920x1080-656978e07c631e4fb1dc5d2f435c536edaafd8d5.jpg"
