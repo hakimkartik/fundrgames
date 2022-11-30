@@ -14,8 +14,28 @@ export function loginGamerOrDeveloper(data, asGamer) {
     body: data,
   }).then((response) => {
     console.log("Try: " + response.json());
-    //set local
-    localStorage.setItem("authToken");
+
+    localStorage.setItem("authToken", response.token);
+    window.location = "/gamer";
+  });
+}
+
+export function registerGamerOrDeveloper(data, asGamer) {
+  let url = asGamer
+    ? `${baseURL}/register/gamer`
+    : `${baseURL}/register/developer`;
+
+  fetch(url, {
+    method: "post",
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+    },
+    body: data,
+  }).then((response) => {
+    console.log("Try: " + response.json());
+
+    localStorage.setItem("authToken", response.token);
     window.location = "/gamer";
   });
 }
