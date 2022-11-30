@@ -1,81 +1,74 @@
-.container-left {
-    background-color: #917cb880;
-    width: 450px;
-    height: 500px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    border-radius: 5%;
+.login-container-left {
+  background-color: var(--bone);
+  width: 450px;
+  height: 500px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border-radius: 5%;
 }
-/* body {
-    background: linear-gradient(
-        to right, 
-        #ffffff 0%, 
-        #ffffff 50%, 
-        #917cb880 50%, 
-        #917cb880 100%
-    );
-} */
-.container-right {
-    background-color: white;
-    width: 450px;
-    height: 500px;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    border-radius: 5%;
+.login-bg {
+  background: linear-gradient(
+    to right,
+    var(--dark) 0%,
+    var(--dark) 50%,
+    var(--iris) 50%,
+    var(--iris) 100%
+  );
 }
-.col-right {
-    padding-left: 5%;
+.login-container-right {
+  background-color: var(--bone);
+  width: 450px;
+  height: 500px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+  border-radius: 5%;
 }
-.type-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: white;
+.login-horizontal-line {
+  width: 80%;
+  height: 1px;
+  background-color: var(--iris);
 }
-.type-img {
-    width: 60px;
-    height: 60px;
-    margin-top: 20px;
+.login-website-hover {
+  color: var(--iris);
+  text-decoration: underline;
 }
-.type-text {
-    font-size: 10px;
+.login-website-hover:hover {
+  color: var(--periwinkle);
 }
-.horizontal-line {
-    width: 80%;
-    height: 1px;
-    background-color: black;
+.login-new-msg {
+  font-size: 50px !important;
+  color: var(--iris) !important;
 }
-.website-hover {
-    color: #112f4c;
-    text-decoration: underline;
+.login-new-sub-msg {
+  font-size: 25px !important;
+  color: var(--dark) !important;
 }
-.website-hover:hover {
-    color: #6869b0;
+.login-type-text {
+  font-size: 14px !important;
+  color: var(--dark) !important;
 }
-.btn-custom {
-    background-color: white;
-    border: 1px solid #6869b0;
-    color: #6869b0;
+.login-msg {
+  font-size: 35px !important;
+  margin-top: 4px;
+  color: var(--iris) !important;
 }
-.btn-custom:hover {
-    background-color: #6869b0;
-    border: 1px solid #6869b0;
-    color: white;
+.login-remember-me {
+  margin-left: 4px;
+  font-size: 14px !important;
 }
-.remember-me {
-    margin-left: 4px;
-    font-size: 12px;
+.login-remember-check {
+  font-size: 14px;
+  border-color: var(--iris);
 }
-.form-check-input {
-    font-size: 12px;
-    border-color: #6869b0;
+.login-remember-check:checked {
+  background-color: var(--iris);
 }
-.form-check-input:checked {
-    background-color: #6869b0;
+.form-control,
+.form-control:focus,
+input:focus,
+.login-remember-check:focus {
+  border-color: var(--iris);
 }
-.form-control, .form-control:focus, input:focus, .form-check-input:focus{
-    border-color: #6869b0;
-}
-svg:hover g {
-    fill: white;
+.login-icons:hover g {
+  fill: var(--iris);
 }

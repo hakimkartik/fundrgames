@@ -5,16 +5,16 @@ export default function DevLogin() {
   document.body.classList.remove("oddBody2");
   document.body.classList.add("oddBody");
   return (
-    <div className="container-fluid">
+    <div className="container-fluid login-bg">
       <div className="row">
         <div className="col-6">
-          <div className="container-left d-flex flex-wrap justify-content-center text-center mx-auto">
+          <div className="login-container-left d-flex flex-wrap justify-content-center text-center mx-auto">
             <div className="col-12 mt-4">
-              <h2>Login for developers</h2>
-              <p className="type-text">
-                Not a developer?
-                <Link className="website-hover" to={`/gamelogin`}>
-                  Sign in as a gamer.
+              <h2 className="login-msg">Login for developers</h2>
+              <p className="login-type-text">
+                Not a developer? 
+                <Link className="login-website-hover" to={`/gamelogin`}>
+                   Sign in as a gamer.
                 </Link>
               </p>
             </div>
@@ -34,8 +34,8 @@ export default function DevLogin() {
                   id="password"
                   placeholder="Password"
                 />
-                <p className="type-text w-75 d-flex justify-content-start">
-                  <span className="website-hover">Forgot password?</span>
+                <p className="login-type-text w-75 d-flex justify-content-start">
+                  <span className="login-website-hover">Forgot password?</span>
                 </p>
                 <button type="submit" className="btn btn-primary w-75">
                   Login
@@ -44,11 +44,11 @@ export default function DevLogin() {
               <div className="col-12 w-75 mt-3 form-check d-flex justify-content-start">
                 <input
                   type="checkbox"
-                  className="form-check-input"
+                  className="form-check-input login-remember-check"
                   id="exampleCheck1"
                 />
                 <label
-                  className="form-check-label remember-me"
+                  className="form-check-label login-remember-me"
                   for="exampleCheck1"
                 >
                   Remember me
@@ -58,7 +58,7 @@ export default function DevLogin() {
 
             <div className="col-12 d-flex flex-wrap justify-content-center">
               <p className="m-0 w-100">or</p>
-              <div className="horizontal-line"></div>
+              <div className="login-horizontal-line mb-4"></div>
             </div>
 
             <div className="col-3 d-flex flex-wrap justify-content-center">
@@ -69,6 +69,7 @@ export default function DevLogin() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -100,6 +101,7 @@ export default function DevLogin() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -131,6 +133,7 @@ export default function DevLogin() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -162,6 +165,7 @@ export default function DevLogin() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -189,18 +193,18 @@ export default function DevLogin() {
         </div>
 
         <div className="col-6">
-          <div className="container-right d-flex flex-wrap justify-content-center text-center mx-auto">
+          <div className="login-container-right d-flex flex-wrap justify-content-center text-center mx-auto">
             <div className="col-12"></div>
-            <h1 className="col-12 d-flex align-items-center justify-content-center">
+            <h1 className="col-12 d-flex align-items-center justify-content-center login-new-msg">
               New Here?
             </h1>
             <div className="col-12 d-flex justify-content-center">
-              <h5 className="w-50">
+              <h5 className="w-50 login-new-sub-msg">
                 sign up and discover first-of-its-kind games!
               </h5>
             </div>
             <div class="col-12">
-              <Link className="btn btn-custom w-50 btn-type" to={"/register"}>
+              <Link className="btn btn-primary w-50 btn-type" to={"/register"}>
                 Sign up
               </Link>
             </div>

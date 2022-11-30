@@ -1,22 +1,23 @@
 import { Link } from "react-router-dom";
+import "../CSS/Register.css";
 
 export default function DevRegister() {
   document.body.classList.remove("oddBody");
   document.body.classList.add("oddBody2");
   return (
-    <div className="container-fluid">
+    <div className="container-fluid login-bg">
       <div className="row">
         <div className="col-6">
-          <div className="container-right d-flex flex-wrap justify-content-center text-center mx-auto">
+          <div className="login-container-right d-flex flex-wrap justify-content-center text-center mx-auto">
             <div className="col-12"></div>
-            <h1 className="col-12 d-flex align-items-center justify-content-center">
+            <h1 className="col-12 d-flex align-items-center justify-content-center login-new-msg">
               Already a user?
             </h1>
             <div className="col-12 d-flex justify-content-center">
-              <h5 className="w-50">login and reconnect with the community </h5>
+              <h5 className="w-50 login-new-sub-msg">login and reconnect with the community </h5>
             </div>
             <div className="col-12">
-              <Link className="btn btn-custom w-50 btn-type" to={"/login"}>
+              <Link className="btn btn-custom w-50 btn-primary" to={"/login"}>
                 Login
               </Link>
             </div>
@@ -25,12 +26,12 @@ export default function DevRegister() {
         </div>
 
         <div className="col-6">
-          <div className="container-left d-flex flex-wrap justify-content-center text-center mx-auto">
+          <div className="login-container-left d-flex flex-wrap justify-content-center text-center mx-auto">
             <div className="col-12 mt-4">
-              <h2>Sign up for developers</h2>
-              <p className="type-text">
+              <h2 className="login-msg">Sign up for developers</h2>
+              <p className="login-type-text">
                 Not a developer?{" "}
-                <Link to={"/gameregister"} className="website-hover">
+                <Link to={"/gameregister"} className="login-website-hover">
                   Sign up as a gamer
                 </Link>
                 .
@@ -62,15 +63,15 @@ export default function DevRegister() {
               <div className="col-12 w-75 mt-3 form-check d-flex justify-content-start">
                 <input
                   type="checkbox"
-                  className="form-check-input"
+                  className="form-check-input login-remember-check"
                   id="exampleCheck1"
                 />
                 <label
-                  className="form-check-label remember-me"
+                  className="form-check-label login-remember-me"
                   htmlFor="exampleCheck1"
                 >
                   Please read our{" "}
-                  <a href="" className="website-hover">
+                  <a href="" className="login-website-hover">
                     User Agreement
                   </a>{" "}
                   and check to agree
@@ -85,7 +86,7 @@ export default function DevRegister() {
 
             <div className="col-12 d-flex flex-wrap justify-content-center">
               <p className="m-0 w-100">or</p>
-              <div className="horizontal-line mb-4"></div>
+              <div className="login-horizontal-line mb-4"></div>
             </div>
 
             <div className="col-3 d-flex flex-wrap justify-content-center">
@@ -96,6 +97,7 @@ export default function DevRegister() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -127,6 +129,7 @@ export default function DevRegister() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -158,6 +161,7 @@ export default function DevRegister() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"
@@ -189,6 +193,7 @@ export default function DevRegister() {
                 width="40"
                 height="40"
                 viewBox="0 0 172 172"
+                className="login-icons"
               >
                 <g
                   fill="none"

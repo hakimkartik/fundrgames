@@ -63,3 +63,23 @@
   margin-top: 4px;
   color: var(--iris) !important;
 }
+.login-remember-me {
+  margin-left: 4px;
+  font-size: 14px !important;
+}
+.login-remember-check {
+  font-size: 14px;
+  border-color: var(--iris);
+}
+.login-remember-check:checked {
+  background-color: var(--iris);
+}
+.form-control,
+.form-control:focus,
+input:focus,
+.login-remember-check:focus {
+  border-color: var(--iris);
+}
+.login-icons:hover g {
+  fill: var(--iris);
+}
