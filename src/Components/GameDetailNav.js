@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function GameDetailNav(props) {
   return (
-    <div className="row m-4 d-flex">
-      <div className="col-1">
+    // <div className="row m-4 d-flex">
+      // <div className="col-1">
         <nav className="navbar navbar-expand-lg navbar-dark navbar-custom game-details-subnav">
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
@@ -70,7 +70,7 @@ export default function GameDetailNav(props) {
             </form>
           </div>
         </nav>
-      </div>
-    </div>
+      // </div>
+    // </div>
   );
 }
