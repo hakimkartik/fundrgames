@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "../CSS/GameDetail.css";
+import "../CSS/main-game.css";
 
 export default function GameDetail() {
   const [mainImage, setMainInmage] = useState(
