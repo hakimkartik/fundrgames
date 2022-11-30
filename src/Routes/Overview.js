@@ -7,12 +7,13 @@ export default function Overview() {
 
       <div className="container">
         <div className="row mt-4">
-          <h2>Overview</h2>
+          <div className="game-purple-line"></div>
+          <h2 className="game-page-title">Overview</h2>
         </div>
 
         <div className="row m-4 d-flex">
-          <div className="col-9 p-4 game-lilac-fill">
-            <h4>Plot</h4>
+          <div className="col-8 offset-1 p-4">
+            <h4 className="bold">Plot</h4>
             <p>
               Celeste is a platform game in which players control a young woman
               named Madeline as she makes her way up Mount Celeste while
@@ -20,20 +21,20 @@ export default function Overview() {
               up walls for a limited amount of time, Madeline has the ability to
               perform a mid-air dash in eight directions.
             </p>
-            <h4>About the Game</h4>
+            <h4 className="bold">About the Game</h4>
             <ul>
               <li>Genre: fiction, thriller</li>
               <li>Audience: 15+</li>
               <li>Characters: 10</li>
               <li>Levels: 20</li>
             </ul>
-            <h4>Characters</h4>
+            <h4 className="bold">Characters</h4>
             <ul>
               <li>Main character: Madeline</li>
               <li>Villain: Part Of Her</li>
               <li>Secondary: Alessandra, Cordelia</li>
             </ul>
-            <h4>The Project</h4>
+            <h4 className="bold">The Project</h4>
             <p>
               I started this project to show young adults the power we have over
               ourselves. The doppelganger is a way to show how we have two sides
@@ -48,38 +49,38 @@ export default function Overview() {
             </p>
           </div>
 
-          <div className="col-2 offset-sm-1 p-4 overflow-auto similar-games-container">
+          <div className="col-2 p-4 overflow-auto similar-games-container">
             <div className="text-center mb-4">
-              <h4>Similar Games</h4>
+              <h4 className="similar-games">Similar Games</h4>
             </div>
-            <div className="card text-center similar-games">
-              <div className="similar-games-wrapper">
+            <div className="game-media-scroller-2">
+              <div className="game-media-element-2">
                 <img
-                  src="https://assets.nintendo.com/video/upload/c_limit,h_300,w_500/v1/ncom/en_US/games/switch/s/stardew-valley-switch/Video/Stardew_Valley_Trailer_ESRB.jpg"
-                  className="card-img-top"
-                  alt="Stardew Valley"
+                  src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+                  alt="Inscryption game"
                 />
+                <p className="media-title">INSCRYPTION</p>
               </div>
-              <div className="card-body game-lilac-fill">
-                <h5 className="card-title">Stardew Valley</h5>
-                <p className="card-text">
-                  <small>FICTION</small>
-                </p>
-              </div>
-            </div>
-            <div className="card text-center mt-4 similar-games">
-              <div className="similar-games-wrapper">
+              <div className="game-media-element-2">
                 <img
-                  src="https://www.thatvideogameblog.com/wp-content/uploads/2017/08/undertale-960x472.jpg"
-                  className="card-img-top"
-                  alt="Undertale"
+                  src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+                  alt="Minecraft game"
                 />
+                <p className="media-title">MINECRAFT</p>
               </div>
-              <div className="card-body game-lilac-fill">
-                <h5 className="card-title">Undertale</h5>
-                <p className="card-text">
-                  <small>FANTASY</small>
-                </p>
+              <div className="game-media-element-2">
+                <img
+                  src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+                  alt="Fez game"
+                />
+                <p className="media-title">FEZ</p>
+              </div>
+              <div className="game-media-element-2">
+                <img
+                  src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+                  alt="Disco Elysium game"
+                />
+                <p className="media-title">DISCO ELYSIUM</p>
               </div>
             </div>
           </div>
