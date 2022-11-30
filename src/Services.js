@@ -9,6 +9,7 @@ export function loginGamerOrDeveloper(data, asGamer) {
     method: "post",
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
     body: data,
   }).then((response) => {

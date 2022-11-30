@@ -4,10 +4,17 @@ import "../CSS/main.css";
 import "bootstrap/dist/css/bootstrap.css";
 import CategoryNav from "../Components/CategoryNav";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { getGameList } from "../Services";
 
 export default function Homes() {
   document.body.classList.remove("oddBody2");
   document.body.classList.remove("oddBody");
+
+  // useEffect(() => {
+  //   getGameList();
+  // });
+
   return (
     <>
       <CategoryNav />
