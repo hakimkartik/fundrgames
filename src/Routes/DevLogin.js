@@ -10,11 +10,11 @@ export default function DevLogin() {
         <div className="col-6">
           <div className="login-container-left d-flex flex-wrap justify-content-center text-center mx-auto">
             <div className="col-12 mt-4">
-              <h2 className="login-msg">Login for developers</h2>
+              <h2 className="login-msg">Login htmlFor developers</h2>
               <p className="login-type-text">
-                Not a developer? 
+                Not a developer?
                 <Link className="login-website-hover" to={`/gamelogin`}>
-                   Sign in as a gamer.
+                  Sign in as a gamer.
                 </Link>
               </p>
             </div>
@@ -49,7 +49,7 @@ export default function DevLogin() {
                 />
                 <label
                   className="form-check-label login-remember-me"
-                  for="exampleCheck1"
+                  htmlFor="exampleCheck1"
                 >
                   Remember me
                 </label>
@@ -73,7 +73,7 @@ export default function DevLogin() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
                   stroke-width="1"
                   stroke-linecap="butt"
@@ -105,7 +105,7 @@ export default function DevLogin() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
                   stroke-width="1"
                   stroke-linecap="butt"
@@ -137,7 +137,7 @@ export default function DevLogin() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
                   stroke-width="1"
                   stroke-linecap="butt"
@@ -169,7 +169,7 @@ export default function DevLogin() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
                   stroke-width="1"
                   stroke-linecap="butt"

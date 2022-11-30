@@ -16,7 +16,9 @@ export default function Register() {
               Already a user?
             </h1>
             <div className="col-12 d-flex justify-content-center">
-              <h5 className="w-50 login-new-sub-msg">login and reconnect with the community </h5>
+              <h5 className="w-50 login-new-sub-msg">
+                login and reconnect with the community
+              </h5>
             </div>
             <div className="col-12">
               <Link className="btn btn-primary w-50 btn-type" to={"/login"}>
@@ -53,7 +55,11 @@ export default function Register() {
             </div>
             <div className="col-6 d-flex flex-wrap justify-content-center">
               <div className="login-type-icon">
-                <img src={dev} alt="developer icon" className="login-type-img" />
+                <img
+                  src={dev}
+                  alt="developer icon"
+                  className="login-type-img"
+                />
               </div>
               <div className="col-12">
                 <Link

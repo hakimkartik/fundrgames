@@ -3,14 +3,37 @@ import "../CSS/GameLogin.css";
 import "../CSS/main-game.css";
 import "font-awesome/css/font-awesome.min.css";
 import { Link } from "react-router-dom";
+import { loginGamerOrDeveloper } from "../Services";
+import { useState } from "react";
 
 export default function GameLogin() {
-  const onSubmitHandler = (event) => {
-    event.preventDefault();
-    window.location = "/gamer";
-  };
   document.body.classList.remove("oddBody2");
   document.body.classList.add("oddBody");
+
+  const [asGamer, setAsGamer] = useState(true);
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+
+    loginGamerOrDeveloper(
+      {
+        username: username,
+        password: password,
+      },
+      asGamer
+    );
+  };
+
+  const usernameHandler = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
     <div className="container-fluid login-bg">
       <div className="row">
@@ -27,7 +50,10 @@ export default function GameLogin() {
               </p>
             </div>
 
-            <form className="d-flex flex-wrap justify-content-center text-center">
+            <form
+              className="d-flex flex-wrap justify-content-center text-center"
+              onSubmit={onSubmitHandler}
+            >
               <div className="col-12 d-flex flex-wrap justify-content-center">
                 <input
                   type="email"
@@ -35,12 +61,14 @@ export default function GameLogin() {
                   id="email"
                   aria-describedby="emailHelp"
                   placeholder="Email"
+                  onChange={usernameHandler}
                 />
                 <input
                   type="password"
                   className="form-control form-control-sm w-75 mb-3"
                   id="password"
                   placeholder="Password"
+                  onChange={passwordHandler}
                 />
                 <p className="login-type-text w-75 d-flex justify-content-start">
                   <span className="login-website-hover">Forgot password?</span>
@@ -48,7 +76,7 @@ export default function GameLogin() {
                 <button
                   type="submit"
                   className="btn btn-primary w-75"
-                  onClick={onSubmitHandler}
+                  // onClick={onSubmitHandler}
                 >
                   Login
                 </button>
@@ -61,7 +89,7 @@ export default function GameLogin() {
                 />
                 <label
                   className="form-check-label login-remember-me"
-                  for="exampleCheck1"
+                  htmlFor="exampleCheck1"
                 >
                   Remember me
                 </label>
@@ -85,18 +113,18 @@ export default function GameLogin() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -117,18 +145,18 @@ export default function GameLogin() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -146,21 +174,24 @@ export default function GameLogin() {
                 height="40"
                 viewBox="0 0 172 172"
                 className="login-icons"
+                onClick={(e) => {
+                  setAsGamer(true);
+                }}
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -178,21 +209,24 @@ export default function GameLogin() {
                 height="40"
                 viewBox="0 0 172 172"
                 className="login-icons"
+                onClick={(e) => {
+                  setAsGamer(false);
+                }}
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -215,7 +249,7 @@ export default function GameLogin() {
                 sign up and discover first-of-its-kind games!
               </h5>
             </div>
-            <div class="col-12">
+            <div className="col-12">
               <Link className="btn btn-primary w-50 btn-type" to={"/register"}>
                 Sign up
               </Link>
