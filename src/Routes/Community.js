@@ -5,7 +5,8 @@ export default function Community() {
     <>
       <div className="container">
         <div className="row mt-4">
-          <h2>Community</h2>
+          <div className="game-purple-line"></div>
+          <h2 className="game-page-title">Community</h2>
         </div>
 
         <div className="row m-4 d-flex">
@@ -13,11 +14,12 @@ export default function Community() {
             <GameDetailNav community="true" />
           </div>
 
-          <div className="col-9 p-4 game-lilac-fill position-relative">
-            <div className="col-12">
-              <h4>Comments</h4>
+          <div className="col-8 offset-1 p-4 position-relative">
+            <div className="col-12 mb-4">
+              <h4 className="bold">Comments</h4>
             </div>
-            <div className="card p-2">
+
+            <div className="card updates-card p-2">
               <div className="row mt-3">
                 <div className="col-2 d-flex justify-content-end">
                   <img
@@ -28,7 +30,7 @@ export default function Community() {
                 </div>
                 <div className="col-9 d-flex justify-content-start align-items-center">
                   <h5>Susy Jane</h5>
-                  <span className="community-backer-tag">Backer</span>
+                  <span className="backer-tag">Backer</span>
                 </div>
                 <div className="col-1">
                   <small className="text-muted">1d</small>
@@ -43,79 +45,76 @@ export default function Community() {
               </div>
               <div className="row">
                 <div className="col-12 d-flex justify-content-end">
-                  <button type="button" className="btn btn-secondary">
+                  <button
+                    type="button"
+                    className="btn btn-secondary game-like-button"
+                  >
                     Like
                   </button>
                 </div>
               </div>
             </div>
 
-            <div className="card p-2 mt-4">
-              <div className="row mt-3">
-                <div className="col-2 d-flex justify-content-end">
-                  <img
-                    className="card-img-left author-avatar"
-                    alt="Susy Jane"
-                    src="https://www.reed.edu/assets_secondary/images/jobs.jpg"
-                  />
+            <div className="card updates-card p-2 mt-4">
+                    <div className="row mt-3">
+                        <div className="col-2 d-flex justify-content-end">
+                            <img className="card-img-left author-avatar" alt="Susy Jane" src="https://www.reed.edu/assets_secondary/images/jobs.jpg"/>
+                        </div>
+                        <div className="col-9 d-flex justify-content-start align-items-center">
+                            <h5>Bob Smith</h5>
+                            <span className="developer-tag">Developer</span>
+                        </div>
+                        <div className="col-1">
+                            <small className="text-muted">3d</small>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="col-2"></div>
+                        <div className="col-9">
+                            <p>Such an amazing game, it is inspiring.</p>
+                        </div>
+                        <div className="col-1"></div>
+                    </div>
+                    <div className="row">
+                        <div className="col-12 d-flex justify-content-end">
+                            <button type="button" className="btn btn-secondary game-like-button">Like</button>
+                        </div> 
+                    </div>
                 </div>
-                <div className="col-9 d-flex justify-content-start align-items-center">
-                  <h5>Bob Smith</h5>
-                  <span className="community-developer-tag">Developer</span>
-                </div>
-                <div className="col-1">
-                  <small className="text-muted">3d</small>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-2"></div>
-                <div className="col-9">
-                  <p>Such an amazin game, it is inspiring.</p>
-                </div>
-                <div className="col-1"></div>
-              </div>
-              <div className="row">
-                <div className="col-12 d-flex justify-content-end">
-                  <button type="button" className="btn btn-secondary">
-                    Like
-                  </button>
-                </div>
-              </div>
-            </div>
           </div>
 
-          <div className="col-2 offset-sm-1 p-4 overflow-auto similar-games-container">
+          <div className="col-2 p-4 overflow-auto similar-games-container">
             <div className="text-center mb-4">
-              <h4>Similar Games</h4>
+              <h4 className="similar-games">Similar Games</h4>
             </div>
-            <div className="card text-center similar-games">
-              <div className="similar-games-wrapper">
+            <div className="game-media-scroller-2">
+              <div className="game-media-element-2">
                 <img
-                  src="https://assets.nintendo.com/video/upload/c_limit,h_300,w_500/v1/ncom/en_US/games/switch/s/stardew-valley-switch/Video/Stardew_Valley_Trailer_ESRB.jpg"
-                  className="card-img-top"
-                  alt="Stardew Valley"
+                  src="https://culturedvultures.com/wp-content/uploads/2021/10/Inscryption-1.jpg"
+                  alt="Inscryption game"
                 />
+                <p className="media-title">INSCRYPTION</p>
               </div>
-              <div className="card-body game-lilac-fill">
-                <h5 className="card-title">Stardew Valley</h5>
-                <p className="card-text">
-                  <small>FICTION</small>
-                </p>
-              </div>
-            </div>
-            <div className="card text-center mt-4 similar-games">
-              <div className="similar-games-wrapper">
+              <div className="game-media-element-2">
                 <img
-                  src="https://www.thatvideogameblog.com/wp-content/uploads/2017/08/undertale-960x472.jpg"
-                  className="card-img-top"
-                  alt="Undertale"
+                  src="https://cdn.images.express.co.uk/img/dynamic/143/590x/571642_1.jpg"
+                  alt="Minecraft game"
                 />
+                <p className="media-title">MINECRAFT</p>
               </div>
-              <div className="card-body game-lilac-fill">
-                <h5 className="card-title">Undertale</h5>
-                <p className="card-text">
-                  <small>FANTASY</small>
-                </p>
+              <div className="game-media-element-2">
+                <img
+                  src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Ffez%2Fhome%2FEGS_POLYTRON_FEZ_N1_NEWSFEED_PRIMARY-2560x1440-d147cec46530772325611671d9ab1b79d134de39.jpg"
+                  alt="Fez game"
+                />
+                <p className="media-title">FEZ</p>
+              </div>
+              <div className="game-media-element-2">
+                <img
+                  src="https://media.npr.org/assets/img/2021/04/06/kim-handshake_wide-56bfe404b79c12a190ba2f2a4b493e73ebe0998a.png"
+                  alt="Disco Elysium game"
+                />
+                <p className="media-title">DISCO ELYSIUM</p>
               </div>
             </div>
           </div>
