@@ -3,13 +3,17 @@ import GameDetailNav from "../Components/GameDetailNav";
 export default function Terms() {
   return (
     <>
-      <GameDetailNav terms="true" />
       <div className="container">
         <div className="row mt-4">
           <h2>Terms</h2>
         </div>
 
         <div className="row m-4 d-flex">
+          <div className="col-1">
+            {/* GameDetailNav be here */}
+            <GameDetailNav terms="true" />
+          </div>
+
           <div className="col-9 p-4 game-lilac-fill">
             <h4>Terms of Use</h4>
             <ul>

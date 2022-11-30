@@ -3,13 +3,16 @@ import "../CSS/GameCommunity.css";
 export default function Community() {
   return (
     <>
-      <GameDetailNav community="true" />
       <div className="container">
         <div className="row mt-4">
           <h2>Community</h2>
         </div>
 
         <div className="row m-4 d-flex">
+          <div className="col-1">
+            <GameDetailNav community="true" />
+          </div>
+
           <div className="col-9 p-4 game-lilac-fill position-relative">
             <div className="col-12">
               <h4>Comments</h4>

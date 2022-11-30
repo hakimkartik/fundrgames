@@ -5,15 +5,15 @@ import mainGame from "../js/main-game.js";
 import GameDetail from "./GameDetail";
 
 export default function Game() {
-    document.body.classList.remove('oddBody2');
-    document.body.classList.remove('oddBody');
-    return(
-        <>
-            <GameDetail />
-            <div className="paddings">
-                <Outlet />
-                <GameBottomButton />
-            </div>
-        </>
-    )
+  document.body.classList.remove("oddBody2");
+  document.body.classList.remove("oddBody");
+  return (
+    <>
+      <GameDetail />
+      <div className="paddings">
+        <Outlet />
+        <GameBottomButton />
+      </div>
+    </>
+  );
 }

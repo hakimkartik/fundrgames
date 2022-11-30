@@ -3,13 +3,15 @@ import "../CSS/GameUpdates.css";
 export default function Updates() {
   return (
     <>
-      <GameDetailNav updates="true" />
       <div className="container">
         <div className="row mt-4">
           <h2>Updates</h2>
         </div>
 
         <div className="row m-4 d-flex">
+          <div className="col-1">
+            <GameDetailNav updates="true" />
+          </div>
           <div className="col-9 p-4 game-lilac-fill position-relative">
             <div className="card p-2">
               <div className="row mt-3">

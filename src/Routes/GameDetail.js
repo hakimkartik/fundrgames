@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import "../CSS/main-game.css";
 
 export default function GameDetail() {
-  const [mainImage, setMainInmage] = useState(
+  const [mainImage, setMainImage] = useState(
     "https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fceleste%2Fhome%2F00-1920x1080-656978e07c631e4fb1dc5d2f435c536edaafd8d5.jpg"
   );
   return (
@@ -20,7 +20,7 @@ export default function GameDetail() {
                 alt="Celeste image 2"
                 onClick={(event) => {
                   console.log(event.target);
-                  setMainInmage(event.target.src);
+                  setMainImage(event.target.src);
                 }}
               />
             </div>
@@ -31,7 +31,7 @@ export default function GameDetail() {
                 alt="Celeste image 3"
                 onClick={(event) => {
                   console.log(event.target);
-                  setMainInmage(event.target.src);
+                  setMainImage(event.target.src);
                 }}
               />
             </div>
@@ -42,7 +42,7 @@ export default function GameDetail() {
                 alt="Celeste image 4"
                 onClick={(event) => {
                   console.log(event.target);
-                  setMainInmage(event.target.src);
+                  setMainImage(event.target.src);
                 }}
               />
             </div>
@@ -53,7 +53,7 @@ export default function GameDetail() {
                 alt="Celeste image 5"
                 onClick={(event) => {
                   console.log(event.target);
-                  setMainInmage(event.target.src);
+                  setMainImage(event.target.src);
                 }}
               />
             </div>
@@ -142,10 +142,8 @@ export default function GameDetail() {
                   </button>
                 </div>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </div>
