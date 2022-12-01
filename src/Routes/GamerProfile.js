@@ -5,8 +5,8 @@ export default function GamerProfile() {
   return (
     <>
       <div className="container">
-        <div className="row pt-4 text-center mb-2 gamer-lilac-fill">
-          PROFILE
+        <div className="row pt-4 text-center mb-2 lilac-underline">
+          <h3>PROFILE</h3>
         </div>
         <div className="row pt-4 text-center mb-2">
           <img className="prof_pic" src={userImage} alt="Gamer Picture" />
@@ -41,8 +41,8 @@ export default function GamerProfile() {
               </li>
             </ul>
           </div>
-          <div className="row pt-4 text-center mb-2 gamer-lilac-fill">
-            YOUR LIKED GAMES
+          <div className="row pt-4 text-center mb-2 lilac-underline">
+            <h4>YOUR LIKED GAMES</h4>
           </div>
           <div className="row pt-4 text-center m-2 games">
             <div className="scrollbar scrollbar-primary games-liked">
@@ -85,8 +85,8 @@ export default function GamerProfile() {
             </div>
           </div>
         </div>
-        <div className="row pt-4 text-center mb-2 gamer-lilac-fill">
-          GAMES FUNDED
+        <div className="row pt-4 text-center mb-2 lilac-underline">
+          <h4>GAMES FUNDED</h4>
         </div>
         <br />
         <div className="col-6 paddings">
@@ -105,9 +105,9 @@ export default function GamerProfile() {
                 <td>
                   <div className="fund">
                     <ul>
-                      <li>INSCRYPTION</li>
+                      <li className="fund-title">INSCRYPTION</li>
                       <br />
-                      <li>Amount Donated: $50</li>
+                      <li>Amount Donated: 50$</li>
                       <br />
                       <li>
                         <div className="tags_">Tier 1 funder</div>
