@@ -3,7 +3,7 @@ import "../CSS/GameLogin.css";
 import "../CSS/main-game.css";
 import "font-awesome/css/font-awesome.min.css";
 import { Link } from "react-router-dom";
-import { loginGamerOrDeveloper } from "../Services";
+import { loginGamerOrDeveloper, getProfile } from "../Services";
 import { useState } from "react";
 
 export default function GameLogin() {
@@ -25,11 +25,21 @@ export default function GameLogin() {
         true
       );
       localStorage.setItem("authToken", resp.token);
+      try {
+        const user = await getProfile(resp.token);
+        localStorage.setItem("email", user.username);
+        localStorage.setItem("name", user.name);
+      }
+      catch(error) {
+        console.log(error)
+      }
+      
       window.location = "/gamer";
     }
     catch(error) {
       console.log(error)
     }
+
   };
 
   const usernameHandler = (e) => {

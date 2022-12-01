@@ -1,8 +1,10 @@
 import userImage from "../img/PROFILE.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/GamerProfile.css";
+
 export default function GamerProfile() {
-  const username = localStorage.getItem("username")
+  const email = localStorage.getItem("email")
+  const name = localStorage.getItem("name")
   return (
     <>
       <div className="container">
@@ -13,9 +15,9 @@ export default function GamerProfile() {
           <img className="prof_pic" src={userImage} alt="Gamer Picture" />
           <div className="col-lg-4 profile">
             <ul>
-              <li>Username: Jax Ross</li>
+              <li>Username: ${name}</li>
               <br />
-              <li>Email: justforgames@gmail.com</li>
+              <li>Email: ${email}</li>
               <br />
               <li>
                 <table className="table table-borderless">
