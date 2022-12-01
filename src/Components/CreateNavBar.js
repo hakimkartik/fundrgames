@@ -67,26 +67,23 @@ export default function CreateNav(props) {
           </div>
 
           <div className="col-sm-2 text-center pt-2 create-nav-item-back">
-            <Link style={{ textDecoration: "none" }} to={"/create/about"}>
+            <Link style={{ textDecoration: "none" }} to={"/create/payments"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
                 fill="currentColor"
-                className="bi bi-person-circle"
+                className="bi bi-cash-stack"
                 viewBox="0 0 16 16"
               >
-                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
-                <path
-                  fillRule="evenodd"
-                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
-                />
+                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z" />
               </svg>
             </Link>
-            <Link style={{ textDecoration: "none" }} to={"/create/about"}>
-              <p className="heading">About You</p>
+            <Link style={{ textDecoration: "none" }} to={"/create/payments"}>
+              <p className="heading">Payments</p>
             </Link>
-            {props.about === "true" ? (
+            {props.payments === "true" ? (
               <hr
                 style={{
                   color: "#000000",
@@ -131,23 +128,26 @@ export default function CreateNav(props) {
           </div>
 
           <div className="col-sm-2 text-center pt-2 create-nav-item-back">
-            <Link style={{ textDecoration: "none" }} to={"/create/payments"}>
+            <Link style={{ textDecoration: "none" }} to={"/create/about"}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
                 height="25"
                 fill="currentColor"
-                className="bi bi-cash-stack"
+                className="bi bi-person-circle"
                 viewBox="0 0 16 16"
               >
-                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
-                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z" />
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fillRule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                />
               </svg>
             </Link>
-            <Link style={{ textDecoration: "none" }} to={"/create/payments"}>
-              <p className="heading">Payments</p>
+            <Link style={{ textDecoration: "none" }} to={"/create/about"}>
+              <p className="heading">About You</p>
             </Link>
-            {props.payments === "true" ? (
+            {props.about === "true" ? (
               <hr
                 style={{
                   color: "#000000",

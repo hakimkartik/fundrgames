@@ -2,6 +2,7 @@ import userImage from "../img/PROFILE.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/GamerProfile.css";
 export default function GamerProfile() {
+  const username = localStorage.getItem("username")
   return (
     <>
       <div className="container">

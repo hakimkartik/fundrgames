@@ -10,16 +10,23 @@ export default function DevLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
 
-    loginGamerOrDeveloper(
-      {
-        username: username,
-        password: password,
-      },
-      false
-    );
+    try {
+      const resp = await loginGamerOrDeveloper(
+        {
+          username: username,
+          password: password,
+        },
+        false
+      );
+      localStorage.setItem("authToken", resp.token);
+      window.location = "/create";
+    }
+    catch(error) {
+      console.log(error)
+    }
   };
 
   const usernameHandler = (e) => {

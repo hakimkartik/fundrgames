@@ -5,7 +5,7 @@ export default function CreatePayments() {
   document.body.classList.remove("oddBody");
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    window.location = "/create/launch";
+    window.location = "/create/rewards";
   };
   return (
     <>
@@ -183,7 +183,7 @@ export default function CreatePayments() {
               type="submit"
               onClick={onSubmitHandler}
             >
-              Next: Launch
+              Next: Rewards
             </button>
           </div>
         </form>
