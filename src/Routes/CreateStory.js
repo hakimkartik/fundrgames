@@ -1,11 +1,21 @@
 import CreateNav from "../Components/CreateNavBar";
+import { toast } from 'react-toastify';
 
 export default function CreateStory() {
+  console.log(localStorage)
   document.body.classList.remove("oddBody2");
   document.body.classList.remove("oddBody");
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    window.location = "/create/about";
+    console.log(localStorage)
+    if(event.target.form.introduction.value === "") {
+      toast.error("Please enter a introduction")
+    }
+    else {
+      localStorage.setItem("introduction",event.target.form.introduction.value)
+      console.log(localStorage.getItem("introduction"))
+      window.location = "/create/payments";
+    }
   };
   return (
     <>
@@ -28,13 +38,14 @@ export default function CreateStory() {
           <hr />
 
           <div className="row mb-4">
-            <label htmlFor="FormControlTextarea1" className="form-label" style={{color: "white"}}>
+            <label htmlFor="introduction" className="form-label" style={{color: "white"}}>
               Project description
             </label>
             <textarea
               className="form-control"
-              id="FormControlTextarea1"
+              id="introduction"
               rows="6"
+              name="introduction"
             ></textarea>
           </div>
 
@@ -46,7 +57,7 @@ export default function CreateStory() {
               type="submit"
               onClick={onSubmitHandler}
             >
-              Next: About You
+              Next: Payments
             </button>
           </div>
         </form>
