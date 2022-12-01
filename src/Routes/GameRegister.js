@@ -13,18 +13,19 @@ export default function GameRigister() {
 
   const onSubmitHandler = (event) => {
     event.preventDefault();
-
+    console.log(name)
     try {
       registerGamerOrDeveloper(
         {
           username: username,
+          name: name,
           password: password,
         },
         true
       );
       // console.log(resp);
       // localStorage.setItem("authToken", resp.token);
-      window.location = "/login";
+      // window.location = "/login";
     }
     catch(error) {
       console.log(error)

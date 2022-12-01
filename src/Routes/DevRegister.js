@@ -18,6 +18,7 @@ export default function DevRegister() {
       registerGamerOrDeveloper(
         {
           username: username,
+          name: name,
           password: password,
         },
         false

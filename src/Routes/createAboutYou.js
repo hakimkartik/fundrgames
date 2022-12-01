@@ -17,13 +17,13 @@ export default function CreateAboutYou() {
     if (files.length === 0) {
       toast.error("Please upload at least 1 images")
     }
-    else if(event.target.form.about.value == "") {
+    else if(event.target.form.about.value === "") {
       toast.error("Please enter about")
     }
-    else if(event.target.form.feature.value == "") {
+    else if(event.target.form.feature.value === "") {
       toast.error("Please enter introduction")
     }
-    else if(event.target.form.requirements.value == "") {
+    else if(event.target.form.requirements.value === "") {
       toast.error("Please enter requirements")
     }
     else {
