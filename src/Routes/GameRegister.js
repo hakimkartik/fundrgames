@@ -73,6 +73,7 @@ export default function GameRigister() {
             </div>
 
             <form
+              action="GamerProfile.js"
               className="d-flex flex-wrap justify-content-center text-center"
               onSubmit={onSubmitHandler}
             >

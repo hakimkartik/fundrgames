@@ -1,7 +1,11 @@
 import userImage from "../img/PROFILE.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/GamerProfile.css";
+//import { registerGamerOrDeveloper } from "../Services";
 export default function GamerProfile() {
+  //const [username, setUsername] = useState("");
+  //const [password, setPassword] = useState("");
+  //const [name, setName] = useState("");
   return (
     <>
       <div className="container">
@@ -10,11 +14,32 @@ export default function GamerProfile() {
         </div>
         <div className="row pt-4 text-center mb-2">
           <img className="prof_pic" src={userImage} alt="Gamer Picture" />
+          {/* <form
+            id="add_pic"
+            action="prof_pic"
+            method="PUSH"
+            enctype="multipart/form-data"
+          >
+            <div class="tavola">
+              <label for="id_doc">Change your profile picture</label>
+              <input type="file" id="id_doc" name="id_doc" />
+            </div>
+            <div class="tavola">
+              <button type="submit" class="green">
+                Upload
+              </button>
+              <button type="reset" class="black">
+                New upload
+              </button>
+            </div>
+          </form> */}
           <div className="col-lg-4 profile">
             <ul>
               <li>Username: Jax Ross</li>
+              {/* <li>Username: {name}</li> */}
               <br />
               <li>Email: justforgames@gmail.com</li>
+              {/* <li>Email: {username}</li> */}
               <br />
               <li>
                 <table className="table table-borderless">
