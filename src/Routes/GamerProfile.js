@@ -45,41 +45,43 @@ export default function GamerProfile() {
             YOUR LIKED GAMES
           </div>
           <div className="row pt-4 text-center m-2 games">
-            <table className="table table-borderless games-liked">
-              <tbody>
-                <tr>
-                  <th scope="row"></th>
-                  <td>
-                    <div className="recommended-game-box recommended-img-wrapper ">
-                      <img
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fdisco-elysium_850024_full.jpg%3Fformat%3Djpg%26width%3D1600%26height%3D1600%26mode%3Dmin%26upscale%3Dfalse&f=1&nofb=1&ipt=7d3408b61ba45cad95b05fa857f3842b7cd7e690417d1b80544358fa5b816609&ipo=images"
-                        alt="Disco Elysium"
-                      />
-                    </div>
-                  </td>
-                  <td>
-                    <h5 className="text-uppercase recommended-name">CELESTE</h5>
-                  </td>
-                  <td>
-                    <div className="recommended-img-wrapper recommended-game-box">
-                      <Link to={"/game/1"}>
-                        <img
-                          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4162235.png&f=1&nofb=1&ipt=16d0abe37a29a4af0a9f1cef858d49096c2b80e471ee778e8caf93e98829a8b6&ipo=images"
-                          alt="Celeste"
-                        />
-                      </Link>
-                    </div>
-                  </td>
-                  <td>
-                    <h5 className="text-uppercase recommended-name">
-                      INCRYPTION
-                    </h5>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div className="scrollbar scrollbar-primary">
+            <div className="scrollbar scrollbar-primary games-liked">
               <div className="force-overflow"></div>
+              <table className="table table-borderless">
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>
+                      <div className="recommended-game-box recommended-img-wrapper ">
+                        <img
+                          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd2.alternativeto.net%2Fdist%2Fs%2Fdisco-elysium_850024_full.jpg%3Fformat%3Djpg%26width%3D1600%26height%3D1600%26mode%3Dmin%26upscale%3Dfalse&f=1&nofb=1&ipt=7d3408b61ba45cad95b05fa857f3842b7cd7e690417d1b80544358fa5b816609&ipo=images"
+                          alt="Disco Elysium"
+                        />
+                      </div>
+                    </td>
+                    <td>
+                      <h5 className="text-uppercase recommended-name">
+                        CELESTE
+                      </h5>
+                    </td>
+                    <td>
+                      <div className="recommended-img-wrapper recommended-game-box">
+                        <Link to={"/game/1"}>
+                          <img
+                            src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp4162235.png&f=1&nofb=1&ipt=16d0abe37a29a4af0a9f1cef858d49096c2b80e471ee778e8caf93e98829a8b6&ipo=images"
+                            alt="Celeste"
+                          />
+                        </Link>
+                      </div>
+                    </td>
+                    <td>
+                      <h5 className="text-uppercase recommended-name">
+                        INCRYPTION
+                      </h5>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

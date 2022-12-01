@@ -1,4 +1,3 @@
-
 .gamer-lilac-fill {
   background-color: #917cb833;
   border: 1px solid black;
@@ -66,21 +65,27 @@ tbody .tags {
 }
 .recommended-img-wrapper {
   height: 190px;
-  width: 300px;
+  width: 330px;
   overflow: hidden;
   border-radius: 10px;
 }
 .recommended-img-wrapper img {
   height: 100%;
   width: auto;
+  overflow: hidden;
   border-radius: 10px;
 }
 .recommended-game-box:hover {
   border-bottom: 4px solid #917cb8;
 }
 .games {
-  margin-left:80px ;
+  margin-left: 80px;
   margin-bottom: 50px;
+}
+.games-liked {
+  position: relative;
+  overflow-x: scroll;
+  height: 100%;
 }
 .funded {
   border: 10px solid green;
@@ -97,7 +102,6 @@ tbody .tags {
 .fund {
   margin-top: 20px;
   margin-left: 80px;
-
 }
 .fund li {
   list-style: none;
