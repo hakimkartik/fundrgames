@@ -5,6 +5,8 @@ export default function GameRigister() {
   document.body.classList.remove("oddBody");
   document.body.classList.add("oddBody2");
 
+  const onSubmitHandler = (e) => {};
+
   return (
     <div className="container-fluid login-bg">
       <div className="row">
@@ -20,6 +22,7 @@ export default function GameRigister() {
               </h5>
             </div>
             <div className="col-12">
+              {/* TODO change this to conditionally render my profiles for gamer and create game for developer */}
               <Link className="btn btn-custom w-50 btn-primary" to={"/login"}>
                 Login
               </Link>

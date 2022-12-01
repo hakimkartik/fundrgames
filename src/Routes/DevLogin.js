@@ -1,16 +1,42 @@
 import { Link } from "react-router-dom";
 import "../CSS/DevLogin.css";
+import { loginGamerOrDeveloper } from "../Services";
+import { useState } from "react";
 
 export default function DevLogin() {
   document.body.classList.remove("oddBody2");
   document.body.classList.add("oddBody");
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+
+    loginGamerOrDeveloper(
+      {
+        username: username,
+        password: password,
+      },
+      false
+    );
+  };
+
+  const usernameHandler = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
     <div className="container-fluid login-bg">
       <div className="row">
         <div className="col-6">
           <div className="login-container-left d-flex flex-wrap justify-content-center text-center mx-auto">
             <div className="col-12 mt-4">
-              <h2 className="login-msg">Login htmlFor developers</h2>
+              <h2 className="login-msg">Login For developers</h2>
               <p className="login-type-text">
                 Not a developer?
                 <Link className="login-website-hover" to={`/gamelogin`}>
@@ -19,7 +45,10 @@ export default function DevLogin() {
               </p>
             </div>
 
-            <form className="d-flex flex-wrap justify-content-center text-center">
+            <form
+              className="d-flex flex-wrap justify-content-center text-center"
+              onSubmit={onSubmitHandler}
+            >
               <div className="col-12 d-flex flex-wrap justify-content-center">
                 <input
                   type="email"
@@ -27,12 +56,14 @@ export default function DevLogin() {
                   id="email"
                   aria-describedby="emailHelp"
                   placeholder="Email"
+                  onChange={usernameHandler}
                 />
                 <input
                   type="password"
                   className="form-control form-control-sm w-75 mb-3"
                   id="password"
                   placeholder="Password"
+                  onChange={passwordHandler}
                 />
                 <p className="login-type-text w-75 d-flex justify-content-start">
                   <span className="login-website-hover">Forgot password?</span>

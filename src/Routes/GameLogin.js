@@ -10,7 +10,6 @@ export default function GameLogin() {
   document.body.classList.remove("oddBody2");
   document.body.classList.add("oddBody");
 
-  const [asGamer, setAsGamer] = useState(true);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -22,7 +21,7 @@ export default function GameLogin() {
         username: username,
         password: password,
       },
-      asGamer
+      true
     );
   };
 
@@ -174,9 +173,6 @@ export default function GameLogin() {
                 height="40"
                 viewBox="0 0 172 172"
                 className="login-icons"
-                onClick={(e) => {
-                  setAsGamer(true);
-                }}
               >
                 <g
                   fill="none"
@@ -209,9 +205,6 @@ export default function GameLogin() {
                 height="40"
                 viewBox="0 0 172 172"
                 className="login-icons"
-                onClick={(e) => {
-                  setAsGamer(false);
-                }}
               >
                 <g
                   fill="none"
