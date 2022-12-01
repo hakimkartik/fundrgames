@@ -16,6 +16,7 @@ export function loginGamerOrDeveloper(data, asGamer) {
     console.log("Try: " + response.json());
 
     localStorage.setItem("authToken", response.token);
+    localStorage.setItem("asGamer", asGamer);
     window.location = asGamer ? "/gamer" : "/create";
   });
 }
@@ -36,6 +37,7 @@ export function registerGamerOrDeveloper(data, asGamer) {
     console.log("Try: " + response.json());
 
     localStorage.setItem("authToken", response.token);
+    localStorage.setItem("asGamer", asGamer);
     window.location = asGamer ? "/gamer" : "/create";
   });
 }

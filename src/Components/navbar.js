@@ -2,6 +2,29 @@ import { Link } from "react-router-dom";
 import "../CSS/App.css";
 import "../CSS/index.css";
 
+function topRight() {
+  if (
+    localStorage.getItem("asGamer") === undefined ||
+    localStorage.getItem("asGamer") == null
+  )
+    return (
+      <Link className="nav-link" to={`/login`}>
+        Login
+      </Link>
+    );
+
+  return (
+    <Link
+      className="nav-link"
+      to={localStorage.getItem("asGamer") === "true" ? "/gamer" : "/create"}
+    >
+      {localStorage.getItem("asGamer") === "true"
+        ? "My Profile"
+        : "Make your game"}
+    </Link>
+  );
+}
+
 export default function navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navbar-custom">
@@ -45,12 +68,8 @@ export default function navbar() {
                 aria-label="Search"
               />
             </form>
-            <ul className="navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link" to={`/login`}>
-                  Login
-                </Link>
-              </li>
+            <ul className="navbar-nav col-4 mb-2 mb-lg-0">
+              <li className="nav-item">{topRight()}</li>
             </ul>
           </div>
         </div>

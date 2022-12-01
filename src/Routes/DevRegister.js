@@ -1,9 +1,41 @@
 import { Link } from "react-router-dom";
 import "../CSS/Register.css";
+import { useState } from "react";
+import { registerGamerOrDeveloper } from "../Services";
 
 export default function DevRegister() {
   document.body.classList.remove("oddBody");
   document.body.classList.add("oddBody2");
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
+
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+
+    registerGamerOrDeveloper(
+      {
+        username: username,
+        name: name,
+        password: password,
+      },
+      true
+    );
+  };
+
+  const usernameHandler = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const passwordHandler = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const nameHandler = (e) => {
+    setName(e.target.value);
+  };
+
   return (
     <div className="container-fluid login-bg">
       <div className="row">
@@ -40,13 +72,17 @@ export default function DevRegister() {
               </p>
             </div>
 
-            <form className="d-flex flex-wrap justify-content-center text-center">
+            <form
+              className="d-flex flex-wrap justify-content-center text-center"
+              onSubmit={onSubmitHandler}
+            >
               <div className="col-12 d-flex flex-wrap justify-content-center">
                 <input
                   type="username"
                   className="form-control form-control-sm w-75 mb-3"
                   id="username"
                   placeholder="Username"
+                  onChange={nameHandler}
                 />
                 <input
                   type="email"
@@ -54,12 +90,14 @@ export default function DevRegister() {
                   id="email"
                   aria-describedby="emailHelp"
                   placeholder="Email"
+                  onChange={usernameHandler}
                 />
                 <input
                   type="password"
                   className="form-control form-control-sm w-75 mb-3"
                   id="password"
                   placeholder="Password"
+                  onChange={passwordHandler}
                 />
               </div>
               <div className="col-12 w-75 mt-3 form-check d-flex justify-content-start">
