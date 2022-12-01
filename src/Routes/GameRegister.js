@@ -4,6 +4,7 @@ import "../CSS/Register.css";
 export default function GameRigister() {
   document.body.classList.remove("oddBody");
   document.body.classList.add("oddBody2");
+
   return (
     <div className="container-fluid login-bg">
       <div className="row">
@@ -14,7 +15,9 @@ export default function GameRigister() {
               Already a user?
             </h1>
             <div className="col-12 d-flex justify-content-center">
-              <h5 className="w-50 login-new-sub-msg">login and reconnect with the community </h5>
+              <h5 className="w-50 login-new-sub-msg">
+                login and reconnect with the community{" "}
+              </h5>
             </div>
             <div className="col-12">
               <Link className="btn btn-custom w-50 btn-primary" to={"/login"}>
@@ -101,18 +104,18 @@ export default function GameRigister() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -133,18 +136,18 @@ export default function GameRigister() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -165,18 +168,18 @@ export default function GameRigister() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
@@ -197,18 +200,18 @@ export default function GameRigister() {
               >
                 <g
                   fill="none"
-                  fill-rule="nonzero"
+                  fillRule="nonzero"
                   stroke="none"
-                  stroke-width="1"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  stroke-miterlimit="10"
-                  stroke-dasharray=""
-                  stroke-dashoffset="0"
-                  font-family="none"
-                  font-weight="none"
-                  font-size="none"
-                  text-anchor="none"
+                  strokeWidth="1"
+                  strokeLinecap="butt"
+                  strokeLinejoin="miter"
+                  strokeMiterlimit="10"
+                  strokeDasharray=""
+                  strokeDashoffset="0"
+                  fontFamily="none"
+                  fontWeight="none"
+                  fontSize="none"
+                  textAnchor="none"
                 >
                   <path d="M0,172v-172h172v172z" fill="none"></path>
                   <g fill="#061f3a">
