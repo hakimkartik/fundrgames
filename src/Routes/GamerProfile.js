@@ -1,11 +1,8 @@
 import userImage from "../img/PROFILE.jpg";
 import { Link } from "react-router-dom";
 import "../CSS/GamerProfile.css";
-//import { registerGamerOrDeveloper } from "../Services";
 export default function GamerProfile() {
-  //const [username, setUsername] = useState("");
-  //const [password, setPassword] = useState("");
-  //const [name, setName] = useState("");
+  const username = localStorage.getItem("username");
   return (
     <>
       <div className="container">

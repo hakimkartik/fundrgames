@@ -13,16 +13,23 @@ export default function GameLogin() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const onSubmitHandler = (event) => {
+  const onSubmitHandler = async (event) => {
     event.preventDefault();
 
-    loginGamerOrDeveloper(
-      {
-        username: username,
-        password: password,
-      },
-      true
-    );
+    try {
+      const resp = await loginGamerOrDeveloper(
+        {
+          username: username,
+          password: password,
+        },
+        true
+      );
+      localStorage.setItem("authToken", resp.token);
+      window.location = "/gamer";
+    }
+    catch(error) {
+      console.log(error)
+    }
   };
 
   const usernameHandler = (e) => {

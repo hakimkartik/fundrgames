@@ -1,11 +1,31 @@
 import CreateNav from "../Components/CreateNavBar";
+import { toast } from 'react-toastify';
 
 export default function CreateGame(props) {
+  console.log(localStorage)
   document.body.classList.remove("oddBody2");
   document.body.classList.remove("oddBody");
+
   const onSubmitHandler = (event) => {
     event.preventDefault();
-    window.location = "/create/story";
+    console.log(event.target.form.categoryId.value)
+    
+    if(event.target.form.title.value === "") {
+      toast.error("Please enter a title")
+    }
+    else if(event.target.form.subtitle.value === "") {
+      toast.error("Please enter a subtitle")
+    }
+    else if(event.target.form.categoryId.value === "0") {
+      toast.error("Please select a category")
+    }
+    else {
+      localStorage.setItem("title",event.target.form.title.value)
+      localStorage.setItem("subtitle",event.target.form.subtitle.value)
+      localStorage.setItem("categoryId",event.target.form.categoryId.value)
+      console.log(localStorage)
+      window.location = "/create/story";
+    }
   };
   return (
     <>
@@ -27,7 +47,7 @@ export default function CreateGame(props) {
 
           <div className="row mb-4">
             <label
-              htmlFor="FormControlInput1"
+              htmlFor="title"
               className="form-label fs-5 text fw-light"
               style={{color: "white"}}
             >
@@ -36,14 +56,16 @@ export default function CreateGame(props) {
             <input
               className="form-control"
               type="text"
-              id="FormControlInput1"
+              id="title"
               aria-label="game title"
+              name="title"
+              required
             />
           </div>
 
           <div className="row mb-4">
             <label
-              htmlFor="FormControlInput2"
+              htmlFor="subtitle"
               className="form-label fs-5 text fw-light"
               style={{color: "white"}}
             >
@@ -52,14 +74,16 @@ export default function CreateGame(props) {
             <input
               className="form-control"
               type="text"
-              id="FormControlInput2"
+              id="subtitle"
               aria-label="Subtitle"
+              name="subtitle"
+              required
             />
           </div>
 
           <div className="row mb-4">
             <label
-              htmlFor="FormControlInput3"
+              htmlFor="categoryId"
               className="form-label fs-5 text fw-light"
               style={{color: "white"}}
             >
@@ -68,81 +92,18 @@ export default function CreateGame(props) {
             <select
               className="form-select-sm"
               aria-label="primary category"
-              id="FormControlInput3"
+              id="categoryId"
               defaultValue={0}
+              name="categoryId"
             >
               <option value="0">-Choose-</option>
-              <option value="1">Sandbox</option>
-              <option value="2">Real-time strategy (RTS)</option>
-              <option value="3">Shooters (FPS and TPS)</option>
-              <option value="4">Multiplayer online battle arena (MOBA)</option>
-              <option value="5">Role-playing (RPG, ARPG, and More)</option>
-              <option value="6">Simulation and sports</option>
-              <option value="7">Puzzlers and party games</option>
-              <option value="8">Action-adventure</option>
-              <option value="9">Survival and horror</option>
-              <option value="10">Platformer</option>
-              <option value="11">Other</option>
+              <option value="strategy">Strategy</option>
+              <option value="history">History</option>
+              <option value="action">Action</option>
+              <option value="sports">Sports</option>
+              <option value="adventure">Adventure</option>
+              <option value="vr">VR</option>
             </select>
-          </div>
-
-          <div className="row mb-4">
-            <label
-              htmlFor="FormControlInput4"
-              className="form-label fs-5 text fw-light"
-              style={{color: "white"}}
-            >
-              Sub Category
-            </label>
-            <select
-              className="form-select-sm"
-              aria-label="sub category"
-              id="FormControlInput4"
-              defaultValue={0}
-            >
-              <option value="0">-Choose-</option>
-              <option value="1">Sandbox</option>
-              <option value="2">Real-time strategy (RTS)</option>
-              <option value="3">Shooters (FPS and TPS)</option>
-              <option value="4">Multiplayer online battle arena (MOBA)</option>
-              <option value="5">Role-playing (RPG, ARPG, and More)</option>
-              <option value="6">Simulation and sports</option>
-              <option value="7">Puzzlers and party games</option>
-              <option value="8">Action-adventure</option>
-              <option value="9">Survival and horror</option>
-              <option value="10">Platformer</option>
-              <option value="11">Other</option>
-            </select>
-          </div>
-
-          <div className="row mb-4">
-            <label
-              htmlFor="FormControlInput5"
-              className="form-label fs-5 text fw-light"
-              style={{color: "white"}}
-            >
-              Project Image
-            </label>
-            <input
-              type="file"
-              className="form-control form-control-sm"
-              id="FormControlInput5"
-            />
-          </div>
-
-          <div className="row mb-5">
-            <label
-              htmlFor="FormControlInput6"
-              className="form-label fs-5 text fw-light"
-              style={{color: "white"}}
-            >
-              Project Media
-            </label>
-            <input
-              type="file"
-              className="form-control form-control-sm"
-              id="FormControlInput6"
-            />
           </div>
 
           <div className="row d-grid gap-2 mb-5">

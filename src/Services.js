@@ -1,23 +1,25 @@
-const baseURL = process.env.REACT_APP_API_BASE_URL;
+const baseURL = 'http://localhost:8080';
 
 export function loginGamerOrDeveloper(data, asGamer) {
   let url = asGamer
     ? `${baseURL}/authenticate/gamer`
     : `${baseURL}/authenticate/developer`;
-
-  fetch(url, {
-    method: "post",
+  return fetch(url, {
+    method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
     },
-    body: data,
+    body:JSON.stringify(data),
   }).then((response) => {
-    console.log("Try: " + response.json());
-
-    localStorage.setItem("authToken", response.token);
-    localStorage.setItem("asGamer", asGamer);
-    window.location = asGamer ? "/gamer" : "/create";
+    if(response.status === 200) {
+      // localStorage.setItem("authToken", response.json().token);
+      localStorage.setItem("asGamer", asGamer);
+      return response.json()
+      // window.location = asGamer ? "/gamer" : "/create";
+    }
+    else {
+      console.log("no")
+    }
   });
 }
 
@@ -26,19 +28,17 @@ export function registerGamerOrDeveloper(data, asGamer) {
     ? `${baseURL}/register/gamer`
     : `${baseURL}/register/developer`;
 
-  fetch(url, {
+  return fetch(url, {
     method: "post",
     headers: {
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
     },
-    body: data,
+    body: JSON.stringify(data),
   }).then((response) => {
-    console.log("Try: " + response.json());
-
-    localStorage.setItem("authToken", response.token);
-    localStorage.setItem("asGamer", asGamer);
-    window.location = asGamer ? "/gamer" : "/create";
+    if(response.status === 200) {
+      localStorage.setItem("asGamer", asGamer);
+      return response.json()
+    }
   });
 }
 

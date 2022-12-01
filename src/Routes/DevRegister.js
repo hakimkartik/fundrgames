@@ -14,14 +14,20 @@ export default function DevRegister() {
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
-    registerGamerOrDeveloper(
-      {
-        username: username,
-        name: name,
-        password: password,
-      },
-      true
-    );
+    try {
+      registerGamerOrDeveloper(
+        {
+          username: username,
+          password: password,
+        },
+        false
+      );
+      // localStorage.setItem("authToken", resp.token);
+      window.location = "/login";
+    }
+    catch(error) {
+      console.log(error)
+    }
   };
 
   const usernameHandler = (e) => {
