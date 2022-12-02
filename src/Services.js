@@ -1,5 +1,6 @@
-// const baseURL = 'http://www.jzhang.tk:8080';
-const baseURL = 'http://localhost:8080';
+
+const baseURL = "http://www.jzhang.tk:8080";
+// const baseURL = 'http://localhost:8080';
 
 export function loginGamerOrDeveloper(data, asGamer) {
   let url = asGamer
@@ -10,16 +11,15 @@ export function loginGamerOrDeveloper(data, asGamer) {
     headers: {
       "Content-Type": "application/json",
     },
-    body:JSON.stringify(data),
+    body: JSON.stringify(data),
   }).then((response) => {
-    if(response.status === 200) {
+    if (response.status === 200) {
       // localStorage.setItem("authToken", response.json().token);
       localStorage.setItem("asGamer", asGamer);
-      return response.json()
+      return response.json();
       // window.location = asGamer ? "/gamer" : "/create";
-    }
-    else {
-      console.log("no")
+    } else {
+      console.log("no");
     }
   });
 }
@@ -36,7 +36,7 @@ export function registerGamerOrDeveloper(data, asGamer) {
     },
     body: JSON.stringify(data),
   }).then((response) => {
-    if(response.status === 200) {
+    if (response.status === 200) {
       localStorage.setItem("asGamer", asGamer);
       // return response.json()
     }
@@ -44,7 +44,7 @@ export function registerGamerOrDeveloper(data, asGamer) {
 }
 
 export function getProfile(token) {
-  let url = `${baseURL}/user`
+  let url = `${baseURL}/user`;
   // let token = localStorage.getItem("authToken");
   return fetch(url, {
     method: "get",
@@ -57,17 +57,21 @@ export function getProfile(token) {
   });
 }
 
-export function getGameList() {
-  let token = localStorage.getItem("authToken");
-  fetch(baseURL, {
+export async function getGameList() {
+  let url = `${baseURL}/game`;
+
+  return fetch(url, {
     method: "get",
     headers: {
       "Access-Control-Allow-Origin": "*",
-      Authorization: `Bearer ${token}`,
     },
-    body: {},
   }).then((response) => {
-    console.log("Try: " + response.json());
+    if (response.status === 200) {
+      console.log(200);
+      return response.json();
+    } else {
+      console.log("no");
+    }
   });
 }
 
