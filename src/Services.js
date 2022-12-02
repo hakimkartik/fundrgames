@@ -1,3 +1,4 @@
+
 const baseURL = "http://www.jzhang.tk:8080";
 // const baseURL = 'http://localhost:8080';
 
@@ -71,5 +72,13 @@ export async function getGameList() {
     } else {
       console.log("no");
     }
+  });
+}
+
+
+export function fetchGameById(id) {
+  let url = `${baseURL}/game/${id}`
+  return fetch(url).then((response) => {
+    return response.json();
   });
 }
