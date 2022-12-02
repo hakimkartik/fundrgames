@@ -1,6 +1,28 @@
 import GameDetailNav from "../Components/GameDetailNav";
+import { useLoaderData,Form, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { fetchGameById } from "../Services";
 
 export default function Overview() {
+
+  const params = useParams();
+  const gameId = params.id;
+  const [introduction, setIntroduction] = useState("Loading");
+  const [subtitle, setSubtitle] = useState("Loading");
+  const [requirements, setRequirements] = useState("Loading");
+  const [feature, setFreature] = useState("Loading");
+
+  useEffect(()=>{
+    fetchGameById(gameId).then((game)=> {
+      console.log(game)
+      setIntroduction(game.introduction)
+      setSubtitle(game.subtitle)
+      setFreature(game.feature)
+      setRequirements(game.requirements)
+    })
+  },[])
+
+
   return (
     <>
       {/* <GameDetailNav overview="true" /> */}
@@ -19,34 +41,21 @@ export default function Overview() {
           </div>
 
           <div className="col-8 offset-1 p-4">
-            <h4 className="bold">Plot</h4>
+            <h4 className="bold">Subtitle</h4>
             <p>
-              Celeste is a platform game in which players control a young woman
-              named Madeline as she makes her way up Mount Celeste while
-              avoiding various deadly obstacles. Along with jumping and climbing
-              up walls for a limited amount of time, Madeline has the ability to
-              perform a mid-air dash in eight directions.
+              {subtitle}
             </p>
-            <h4 className="bold">About the Game</h4>
-            <ul>
-              <li>Genre: fiction, thriller</li>
-              <li>Audience: 15+</li>
-              <li>Characters: 10</li>
-              <li>Levels: 20</li>
-            </ul>
-            <h4 className="bold">Characters</h4>
-            <ul>
-              <li>Main character: Madeline</li>
-              <li>Villain: Part Of Her</li>
-              <li>Secondary: Alessandra, Cordelia</li>
-            </ul>
-            <h4 className="bold">The Project</h4>
+            <h4 className="bold">Introduction</h4>
             <p>
-              I started this project to show young adults the power we have over
-              ourselves. The doppelganger is a way to show how we have two sides
-              to our personalities and we should try and let our best self
-              dominate and not be scared of the “evil one” - in this case Part
-              Of Her. It shows them to beat their fears.
+              {introduction}
+            </p>
+            <h4 className="bold">Features</h4>
+            <p>
+              {feature}
+            </p>
+            <h4 className="bold">Requirements</h4>
+            <p>
+              {requirements}
             </p>
             <p>
               I am looking for your help to help with funding and release this

@@ -1,10 +1,47 @@
 import { useEffect, useState } from "react";
 import "../CSS/main-game.css";
+import { fetchGameById } from "../Services";
+import { useLoaderData,Form, useParams } from "react-router-dom";
+
 
 export default function GameDetail() {
   const [mainImage, setMainImage] = useState(
-    "https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fceleste%2Fhome%2F00-1920x1080-656978e07c631e4fb1dc5d2f435c536edaafd8d5.jpg"
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
   );
+  const [username, setUsername] = useState("Loading")
+  const [image1, setImage1] = useState(
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+  );
+  const [image2, setImage2] = useState(
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+  );
+  const [image3, setImage3] = useState(
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+  );
+  const [image4, setImage4] = useState(
+    "https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921"
+  );
+  const [about, setAbout] = useState("Loading");
+  const params = useParams();
+  const gameId = params.id;
+
+
+
+  useEffect(()=>{
+    fetchGameById(gameId).then((game)=> {
+      console.log(game)
+      setUsername(game.userName)
+      console.log(game.images)
+      console.log(game.images[0].url)
+      setImage1(game.images[0].url)
+      setImage2(game.images[1].url)
+      setImage3(game.images[2].url)
+      setImage4(game.images[3].url)
+      setMainImage(game.images[1].url)
+      setAbout(game.about)
+    })
+  },[])
+
   return (
     <div className="container top-game-details d-flex">
       <div className="row mt-4">
@@ -15,7 +52,7 @@ export default function GameDetail() {
           <div className="row game-details-thumbnails">
             <div className="col-3">
               <img
-                src="https://c.tenor.com/D9f6YJpuRmUAAAAC/celeste-madeline.gif"
+                src={image1}
                 className="img-fluid"
                 alt="Celeste image 2"
                 onClick={(event) => {
@@ -26,7 +63,7 @@ export default function GameDetail() {
             </div>
             <div className="col-3">
               <img
-                src="https://cdn2.unrealengine.com/Diesel%2Fproductv2%2Fceleste%2Fhome%2F00-1920x1080-656978e07c631e4fb1dc5d2f435c536edaafd8d5.jpg"
+                src={image2}
                 className="img-fluid opassities"
                 alt="Celeste image 3"
                 onClick={(event) => {
@@ -37,7 +74,7 @@ export default function GameDetail() {
             </div>
             <div className="col-3">
               <img
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/ss_1012b11ad364ad6c138a25a654108de28de56c5f.1920x1080.jpg?t=1617130992"
+                src={image3}
                 className="img-fluid"
                 alt="Celeste image 4"
                 onClick={(event) => {
@@ -48,7 +85,7 @@ export default function GameDetail() {
             </div>
             <div className="col-3">
               <img
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/504230/ss_726b2d2cd47cfd785c1aed73d65509037c822495.1920x1080.jpg?t=1617130992"
+                src={image4}
                 className="img-fluid"
                 alt="Celeste image 5"
                 onClick={(event) => {
@@ -63,17 +100,14 @@ export default function GameDetail() {
           <div className="game-box-one">
             <div className="row pb-3 shadow-5 game-details-title-img">
               <img
-                src="https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_2.625/c_scale,w_500/ncom/en_US/games/switch/c/celeste-switch/hero"
+                src={image1}
                 className="img-fluid"
                 alt="Celeste image 1"
               />
             </div>
             <div className="row mt-2 game-description">
               <p>
-                A young woman named Madeline undertakes the challenge of
-                climbing a mountain with dangerous perils and mysterious powers.
-                Throughout her journey, she is confronted by Part Of Her, her
-                evil doppelganger.
+                {about}
               </p>
             </div>
           </div>
@@ -83,7 +117,7 @@ export default function GameDetail() {
               <div className="card-group game-card-auth mt-2">
                 <div className="card d-flex flex-row mb-2 border-0 col-8">
                   <div className="card-body">
-                    <h5 className="mb-0">Lena Raine</h5>
+                    <h5 className="mb-0">{username}</h5>
                     <small>8 games | Los Angeles, CA</small>
                   </div>
                 </div>

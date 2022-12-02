@@ -1,11 +1,44 @@
 import GameDetailNav from "../Components/GameDetailNav";
+import { useEffect, useState } from "react";
+import { fetchGameById } from "../Services";
+import { useLoaderData,Form, useParams } from "react-router-dom";
+
 export default function Updates() {
+
+  const params = useParams();
+  const gameId = params.id;
+  const[tier1_title, setT1t] = useState("Loading")
+  const[tier1_amount, setT1a] = useState("Loading")
+  const[tier1_description, setT1d] = useState("Loading")
+  const[tier2_title, setT2t] = useState("Loading")
+  const[tier2_amount, setT2a] = useState("Loading")
+  const[tier2_description, setT2d] = useState("Loading")
+  const[tier3_title, setT3t] = useState("Loading")
+  const[tier3_amount, setT3a] = useState("Loading")
+  const[tier3_description, setT3d] = useState("Loading")
+
+
+  useEffect(()=>{
+    fetchGameById(gameId).then((game)=> {
+      console.log(game)
+      setT1a(game.tier1_amount)
+      setT1d(game.tier1_description)
+      setT1t(game.tier1_title)
+      setT2a(game.tier2_amount)
+      setT2d(game.tier2_description)
+      setT2t(game.tier2_title)
+      setT3a(game.tier3_amount)
+      setT3d(game.tier3_description)
+      setT3t(game.tier3_title)
+    })
+  },[])
+
   return (
     <>
       <div className="container">
         <div className="row mt-4">
           <div className="game-purple-line"></div>
-          <h2 className="game-page-title">Updates</h2>
+          <h2 className="game-page-title">Rewards</h2>
         </div>
 
         <div className="row m-4 d-flex">
@@ -17,10 +50,10 @@ export default function Updates() {
             <div className="card updates-card p-2">
               <div className="row mt-2">
                 <div className="col-11">
-                  <h4 className="card-title update-title">50% funded in 3 days!</h4>
+                  <h4 className="card-title update-title">{tier1_title}</h4>
                 </div>
                 <div className="col-1">
-                  <small className="text-muted">1d</small>
+                  <small className="text-muted"></small>
                 </div>
               </div>
               <div className="row">
@@ -32,37 +65,62 @@ export default function Updates() {
                   />
                 </div>
                 <div className="col-10 d-flex justify-content-start align-items-center">
-                  <h5>Lena Raine</h5>
-                  <span className="author-tag">Author</span>
+                  <h5>{tier1_amount}</h5>
+                  <span className="author-tag">$</span>
                 </div>
               </div>
               <div className="row">
                 <div className="col-2"></div>
                 <div className="col-9">
                   <p>
-                    Thanks to every single one of you! We are at 50% funding for
-                    this game...and only in 3 days! Please keep on sharing so we
-                    can reach 100% and you can be a part of this game’s story.
+                    {tier1_description}
                   </p>
                 </div>
                 <div className="col-1"></div>
               </div>
-              <div className="row">
-                <div className="col-12 d-flex justify-content-end">
-                  <button type="button" className="btn btn-secondary">
-                    Like
-                  </button>
+              
+            </div>
+            
+            <div className="card updates-card p-2 mt-4">
+              <div className="row mt-2">
+                <div className="col-11">
+                  <h4 className="card-title update-title">{tier2_title}</h4>
                 </div>
+                <div className="col-1">
+                  <small className="text-muted"></small>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-2 d-flex justify-content-end">
+                  <img
+                    className="card-img-left author-avatar"
+                    alt="Lena Raine"
+                    src="https://virtualpiano.net/wp-content/uploads/2020/08/Lena-Raine-Artist-on-Virtual-Piano-Play-Piano-Online.jpg"
+                  />
+                </div>
+                <div className="col-10 d-flex justify-content-start align-items-center">
+                  <h5>{tier2_amount}</h5>
+                  <span className="author-tag">$</span>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-2"></div>
+                <div className="col-9">
+                  <p>
+                    {tier2_description}
+                  </p>
+                </div>
+                <div className="col-1"></div>
               </div>
             </div>
 
             <div className="card updates-card p-2 mt-4">
               <div className="row mt-2">
                 <div className="col-11">
-                  <h4 className="card-title update-title">Our first $1,000!</h4>
+                  <h4 className="card-title update-title">{tier3_title}</h4>
                 </div>
                 <div className="col-1">
-                  <small className="text-muted">7d</small>
+                  <small className="text-muted"></small>
                 </div>
               </div>
               <div className="row">
@@ -74,29 +132,22 @@ export default function Updates() {
                   />
                 </div>
                 <div className="col-10 d-flex justify-content-start align-items-center">
-                  <h5>Lena Raine</h5>
-                  <span className="author-tag">Author</span>
+                  <h5>{tier3_amount}</h5>
+                  <span className="author-tag">$</span>
                 </div>
               </div>
               <div className="row">
                 <div className="col-2"></div>
                 <div className="col-9">
                   <p>
-                    Hello everyone! Thanks for helping me reach the first
-                    $1,000. I am so excited to know people are backing this
-                    project and with me every step of the way.
+                    {tier3_description}
                   </p>
                 </div>
                 <div className="col-1"></div>
               </div>
-              <div className="row">
-                <div className="col-12 d-flex justify-content-end">
-                  <button type="button" className="btn btn-secondary">
-                    Like
-                  </button>
-                </div>
-              </div>
             </div>
+
+            
           </div>
 
           <div className="col-2 p-4 overflow-auto similar-games-container">

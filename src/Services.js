@@ -1,5 +1,5 @@
-const baseURL = 'http://www.jzhang.tk:8080';
-// const baseURL = 'http://localhost:8080';
+// const baseURL = 'http://www.jzhang.tk:8080';
+const baseURL = 'http://localhost:8080';
 
 export function loginGamerOrDeveloper(data, asGamer) {
   let url = asGamer
@@ -68,5 +68,13 @@ export function getGameList() {
     body: {},
   }).then((response) => {
     console.log("Try: " + response.json());
+  });
+}
+
+
+export function fetchGameById(id) {
+  let url = `${baseURL}/game/${id}`
+  return fetch(url).then((response) => {
+    return response.json();
   });
 }
