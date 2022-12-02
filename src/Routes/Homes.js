@@ -167,12 +167,12 @@ export default function Homes() {
       let top = [];
       let bottom = [];
 
-      for (let i = 0; i < games.length; ++i) {
-        console.log(games[i]);
+      for (let i = 0; i < response.length; ++i) {
+        console.log(response[i]);
         if (i < 3) {
-          top.push(games[i]);
+          top.push(response[i]);
         } else {
-          bottom.push(games[i]);
+          bottom.push(response[i]);
         }
         // (i < 3 ? top : bottom).append(games[i]);
       }
